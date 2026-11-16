@@ -22,10 +22,10 @@ def populate_report():
     # -------------------------------------------------------------
     t0 = doc.tables[0]
     members = [
-        ("1", "Siddhant Balaso Shinde", "202401040250", "149", "Lead ML Engineer (Algorithms & Evaluation)"),
-        ("2", "Piyush Ashok Patil", "202401040134", "134", "Data Engineer (PDF Ingestion & Regex Normalization)"),
-        ("3", "Sarthak Rajvaidya", "202401040245", "145", "Full-Stack Lead (React 18 SPA & FastAPI Backend)"),
-        ("4", "Omkar Sanjay More", "202401040101", "101", "Quality Analyst (Validation, Pytest & Docs)")
+        ("1", "Dipti Patil", "202401040161", "161", "Data Engineering Lead (PDF Extraction, Regex Normalization & Seat Matrix)"),
+        ("2", "Rohan Burande", "202401040188", "188", "Quality Analyst & Testing Lead (Data Validation, Pytest Suite & Source Traceability)"),
+        ("3", "Samadhan Kendhale", "202401040243", "243", "Full-Stack & Frontend Lead (React 18 SPA & FastAPI REST Backend)"),
+        ("4", "Siddhant Shinde", "202401040250", "250", "Lead ML & AI Engineer (Feature Engineering, Algorithm Benchmarking & Recommender)")
     ]
     for row_idx, data in enumerate(members, start=1):
         for col_idx, text in enumerate(data):

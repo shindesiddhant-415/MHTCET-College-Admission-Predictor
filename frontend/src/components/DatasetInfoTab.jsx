@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, ShieldCheck, Database, CheckCircle2 } from 'lucide-react';
+import { BookOpen, ShieldCheck, Database, CheckCircle2, Users } from 'lucide-react';
 import { fetchManifest } from '../services/api';
 
 export default function DatasetInfoTab() {
@@ -187,6 +187,61 @@ export default function DatasetInfoTab() {
         <div style={{ marginTop: '1rem', fontSize: '0.85rem', color: '#64748b' }}>
           <strong>Privacy by Design:</strong> The platform operates strictly on aggregate numerical scores and academic preferences. 
           Zero personally identifiable information (PII), application IDs, or personal documents are stored or logged.
+        </div>
+      </div>
+
+      {/* Project Group & Academic Team */}
+      <div className="card">
+        <h3 className="card-title">
+          <Users size={20} color="#00509d" />
+          Project Team & Academic Roster
+        </h3>
+        <p className="card-subtitle">
+          Third Year B.Tech – Computer Engineering | AIML Lab (2311331L) | MIT Academy of Engineering, Pune
+        </p>
+
+        <div className="table-responsive">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th style={{ width: '60px' }}>Sr.</th>
+                <th>Student Name</th>
+                <th>PRN</th>
+                <th>Roll No.</th>
+                <th>Project Role & Core Contribution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1</strong></td>
+                <td style={{ fontWeight: 600, color: '#00296b' }}>Dipti Patil</td>
+                <td><code>202401040161</code></td>
+                <td>161</td>
+                <td>Data Engineering Lead (PDF Extraction, Regex Normalization & Seat Matrix)</td>
+              </tr>
+              <tr>
+                <td><strong>2</strong></td>
+                <td style={{ fontWeight: 600, color: '#00296b' }}>Rohan Burande</td>
+                <td><code>202401040188</code></td>
+                <td>188</td>
+                <td>Quality Analyst & Testing Lead (Data Validation, Pytest Suite & Source Traceability)</td>
+              </tr>
+              <tr>
+                <td><strong>3</strong></td>
+                <td style={{ fontWeight: 600, color: '#00296b' }}>Samadhan Kendhale</td>
+                <td><code>202401040243</code></td>
+                <td>243</td>
+                <td>Full-Stack & Frontend Lead (React 18 SPA UI & FastAPI REST Backend)</td>
+              </tr>
+              <tr>
+                <td><strong>4</strong></td>
+                <td style={{ fontWeight: 600, color: '#00296b' }}>Siddhant Shinde</td>
+                <td><code>202401040250</code></td>
+                <td>250</td>
+                <td>Lead ML & AI Engineer (Feature Engineering, Algorithm Benchmarking & Recommender)</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

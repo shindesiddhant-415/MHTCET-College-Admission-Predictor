@@ -195,3 +195,19 @@ pnpm run dev
 - **Category Fairness**: The system enforces official reservation categories (`GOPENS`, `GOBCS`, `GSCS`, `GSTS`, `EWS`, `TFWS`) as selected by the user without making unsolicited assumptions.
 - **Privacy by Design**: No personal identity documents, roll numbers, or personal identifying information are collected or stored.
 - **Decision-Support Notice**: This tool is an academic decision aid and does not guarantee admission. Final allotments are governed solely by Maharashtra State CET Cell official procedures.
+
+---
+
+## 👥 Project Team & Academic Credits
+
+**MIT Academy of Engineering (MITAOE), Pune**  
+*Department of Computer Engineering | Third Year B.Tech. (AIML MDM Lab `2311331L`)*  
+*Practical No. 07 Mini-Project (November 2026)*
+
+| Sr. | Student Name | PRN | Roll No. | Contribution / Project Role |
+| :---: | :--- | :---: | :---: | :--- |
+| **1** | **Dipti Patil** | `202401040161` | 161 | Data Engineering Lead (PDF Extraction, Regex Normalization & Seat Matrix) |
+| **2** | **Rohan Burande** | `202401040188` | 188 | Quality Analyst & Testing Lead (Data Validation, Pytest Suite & Source Traceability) |
+| **3** | **Samadhan Kendhale** | `202401040243` | 243 | Full-Stack & Frontend Lead (React 18 SPA UI & FastAPI REST Backend) |
+| **4** | **Siddhant Shinde** | `202401040250` | 250 | Lead ML & AI Engineer (Feature Engineering, Algorithm Benchmarking & Recommender) |
+

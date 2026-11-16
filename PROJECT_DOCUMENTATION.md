@@ -21,6 +21,15 @@
 | **Unit Test Coverage** | 20 / 20 Unit Tests Passing (100% test pass rate across validation, prediction, and FastAPI REST endpoints) |
 | **SDG Alignment** | **SDG 4**: Quality Education & **SDG 10**: Reduced Inequalities |
 
+### 👥 Project Team & Group Details
+
+| Sr. | Student Name | PRN | Roll No. | Academic Role / Contribution |
+| :---: | :--- | :---: | :---: | :--- |
+| **1** | **Dipti Patil** | `202401040161` | 161 | Data Engineering Lead (PDF Extraction, Regex Normalization & Seat Matrix) |
+| **2** | **Rohan Burande** | `202401040188` | 188 | Quality Analyst & Testing Lead (Data Validation, Pytest Suite & Source Traceability) |
+| **3** | **Samadhan Kendhale** | `202401040243` | 243 | Full-Stack & Frontend Lead (React 18 SPA UI & FastAPI REST Backend) |
+| **4** | **Siddhant Shinde** | `202401040250` | 250 | Lead ML & AI Engineer (Feature Engineering, Algorithm Benchmarking & Recommender) |
+
 ---
 
 ## 📑 Table of Contents

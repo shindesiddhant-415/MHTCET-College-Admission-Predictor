@@ -5,12 +5,12 @@
 ---
 
 ## 1. Group Details
-| Sr. | Student Name | PRN | Roll No. | Role / Contribution in Project |
-| :---: | :--- | :---: | :---: | :--- |
-| 1 | **Siddhant Balaso Shinde** | 202401040250 | 149 | Lead ML Engineer (Algorithm Training & Evaluation) |
-| 2 | **Piyush Ashok Patil** | 202401040134 | 134 | Data Engineer (PDF Ingestion & Regex Normalization) |
-| 3 | **Sarthak Rajvaidya** | 202401040245 | 145 | Full-Stack Lead (React 18 SPA UI & Recommendation Engine) |
-| 4 | **Omkar Sanjay More** | 202401040101 | 101 | Quality Analyst (Data Validation, Pytest & Documentation) |
+| Sr. | Student Name | PRN | Roll No. | Role / Contribution in Project | Signature |
+| :---: | :--- | :---: | :---: | :--- | :---: |
+| 1 | **Dipti Patil** | 202401040161 | 161 | Data Engineering Lead (PDF Extraction, Regex Normalization & Seat Matrix) | *Submitted* |
+| 2 | **Rohan Burande** | 202401040188 | 188 | Quality Analyst & Testing Lead (Data Validation, Pytest Suite & Source Traceability) | *Submitted* |
+| 3 | **Samadhan Kendhale** | 202401040243 | 243 | Full-Stack & Frontend Lead (React 18 SPA UI & FastAPI REST Backend) | *Submitted* |
+| 4 | **Siddhant Shinde** | 202401040250 | 250 | Lead ML & AI Engineer (Feature Engineering, Algorithm Benchmarking & Recommender) | *Submitted* |
 
 - **Branch**: B.Tech. Computer Engineering (MDM AI & ML)
 - **Division / Batch**: TY - Division B / Batch B2
