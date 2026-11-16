@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Cpu, Award, BarChart3, LineChart, FileText } from 'lucide-react';
+import { Cpu, Award, BarChart3, LineChart } from 'lucide-react';
 import { fetchModelPerformance } from '../services/api';
 
 export default function ModelPerformanceTab() {
@@ -146,41 +146,6 @@ export default function ModelPerformanceTab() {
               alt="Feature Importance" 
               style={{ width: '100%', height: 'auto', borderRadius: '6px' }}
             />
-          </div>
-        </div>
-      </div>
-
-      {/* Critical Analysis & Viva Guide */}
-      <div className="card">
-        <h3 className="card-title">
-          <FileText size={20} color="#00509d" />
-          Critical Analysis & Viva Discussion Notes
-        </h3>
-        <p className="card-subtitle">Key methodological points addressing syllabus course outcomes CO2, CO3, and CO4</p>
-        
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', fontSize: '0.875rem' }}>
-          <div>
-            <strong>1. Why Chronological Validation Instead of Randomized K-Fold?</strong>
-            <p style={{ color: '#475569' }}>
-              Randomized k-fold splits mix records across academic cycles, allowing the model to peek into future cutoffs to predict past years. 
-              Our expanding window (Train: 2024, Val: 2025, Test: 2026) models the real-world temporal scenario of predicting next year's unseen admissions.
-            </p>
-          </div>
-
-          <div>
-            <strong>2. Why Ridge Regression Outperformed Tree Ensembles?</strong>
-            <p style={{ color: '#475569' }}>
-              Cutoffs across years exhibit strong linear autoregressive momentum. Ridge's $L_2$ penalty shrinkages prevent overfitting 
-              across hundreds of one-hot encoded institute and branch combinations, while tree partition models struggle to extrapolate outside their training leaf ranges.
-            </p>
-          </div>
-
-          <div>
-            <strong>3. Error Margin Grounding:</strong>
-            <p style={{ color: '#475569' }}>
-              The recommendation margin (M = 1.5 &times; MAE ≈ 0.17%) grounds the Safer, Moderate, and Reach suitability grouping 
-              directly in empirical validation error rather than subjective heuristics.
-            </p>
           </div>
         </div>
       </div>

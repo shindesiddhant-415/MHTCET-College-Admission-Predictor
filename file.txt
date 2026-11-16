@@ -1,0 +1,395 @@
+====================================================================================================
+AI-BASED MHT-CET COLLEGE ADMISSION PREDICTION AND PERSONALIZED RECOMMENDATION SYSTEM
+====================================================================================================
+Project Type: Third Year B.Tech Mini-Project (AIML Lab - Practical No. 07)
+Student Authors: Dipti Patil, Rohan Burande, Samadhan Kendhale, Siddhant Shinde
+Institution: MIT Academy of Engineering (MITAOE), Pune
+Academic Year: 2026-2027
+Primary Interface: React 18 SPA (Vite) + FastAPI REST ML Backend
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+1. PROJECT OVERVIEW & PROBLEM STATEMENT (FROM MY PERSPECTIVE)
+----------------------------------------------------------------------------------------------------
+Every year in Maharashtra, over 140,000 engineering aspirants take the MHT-CET examination and 
+participate in the Centralized Admission Process (CAP) conducted by the State Common Entrance Test 
+Cell (CET Cell). 
+
+During the CAP rounds, every candidate must submit an "Option Form" listing up to 300 college and branch 
+preferences in order of priority. This is a very stressful decision for students and parents:
+- If you place cutoffs too high, you get zero allotments (rejection).
+- If you place cutoffs too conservatively, you end up in a lower college despite having good marks.
+
+The real challenge is that the official cutoff information is published only as massive, messy, 
+multi-page PDF documents (often 500+ pages per round). The data is split across 4 academic years 
+(2023-24 to 2026-27), 4 separate CAP rounds, 14+ different reservation categories (GOPENS, GOBCS, 
+GSCS, GSTS, TFWS, EWS, etc.), and multiple regional quotas (Home University, State Level).
+
+Students currently try to manually search through these PDFs, which leads to confusion, mistakes, 
+and bad college shortlists.
+
+What I Built:
+I built an end-to-end Machine Learning system that:
+1. Ingests all 18 official CET Cell cutoff and seat-matrix PDF documents across 4 academic cycles.
+2. Cleans and normalizes them into structured, relational datasets (32,144 rows, 0 nulls).
+3. Constructs time-series lag features (t-1, t-2) strictly chronologically without data leakage.
+4. Implements and benchmarks 5 regression algorithms on a held-out test year (2026-27).
+5. Uses the best model (Ridge Regression, MAE = 0.1133 percentile points) to forecast future cutoffs.
+6. Groups recommendations into Safer, Moderate, and Reach options based on a transparent error margin.
+7. Deploys the complete system as a modern React 18 web application backed by a FastAPI REST service.
+
+----------------------------------------------------------------------------------------------------
+2. SYSTEM ARCHITECTURE & HOW IT IS IMPLEMENTED
+----------------------------------------------------------------------------------------------------
+My project is organized into an automated, sequential pipeline:
+
+[18 Official PDFs] (Cutoffs & Seat Matrices: 2023–2027)
+        │
+        ▼  PyMuPDF (fitz) text extraction
+[Interim Page Text] (506 extracted PDF pages)
+        │
+        ▼  Regex parser & table normalizer
+[Processed Relational CSVs] (32,144 cutoff records + 704 seat matrix rows)
+        │
+        ▼  Data quality & integrity verification (Zero nulls, 0-imputation check)
+[Validated Dataset]
+        │
+        ▼  Chronological lag builder (t-1, t-2 shifts + trends, NO future leakage)
+[Model Dataset] (22,960 supervised learning instances)
+        │
+        ▼  Chronological Expanding Split (Train: 2024, Val: 2025, Held-out Test: 2026)
+[5 Regression Models Benchmark] -> Ridge Regression won (MAE 0.1133, R² 0.9996)
+        │
+        ▼  Joblib serialization (Pipeline + Preprocessing + Metadata)
+[Production Model Artifact] (models/selected_model.joblib)
+        │
+        ▼  REST ML Inference Service (Pydantic schemas + CORS)
+[FastAPI Backend] (api/main.py on port 8000)
+        │
+        ▼  JSON REST over HTTP
+[React 18 SPA Frontend] (Vite + Dark modern design system on port 5173 / 8000)
+
+----------------------------------------------------------------------------------------------------
+3. DATABASE & DATASET STRUCTURE USED
+----------------------------------------------------------------------------------------------------
+I structured my data into four progressive stages stored as CSV tables:
+
+1. Raw PDF Archive (`dataset/raw/pdfs/`):
+   - 18 official documents from the State CET Cell portal.
+   - 14 Cutoff lists (CAP 1, 2, 3 for 2023-24; CAP 1, 2, 3 for 2024-25; CAP 1, 2, 3, 4 for 2025-26; 
+     and CAP 1, 2, 3, 4 for 2026-27).
+   - 4 Sanctioned Seat Matrix documents (one per academic year).
+
+2. Interim Page Extraction (`dataset/interim/pdf_pages.csv`):
+   - Columns: `academic_year`, `document_type`, `cap_round`, `page_number`, `page_text`.
+   - Contains 506 raw text pages extracted page-by-page using PyMuPDF.
+
+3. Processed Long Cutoffs (`dataset/processed/cutoffs_long.csv`):
+   - Exactly 32,144 rows, normalized in long format (one row per college-branch-category-round).
+   - Schema:
+     * `academic_year`: String (e.g. "2023-24", "2024-25", "2025-26", "2026-27")
+     * `year_num`: Integer (2023, 2024, 2025, 2026)
+     * `cap_round`: Integer (1, 2, 3, 4)
+     * `institute_code`: String (5-digit DTE code, e.g. "06006" for COEP)
+     * `institute_name`: String (Full college name)
+     * `course_code`: String (10-digit DTE course code, e.g. "0600624510")
+     * `branch_name`: String (e.g. "Computer Engineering", "Information Technology")
+     * `seat_pool`: String ("State Level", "Home University", "Other than Home University")
+     * `seat_category_code`: String (e.g. "GOPENS", "GOBCS", "GSCS", "TFWS", "EWS")
+     * `stage_code`: String ("I" for Stage 1 allotments)
+     * `merit_number`: Integer (Closing General State Merit rank)
+     * `cutoff_percentile`: Float (Closing MHT-CET PCM percentile, 0.00 to 100.00)
+
+4. Processed Seat Matrix (`dataset/processed/seat_matrix.csv`):
+   - Exactly 704 rows (22 colleges x 8 branches x 4 years).
+   - Schema:
+     * `academic_year`, `institute_code`, `institute_name`, `course_code`, `branch_name`
+     * `total_intake`: Approved annual seat capacity (e.g. 150, 120, 60)
+     * `state_seats`: Sanctioned seats for Maharashtra CAP pool
+     * `minority_seats`: Minority quota seats (0 for non-minority)
+     * `all_india_seats`: Seats allotted via JEE Main
+     * `institute_seats`: Institutional / Management quota seats
+
+5. Model Feature Store (`dataset/model/model_dataset.csv`):
+   - Exactly 22,960 target rows (from target years 2024, 2025, 2026).
+   - Contains the target variable (`cutoff_percentile`) alongside historical lag features.
+
+----------------------------------------------------------------------------------------------------
+4. PREPROCESSING & DATA CLEANING RULES (HOW I HANDLED THE RAW DATA)
+----------------------------------------------------------------------------------------------------
+Raw CET Cell PDFs are notoriously difficult to parse because they are printed tables formatted 
+for paper rather than structured data. I solved this using a custom Python regex state machine:
+
+A. Header & Institute Tracking:
+   - Institute and branch names are printed at the top of pages. When a table spans multiple pages, 
+     the institute name may only appear on page 1.
+   - My fix: I extracted the 10-digit DTE course code (`0600624510`). The first 5 digits (`06006`) 
+     are mathematically guaranteed by DTE rules to be the institute code. I mapped this to an 
+     institutional lookup dictionary, ensuring 0 null institute names across all 32,144 rows.
+
+B. The Stage Code vs Category Parsing Bug:
+   - In Maharashtra cutoff tables, the Roman numeral "I" represents "Stage I".
+   - Early regex passes mistakenly consumed "I" as a category name. I fixed this by restricting 
+     category collection strictly to verified category tokens (`GOPENS`, `GOBCS`, etc.) and 
+     parsing the Roman numeral separately as `stage_code = 'I'`.
+
+C. The "Zero Zero-Imputation" Principle (Very Important!):
+   - In standard ML, people often impute missing numbers with 0.
+   - In MHT-CET, imputing a missing cutoff with `0.0` is catastrophic! A percentile of 0.0 means 
+     the candidate scored at the 0th percentile (the absolute worst score in Maharashtra).
+   - If a college did not allot seats under ST or VJ in Round 3, the cutoff was NOT 0.0; the seat 
+     simply was not applicable or was already filled.
+   - My rule: I strictly forbade zero-imputation. If a prior lag was missing, I imputed a neutral 
+     momentum trend (`percentile_trend = 0.0`) rather than a fake 0.0 cutoff.
+
+D. Data Quality Verification Script (`src/data/validate_data.py`):
+   - Total extracted rows: 32,144 (100% verified)
+   - Rows with missing cutoffs: 0 (PASS)
+   - Invalid percentile values (<0 or >100): 0 (PASS)
+   - Duplicate records: 0 (PASS)
+   - Source traceability: 100% PASS
+
+----------------------------------------------------------------------------------------------------
+5. FEATURE ENGINEERING WITHOUT TEMPORAL LOOK-AHEAD LEAKAGE
+----------------------------------------------------------------------------------------------------
+In machine learning, temporal leakage is a fatal flaw: if you randomly shuffle data across years, 
+a model predicting 2025 cutoffs might learn from 2026 data!
+
+To ensure my model reflects reality, I enforced strict chronological isolation:
+To predict year t, the model only sees information from year t-1 and year t-2.
+
+Features I Engineered for each college-branch-category combination:
+1. `prev_year_percentile` (Float): Closing cutoff from the immediate prior cycle (y_{t-1}).
+2. `prev2_year_percentile` (Float): Closing cutoff from two cycles prior (y_{t-2}).
+3. `percentile_trend` (Float): Rate of change = y_{t-1} - y_{t-2}. Positive means cutoff is rising 
+   (increasing student demand); negative means cutoff is falling.
+4. `prev_year_merit_no` (Integer): The general merit rank of the closing student in the prior year.
+5. `prev_year_intake` (Integer): Sanctioned student capacity in the prior year.
+6. `intake_change` (Integer): Change in intake capacity (Intake_{t-1} - Intake_{t-2}).
+7. Categorical Identity Features:
+   - `institute_code` (One-hot encoded)
+   - `course_code` (One-hot encoded)
+   - `branch_name` (One-hot encoded)
+   - `cap_round` (1, 2, 3, 4 - models round relaxation)
+   - `seat_pool` (State Level vs Home University)
+   - `seat_category_code` (GOPENS, GOBCS, GSCS, etc.)
+   - `stage_code` (Stage I)
+
+----------------------------------------------------------------------------------------------------
+6. MACHINE LEARNING MODELS USED & HOW THEY WORK
+----------------------------------------------------------------------------------------------------
+I implemented and compared 5 distinct regression algorithms mapping directly to the AIML lab syllabus:
+
+1. Previous-Year Baseline (Naive Lag Predictor):
+   - Formula: y_hat_{t} = y_{t-1}
+   - How it works: It simply assumes next year's cutoff will be identical to this year's cutoff. 
+     This is the baseline heuristic students currently use manually.
+
+2. Ridge Regression with L2 Regularization & SGD Principles (Practical 3):
+   - Objective: Minimize the sum of squared errors plus an L2 penalty on weights:
+     Cost(w) = (1 / 2n) * Sum( (y_i - w^T x_i)^2 ) + alpha * ||w||_2^2
+   - How it works: It fits a regularized linear hyperplane. The L2 penalty shrinks regression 
+     coefficients toward zero, preventing large weights on sparse one-hot dummy variables.
+
+3. Decision Tree Regressor (Practical 4):
+   - How it works: Non-linear recursive partitioning that splits feature space using orthogonal 
+     thresholds to minimize Mean Squared Error (MSE) within leaves.
+   - Hyperparameters: max_depth=12, min_samples_leaf=5.
+
+4. Random Forest Regressor - Bagging Ensemble (Practical 5):
+   - How it works: Bootstrap aggregation of 100 decorrelated decision trees. Each tree is trained 
+     on a bootstrap sample of the data with random feature subspace sampling at each split.
+   - Hyperparameters: n_estimators=100, max_depth=16, min_samples_leaf=3.
+
+5. HistGradientBoosting Regressor - Boosting Ensemble (Practical 5):
+   - How it works: Sequential boosting based on histogram binning (similar to LightGBM). Trees are 
+     trained iteratively, where each subsequent tree predicts the negative gradient (residual errors) 
+     of the preceding ensemble.
+   - Hyperparameters: max_iter=150, learning_rate=0.08, max_leaf_nodes=31.
+
+----------------------------------------------------------------------------------------------------
+7. HOW BENCHMARKING WORKS & EVALUATION METRICS
+----------------------------------------------------------------------------------------------------
+I evaluated all models using an Expanding Chronological Window:
+- Training Split: Academic Cycle 2024–25 (6,888 records, using 2023 as lags)
+- Validation Split: Academic Cycle 2025–26 (6,888 records, using 2024 as lags)
+  -> Used exclusively to tune hyperparameters (alpha, tree depth) and determine error margins.
+- Held-Out Test Split: Academic Cycle 2026–27 (9,184 records, using 2025 as lags)
+  -> The models had ZERO access to 2026 data during training or tuning.
+
+Metrics Used for Fair Comparison:
+- MAE (Mean Absolute Error): Average magnitude of error in percentile points:
+  MAE = (1 / n) * Sum( |y_actual - y_predicted| )
+- MSE (Mean Squared Error): Average of squared differences:
+  MSE = (1 / n) * Sum( (y_actual - y_predicted)^2 )
+- RMSE (Root Mean Squared Error): Square root of MSE, penalizes large outliers heavily:
+  RMSE = Sqrt( MSE )
+- R² Score (Coefficient of Determination): Proportion of variance explained (1.0 is perfect):
+  R² = 1 - ( Sum( (y - y_hat)^2 ) / Sum( (y - y_mean)^2 ) )
+
+Benchmark Leaderboard on Held-Out Test Year 2026–27:
++------------------------------------+-----------+--------+--------+----------+---------------+
+| Model                              |  MAE ↓    | MSE ↓  | RMSE ↓ | R² ↑     | Training Time |
++------------------------------------+-----------+--------+--------+----------+---------------+
+| 1. Ridge Regression (SGD/L2) [BEST]|  0.1133   | 0.0200 | 0.1415 |  0.9996  |    0.120 s    |
+| 2. Random Forest Regressor         |  0.1168   | 0.0208 | 0.1442 |  0.9996  |    1.296 s    |
+| 3. HistGradientBoosting Regressor  |  0.1236   | 0.0260 | 0.1612 |  0.9994  |    3.626 s    |
+| 4. Decision Tree Regressor         |  0.1266   | 0.0248 | 0.1574 |  0.9995  |    0.210 s    |
+| 5. Previous-Year Baseline          |  0.2037   | 0.0550 | 0.2346 |  0.9988  |   <0.001 s    |
++------------------------------------+-----------+--------+--------+----------+---------------+
+
+----------------------------------------------------------------------------------------------------
+8. WHY THE BEST MODEL (RIDGE REGRESSION) WON
+----------------------------------------------------------------------------------------------------
+Many people expect complex ensemble trees like Random Forest or Gradient Boosting to always beat 
+linear models. In this project, Ridge Regression won conclusively. Here is the technical explanation:
+
+1. Autoregressive Linear Dominance:
+   Cutoff percentiles follow an overwhelmingly linear trajectory: the previous-year cutoff 
+   (prev_year_percentile) has a Pearson correlation coefficient r > 0.99 with the current cutoff. 
+   A linear model captures this baseline relationship with zero bias.
+
+2. Tree Partitioning vs Linear Extrapolation:
+   Decision trees partition the feature space into flat, orthogonal step-functions. A tree cannot 
+   predict a value higher than the highest cutoff or lower than the lowest cutoff in its training leaves. 
+   When a college cutoff rises due to surging popularity (e.g., AI & Data Science demand), tree models 
+   under-predict, whereas Ridge naturally projects the linear trend upward.
+
+3. L2 Penalty on High-Cardinality One-Hot Features:
+   Encoding 22 colleges, 8 branches, and 14 categories creates hundreds of sparse binary columns. 
+   Unregularized linear regression would suffer from multicollinearity. Ridge's L2 penalty 
+   (alpha * ||w||_2^2) smoothly shrinks the categorical weights toward zero, eliminating overfitting 
+   while preserving the institutional prestige offsets.
+
+4. 44.4% Improvement Over the Baseline:
+   Compared to the naive student heuristic (copying last year's cutoff, MAE = 0.2037), Ridge reduces 
+   prediction error to MAE = 0.1133, a massive 44.4% reduction in error!
+
+----------------------------------------------------------------------------------------------------
+9. HOW PARAMETERS & HYPERPARAMETERS ARE PROCESSED
+----------------------------------------------------------------------------------------------------
+I built a clean, leak-free Scikit-Learn `Pipeline` using `ColumnTransformer`:
+
+Preprocessing Pipeline Architecture:
+1. Categorical Pipeline:
+   - Applied to: `institute_code`, `course_code`, `branch_name`, `cap_round`, `seat_pool`, 
+     `seat_category_code`, `stage_code`.
+   - Transformation: `OneHotEncoder(handle_unknown='ignore', sparse_output=False)`
+   - Why: Converts discrete categorical strings into binary indicator vectors. `handle_unknown='ignore'` 
+     guarantees the pipeline will never crash if an unseen category appears during inference.
+
+2. Numerical Pipeline:
+   - Applied to: `prev_year_percentile`, `prev_year_merit_no`, `prev_year_intake`, 
+     `percentile_trend`, `intake_change`.
+   - Transformation: `StandardScaler()`
+   - Why: Normalizes numerical scales so that large merit numbers (e.g. 45,000) do not dominate 
+     cutoff percentiles (e.g. 92.5) during L2 penalty shrinkage.
+
+Hyperparameter Tuning:
+- For Ridge Regression, I evaluated regularization strength alpha across [0.1, 1.0, 5.0, 10.0, 50.0, 100.0] 
+  on the validation split (Year 2025). 
+- `alpha = 10.0` achieved the optimal balance: it provided enough regularization to prevent one-hot 
+  overfitting while keeping the weights responsive to cutoff momentum.
+
+Model Persistence:
+- After benchmarking on the 2026 test set, I refit the winning Ridge Pipeline on all 22,960 historical 
+  records to prepare it for predicting future admissions (2027–28).
+- Saved artifacts using Joblib:
+  * `models/selected_model.joblib`: The complete trained Pipeline (Transformers + Ridge).
+  * `models/model_metadata.json`: Stores validation metrics, best hyperparameters, and margins.
+
+----------------------------------------------------------------------------------------------------
+10. PERSONALIZED RECOMMENDATION ENGINE & SUITABILITY GROUPING LOGIC
+----------------------------------------------------------------------------------------------------
+The recommendation engine does not output raw, confusing numbers. It translates model predictions 
+into actionable, explainable admission option lists.
+
+Step 1: The Percentile Gap Formula
+For a student with MHT-CET percentile P_student, applying for a college option with predicted cutoff y_hat:
+   Gap = P_student - y_hat
+- If Gap > 0: The student's score is above the estimated closing cutoff.
+- If Gap < 0: The student's score is below the estimated closing cutoff.
+
+Step 2: Grounding Decision Boundaries in Empirical Validation Error
+Instead of inventing arbitrary numbers (like 2% or 5%), I mathematically tied the suitability 
+threshold directly to the model's measured validation error:
+   M = 1.5 * MAE_val = 1.5 * 0.1133 ≈ 0.170 percentile points
+
+Step 3: Transparent Suitability Grouping Rules
+1. 🛡️ Safer Options (Gap > +M):
+   - Candidate percentile is more than 0.17 pts above the estimated cutoff.
+   - High allotment probability buffer; essential as safe backups on the CAP option form.
+2. ⚖️ Moderate Options (-M <= Gap <= +M):
+   - Candidate percentile is within ±0.17 pts of the predicted cutoff.
+   - Highly competitive border options where allotment depends on marginal round dynamics.
+3. 🚀 Reach Options (Gap < -M):
+   - Candidate percentile is more than 0.17 pts below the predicted cutoff.
+   - Ambitious / Dream options that candidates should place at the top of their option form.
+
+Step 4: Explainability
+Every recommended option generates a clear explanation, for example:
+"Candidate percentile (94.50) is +1.82 above predicted cutoff (92.68). Safe admission option with buffer."
+
+----------------------------------------------------------------------------------------------------
+11. FULL-STACK DEPLOYMENT (REACT 18 SPA + FASTAPI BACKEND)
+----------------------------------------------------------------------------------------------------
+Instead of relying on basic script wrappers, I built a production-grade full-stack architecture:
+
+Backend (FastAPI in `api/main.py` on Port 8000):
+- Exposes clean REST endpoints:
+  * `GET /api/health`: Health status & model verification.
+  * `GET /api/overview`: Dataset KPIs (32,144 records, 22 colleges, best MAE 0.1133).
+  * `GET /api/filters`: Unique dropdown lists for categories, pools, branches, and colleges.
+  * `POST /api/recommend`: Accepts candidate percentile and preferences; returns sorted options.
+  * `GET /api/trends`: Multi-year cutoff trajectories across 2023–2026.
+  * `GET /api/model-performance`: Leaderboard table, metrics, and diagnostic plot paths.
+  * `GET /api/compare`: Head-to-head comparison of cutoffs and sanctioned seat intake.
+  * `GET /api/manifest`: 18-document traceability audit trail.
+- Mounts the compiled React `frontend/dist` directory so both the SPA and REST endpoints are served 
+  from a single unified port (8000).
+
+Frontend (React 18 Single-Page Application in `frontend/`):
+- Built with React 18, Vite bundler, Lucide React icons, and a custom dark glassmorphic CSS design system.
+- Organized into 6 distinct tabs:
+  1. OverviewTab: KPI cards, dataset distributions, and system objectives.
+  2. RecommendationsTab: Interactive percentile slider (0-100), category selector, branch chips, 
+     Safer/Moderate/Reach badges, and one-click CSV export.
+  3. CutoffTrendsTab: Multi-year trend progression visualizer and CAP round relaxation cards.
+  4. ModelPerformanceTab: Regression leaderboard and diagnostic plots (Actual vs Predicted, 
+     Residual Distribution, Feature Importance).
+  5. CollegeComparisonTab: Side-by-side cutoff & seat matrix intake comparison across institutes.
+  6. DatasetInfoTab: 18-document manifest, automated quality report, category guide, and team roster.
+- Resilient Error Handling: Includes an ErrorBoundary and fallback dataset so that the dashboard 
+  renders cleanly without white screens even if the backend is initializing.
+
+----------------------------------------------------------------------------------------------------
+12. HOW TO RUN AND TEST THE PROJECT
+----------------------------------------------------------------------------------------------------
+A. One-Click Launch (Easiest):
+   Double-click `launch_app.bat` (or run `./launch_app.ps1` in PowerShell).
+   This launches the browser to http://localhost:8000 and starts the FastAPI server.
+
+B. Manual Command Line:
+   # Terminal 1: Run unified server
+   python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
+   # Open http://localhost:8000 in your browser.
+
+C. Run Automated Unit Tests (20 / 20 Passing):
+   $env:PYTHONPATH="."
+   python -m pytest tests -v
+
+D. Re-run Entire Data Pipeline from Scratch:
+   python src/data/download_pdfs.py         # Step 1: Verify 18 official PDFs
+   python src/data/extract_pdf_text.py      # Step 2: Extract text from PDFs
+   python src/data/parse_cutoff_tables.py   # Step 3: Parse cutoff tables
+   python src/data/parse_seat_matrix.py     # Step 4: Parse seat matrices
+   python src/data/validate_data.py         # Step 5: Run data quality audit
+   python src/features/build_features.py    # Step 6: Engineer lag features
+   python src/models/train_models.py        # Step 7: Benchmark models & train Ridge
+   python src/models/explain_model.py       # Step 8: Generate diagnostic charts
+   cd frontend; pnpm run build; cd ..       # Step 9: Compile React frontend
+   python report/generate_final_report.py   # Step 10: Populate official report DOCX
+
+====================================================================================================
+End of Project Explanation File (`file.txt`)
+====================================================================================================
