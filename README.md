@@ -135,6 +135,79 @@ MHTCET-College-Recommender/
 
 ---
 
+## 📦 Dataset & Official Source Links
+
+This project utilizes real-world regulatory documents published by the **State Common Entrance Test Cell, Maharashtra State** across four consecutive academic years (2023–24 through 2026–27).
+
+### 1. Processed Datasets (Available in Repository)
+- 📊 **[dataset/processed/cutoffs_long.csv](dataset/processed/cutoffs_long.csv)**: 32,144 normalized closing cutoff records across 22 top engineering institutions, 8 branches, 4 CAP rounds, and 14 reservation categories.
+- 🪑 **[dataset/processed/seat_matrix.csv](dataset/processed/seat_matrix.csv)**: 704 sanctioned intake records with seat breakdown (State Level, Home University, TFWS, Minority, and Institute Level).
+- ⚙️ **[dataset/model/model_dataset.csv](dataset/model/model_dataset.csv)**: 22,960 ML-ready target records containing chronological lag variables ($t-1$, $t-2$), cutoff trends, and intake shifts.
+- 📋 **[dataset/processed/data_quality_report.csv](dataset/processed/data_quality_report.csv)**: Automated audit report verifying 0 missing critical values, 100% valid percentiles (0–100), and non-zero merit ranks.
+- 📁 **[dataset/raw/pdfs/](dataset/raw/pdfs/)**: 18 original official PDF documents organized by academic year.
+
+### 2. Official Maharashtra State Regulatory Links
+- 🌐 **Official Maharashtra CET Cell Engineering Portal**: [https://fe2026.mahacet.org](https://fe2026.mahacet.org)
+- 🌐 **State Common Entrance Test Cell Main Portal**: [https://cetcell.mahacet.org](https://cetcell.mahacet.org)
+- 🌐 **Directorate of Technical Education (DTE) Maharashtra**: [https://dte.maharashtra.gov.in](https://dte.maharashtra.gov.in)
+- 📄 **Source Document Audit Manifest**: [docs/source_manifest.csv](docs/source_manifest.csv) (Includes SHA-256 cryptographic verification hashes for every document).
+- 🔗 **Detailed Document Sources JSON**: [config/sources.json](config/sources.json).
+
+---
+
+## 🧠 Saved Trained Model File
+
+The winning, production-selected Machine Learning model is serialized and ready for instant deployment without requiring retraining.
+
+### 1. Serialized Model Files
+- 💾 **[models/selected_model.joblib](models/selected_model.joblib)**: Serialized scikit-learn `Pipeline` combining:
+  - `ColumnTransformer` with `OneHotEncoder(handle_unknown='ignore')` for high-cardinality institute, branch, and category codes.
+  - `StandardScaler` for continuous numerical lag percentiles, trend momentum, and intake capacity.
+  - `Ridge(alpha=10.0)` regularized linear regression estimator.
+- 📑 **[models/model_metadata.json](models/model_metadata.json)**: Model configuration file storing hyperparameters, evaluation metrics (MAE = 0.1133, RMSE = 0.1415, $R^2$ = 0.9996), recommendation margin ($M = 0.170\%$), and target forecast year (`2027-28`).
+
+### 2. Python Quickstart: How to Load & Predict with the Model
+```python
+import joblib
+import pandas as pd
+
+# Load the production pipeline directly
+model = joblib.load('models/selected_model.joblib')
+
+# Sample query input for a candidate
+sample_input = pd.DataFrame([{
+    'institute_code': '6006',
+    'branch_name': 'Computer Engineering',
+    'seat_category_code': 'GOPENS',
+    'seat_pool': 'State Level',
+    'cap_round': 1,
+    'prev_year_percentile': 98.94,
+    'prev2_year_percentile': 98.57,
+    'percentile_trend': 0.37,
+    'total_intake': 120,
+    'state_seats': 102,
+    'intake_change': 0
+}])
+
+# Predict future closing cutoff percentile
+predicted_cutoff = model.predict(sample_input)[0]
+print(f"Predicted Closing Cutoff: {predicted_cutoff:.4f}%")
+```
+
+---
+
+## 📓 Jupyter Notebooks (Master & Step-by-Step)
+
+- 🌟 **[notebooks/mhtcet_admission_predictor_master.ipynb](notebooks/mhtcet_admission_predictor_master.ipynb)**: **MASTER End-to-End Notebook** combining all 11 stages of the pipeline in a single scrollable document with pre-rendered tables and figures.
+- 01. **[notebooks/01_data_understanding.ipynb](notebooks/01_data_understanding.ipynb)**: Document ingestion, manifest audit & PDF text extraction.
+- 02. **[notebooks/02_eda.ipynb](notebooks/02_eda.ipynb)**: Exploratory data analysis, cutoff distributions & branch hierarchy.
+- 03. **[notebooks/03_data_preprocessing.ipynb](notebooks/03_data_preprocessing.ipynb)**: Data cleaning, non-zero imputation check & seat matrix join.
+- 04. **[notebooks/04_feature_engineering.ipynb](notebooks/04_feature_engineering.ipynb)**: Chronological expanding-window lag variables ($t-1$, $t-2$) & momentum.
+- 05. **[notebooks/05_model_experiments.ipynb](notebooks/05_model_experiments.ipynb)**: 5-algorithm benchmarking leaderboard & model comparison bar chart.
+- 06. **[notebooks/06_model_analysis.ipynb](notebooks/06_model_analysis.ipynb)**: Actual vs. Predicted scatter plot, feature importance & recommendation simulation.
+
+---
+
 ## 🚀 Getting Started
 
 ### 1. Installation
@@ -242,13 +315,13 @@ pnpm run dev
 
 | Deliverable | Repository Path / Evidence | Verification Status |
 | :--- | :--- | :---: |
-| **1. Source Code / Jupyter Notebooks** | `src/`, `api/`, `frontend/`, `tests/` + 6 well-commented notebooks in `notebooks/` | ✅ Complete |
-| **2. README.md with Run Steps** | Comprehensive architecture, benchmark tables, live URL, and execution guide | ✅ Complete |
-| **3. Dataset or Dataset Link** | `dataset/` (18 PDFs, `cutoffs_long.csv`, `seat_matrix.csv`) + `config/sources.json` | ✅ Complete |
-| **4. requirements.txt** | Clean dependency file for FastAPI, Scikit-learn, ReportLab, Pytest, Uvicorn | ✅ Complete |
-| **5. Saved Trained Model File** | `models/selected_model.joblib` and `models/model_metadata.json` | ✅ Complete |
-| **6. Screenshots of Results & App** | `report/screenshots/` (6 UI tab captures, live Render app, diagnostic plots) | ✅ Complete |
-| **7. Project Report (PDF) & Poster** | `report/final_report.pdf`, `report/final_report.docx`, `report/project_poster.png`, `report/project_poster.pdf` | ✅ Complete |
+| **1. Source Code / Jupyter Notebooks** | [`src/`](src/), [`api/`](api/), [`frontend/`](frontend/), [`tests/`](tests/) + [`notebooks/mhtcet_admission_predictor_master.ipynb`](notebooks/mhtcet_admission_predictor_master.ipynb) | ✅ Complete |
+| **2. README.md with Run Steps** | [`README.md`](README.md) with architecture, benchmark tables, live URL, and execution guide | ✅ Complete |
+| **3. Dataset or Dataset Link** | [`dataset/processed/cutoffs_long.csv`](dataset/processed/cutoffs_long.csv), [`dataset/processed/seat_matrix.csv`](dataset/processed/seat_matrix.csv) + [Official CET Portal](https://fe2026.mahacet.org) in [`config/sources.json`](config/sources.json) | ✅ Complete |
+| **4. requirements.txt** | [`requirements.txt`](requirements.txt) (FastAPI, Scikit-learn, ReportLab, Pytest, Uvicorn) | ✅ Complete |
+| **5. Saved Trained Model File** | [`models/selected_model.joblib`](models/selected_model.joblib) and [`models/model_metadata.json`](models/model_metadata.json) | ✅ Complete |
+| **6. Screenshots of Results & App** | [`report/screenshots/`](report/screenshots/) (6 UI tab captures, live Render app, diagnostic plots) | ✅ Complete |
+| **7. Project Report (PDF) & Poster** | [`report/final_report.pdf`](report/final_report.pdf), [`report/final_report.docx`](report/final_report.docx), [`report/project_poster.png`](report/project_poster.png) | ✅ Complete |
 
 ---
 
