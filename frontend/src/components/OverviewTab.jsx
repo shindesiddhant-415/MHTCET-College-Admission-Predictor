@@ -103,7 +103,7 @@ export default function OverviewTab({ overview, setActiveTab }) {
             <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
               <span className="badge badge-moderate">GROUPING ENGINE</span>
               <div>
-                <strong>Suitability Categorization:</strong> Transparent grouping into 🛡️ Safer, ⚖️ Moderate, and 🚀 Reach based on validation error margin ($M = 1.5 \times \text{MAE}$).
+                <strong>Suitability Categorization:</strong> Transparent grouping into 🛡️ Safer, ⚖️ Moderate, and 🚀 Reach based on validation error margin (M = 1.5 &times; MAE ≈ 0.170%).
               </div>
             </div>
 

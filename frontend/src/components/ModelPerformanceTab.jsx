@@ -120,7 +120,7 @@ export default function ModelPerformanceTab() {
               style={{ width: '100%', height: 'auto', borderRadius: '6px' }}
             />
             <p style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '0.5rem' }}>
-              Residuals $\epsilon = y - \hat{y}$ are normally distributed with zero mean and low variance.
+              Residuals (e = Actual - Predicted) are normally distributed with zero mean and low variance.
             </p>
           </div>
         </div>

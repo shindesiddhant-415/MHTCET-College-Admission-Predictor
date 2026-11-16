@@ -8,3 +8,4 @@ Start-Process "http://localhost:8000"
 Write-Host ""
 Write-Host "[2/2] Starting FastAPI server on port 8000 (Ctrl+C to stop)..." -ForegroundColor Yellow
 python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
+
