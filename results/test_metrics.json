@@ -1,0 +1,9 @@
+{
+  "Model": "Ridge Regression (SGD/L2)",
+  "MAE": 0.1133,
+  "MSE": 0.02,
+  "RMSE": 0.1415,
+  "R2": 0.9996,
+  "Training Time (s)": 0.12,
+  "Prediction Time (s)": 0.0266
+}

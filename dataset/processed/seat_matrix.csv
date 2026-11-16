@@ -1,0 +1,705 @@
+academic_year,institute_code,institute_name,course_code,branch_name,institute_status,total_intake,state_seats,minority_seats,all_india_seats,institute_seats,orphan_seats,source_file,source_page
+2023-24,06006,"COEP Technological University, Pune",0600624510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0600624610,Information Technology,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0600626310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0600637210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0600629310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0600661210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0600619110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0600691110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0301224510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0301224610,Information Technology,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0301226310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0301237210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0301229310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0301261210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0301219110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0301291110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0627124510,Computer Engineering,Government Autonomous,120,78,0,18,24,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0627124610,Information Technology,Government Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0627126310,Artificial Intelligence and Data Science,Government Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0627137210,Electronics and Telecommunication Engg,Government Autonomous,120,78,0,18,24,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0627129310,Electrical Engineering,Government Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0627161210,Mechanical Engineering,Government Autonomous,120,78,0,18,24,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0627119110,Civil Engineering,Government Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,1
+2023-24,06006,"COEP Technological University, Pune",0627191110,Robotics and Automation,Government Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,1
+2023-24,03014,,0301424510,Computer Engineering,,120,78,0,18,24,1,2023SeatMatrix.pdf,2
+2023-24,03014,,0301424610,Information Technology,,60,39,0,9,12,1,2023SeatMatrix.pdf,2
+2023-24,03014,,0301426310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2023SeatMatrix.pdf,2
+2023-24,03014,,0301437210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2023SeatMatrix.pdf,2
+2023-24,03014,,0301429310,Electrical Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,2
+2023-24,03014,,0301461210,Mechanical Engineering,,120,78,0,18,24,1,2023SeatMatrix.pdf,2
+2023-24,03014,,0301419110,Civil Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,2
+2023-24,03014,,0301491110,Robotics and Automation,,60,39,0,9,12,1,2023SeatMatrix.pdf,2
+2023-24,06273,,0627324510,Computer Engineering,,120,78,0,18,24,1,2023SeatMatrix.pdf,3
+2023-24,06273,,0627324610,Information Technology,,60,39,0,9,12,1,2023SeatMatrix.pdf,3
+2023-24,06273,,0627326310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2023SeatMatrix.pdf,3
+2023-24,06273,,0627337210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2023SeatMatrix.pdf,3
+2023-24,06273,,0627329310,Electrical Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,3
+2023-24,06273,,0627361210,Mechanical Engineering,,120,78,0,18,24,1,2023SeatMatrix.pdf,3
+2023-24,06273,,0627319110,Civil Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,3
+2023-24,06273,,0627391110,Robotics and Automation,,60,39,0,9,12,1,2023SeatMatrix.pdf,3
+2023-24,06284,,0628424510,Computer Engineering,,120,78,0,18,24,1,2023SeatMatrix.pdf,3
+2023-24,06284,,0628424610,Information Technology,,60,39,0,9,12,1,2023SeatMatrix.pdf,3
+2023-24,06284,,0628426310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2023SeatMatrix.pdf,3
+2023-24,06284,,0628437210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2023SeatMatrix.pdf,3
+2023-24,06284,,0628429310,Electrical Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,3
+2023-24,06284,,0628461210,Mechanical Engineering,,120,78,0,18,24,1,2023SeatMatrix.pdf,3
+2023-24,06284,,0628419110,Civil Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,3
+2023-24,06284,,0628491110,Robotics and Automation,,60,39,0,9,12,1,2023SeatMatrix.pdf,3
+2023-24,06007,"Walchand College of Engineering, Sangli",0600724510,Computer Engineering,Government-Aided Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,3
+2023-24,06007,"Walchand College of Engineering, Sangli",0600724610,Information Technology,Government-Aided Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,3
+2023-24,06007,"Walchand College of Engineering, Sangli",0600726310,Artificial Intelligence and Data Science,Government-Aided Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,3
+2023-24,06007,"Walchand College of Engineering, Sangli",0600737210,Electronics and Telecommunication Engg,Government-Aided Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,3
+2023-24,06007,"Walchand College of Engineering, Sangli",0600729310,Electrical Engineering,Government-Aided Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,3
+2023-24,06007,"Walchand College of Engineering, Sangli",0600761210,Mechanical Engineering,Government-Aided Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,3
+2023-24,06007,"Walchand College of Engineering, Sangli",0600719110,Civil Engineering,Government-Aided Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,3
+2023-24,06007,"Walchand College of Engineering, Sangli",0600791110,Robotics and Automation,Government-Aided Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,3
+2023-24,01002,"Government College of Engineering, Amravati",0100224510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,3
+2023-24,01002,"Government College of Engineering, Amravati",0100224610,Information Technology,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,3
+2023-24,01002,"Government College of Engineering, Amravati",0100226310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,3
+2023-24,01002,"Government College of Engineering, Amravati",0100237210,Electronics and Telecommunication Engg,,120,102,0,18,0,1,2023SeatMatrix.pdf,4
+2023-24,01002,"Government College of Engineering, Amravati",0100229310,Electrical Engineering,,60,51,0,9,0,1,2023SeatMatrix.pdf,4
+2023-24,01002,"Government College of Engineering, Amravati",0100261210,Mechanical Engineering,,120,102,0,18,0,1,2023SeatMatrix.pdf,4
+2023-24,01002,"Government College of Engineering, Amravati",0100219110,Civil Engineering,,60,51,0,9,0,1,2023SeatMatrix.pdf,4
+2023-24,01002,"Government College of Engineering, Amravati",0100291110,Robotics and Automation,,60,51,0,9,0,1,2023SeatMatrix.pdf,4
+2023-24,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200824510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,5
+2023-24,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200824610,Information Technology,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200826310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200837210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,5
+2023-24,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200829310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200861210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,5
+2023-24,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200819110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200891110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,06004,"Government College of Engineering, Karad",0600424510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,5
+2023-24,06004,"Government College of Engineering, Karad",0600424610,Information Technology,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,06004,"Government College of Engineering, Karad",0600426310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,06004,"Government College of Engineering, Karad",0600437210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,5
+2023-24,06004,"Government College of Engineering, Karad",0600429310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,06004,"Government College of Engineering, Karad",0600461210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2023SeatMatrix.pdf,5
+2023-24,06004,"Government College of Engineering, Karad",0600419110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,06004,"Government College of Engineering, Karad",0600491110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,04003,"Government College of Engineering, Chandrapur",0400324510,Computer Engineering,Government,120,102,0,18,0,1,2023SeatMatrix.pdf,5
+2023-24,04003,"Government College of Engineering, Chandrapur",0400324610,Information Technology,Government,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,04003,"Government College of Engineering, Chandrapur",0400326310,Artificial Intelligence and Data Science,Government,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,04003,"Government College of Engineering, Chandrapur",0400337210,Electronics and Telecommunication Engg,Government,120,102,0,18,0,1,2023SeatMatrix.pdf,5
+2023-24,04003,"Government College of Engineering, Chandrapur",0400329310,Electrical Engineering,Government,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,04003,"Government College of Engineering, Chandrapur",0400361210,Mechanical Engineering,Government,120,102,0,18,0,1,2023SeatMatrix.pdf,5
+2023-24,04003,"Government College of Engineering, Chandrapur",0400319110,Civil Engineering,Government,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,04003,"Government College of Engineering, Chandrapur",0400391110,Robotics and Automation,Government,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,04003,"Government College of Engineering, Chandrapur",0201824510,Computer Engineering,Government,120,102,0,18,0,1,2023SeatMatrix.pdf,5
+2023-24,04003,"Government College of Engineering, Chandrapur",0201824610,Information Technology,Government,60,51,0,9,0,1,2023SeatMatrix.pdf,5
+2023-24,02018,,0201826310,Artificial Intelligence and Data Science,,60,51,0,9,0,1,2023SeatMatrix.pdf,6
+2023-24,02018,,0201837210,Electronics and Telecommunication Engg,,120,102,0,18,0,1,2023SeatMatrix.pdf,6
+2023-24,02018,,0201829310,Electrical Engineering,,60,51,0,9,0,1,2023SeatMatrix.pdf,6
+2023-24,02018,,0201861210,Mechanical Engineering,,120,102,0,18,0,1,2023SeatMatrix.pdf,6
+2023-24,02018,,0201819110,Civil Engineering,,60,51,0,9,0,1,2023SeatMatrix.pdf,6
+2023-24,02018,,0201891110,Robotics and Automation,,60,51,0,9,0,1,2023SeatMatrix.pdf,6
+2023-24,03199,,0319924510,Computer Engineering,,120,42,60,18,0,1,2023SeatMatrix.pdf,7
+2023-24,03199,,0319924610,Information Technology,,60,21,30,9,0,1,2023SeatMatrix.pdf,7
+2023-24,03199,,0319926310,Artificial Intelligence and Data Science,,60,21,30,9,0,1,2023SeatMatrix.pdf,7
+2023-24,03199,,0319937210,Electronics and Telecommunication Engg,,120,42,60,18,0,1,2023SeatMatrix.pdf,7
+2023-24,03199,,0319929310,Electrical Engineering,,60,21,30,9,0,1,2023SeatMatrix.pdf,7
+2023-24,03199,,0319961210,Mechanical Engineering,,120,42,60,18,0,1,2023SeatMatrix.pdf,7
+2023-24,03199,,0319919110,Civil Engineering,,60,21,30,9,0,1,2023SeatMatrix.pdf,7
+2023-24,03199,,0319991110,Robotics and Automation,,60,21,30,9,0,1,2023SeatMatrix.pdf,7
+2023-24,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319824510,Computer Engineering,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2023SeatMatrix.pdf,7
+2023-24,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319824610,Information Technology,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2023SeatMatrix.pdf,7
+2023-24,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319826310,Artificial Intelligence and Data Science,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2023SeatMatrix.pdf,7
+2023-24,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319837210,Electronics and Telecommunication Engg,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2023SeatMatrix.pdf,7
+2023-24,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319829310,Electrical Engineering,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2023SeatMatrix.pdf,7
+2023-24,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319861210,Mechanical Engineering,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2023SeatMatrix.pdf,7
+2023-24,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319819110,Civil Engineering,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2023SeatMatrix.pdf,7
+2023-24,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319891110,Robotics and Automation,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2023SeatMatrix.pdf,7
+2023-24,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628824510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2023SeatMatrix.pdf,7
+2023-24,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628824610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,7
+2023-24,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628826310,Artificial Intelligence and Data Science,Un-Aided Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,7
+2023-24,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628837210,Electronics and Telecommunication Engg,Un-Aided Autonomous,120,78,0,18,24,1,2023SeatMatrix.pdf,7
+2023-24,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628829310,Electrical Engineering,Un-Aided Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,7
+2023-24,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628861210,Mechanical Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2023SeatMatrix.pdf,7
+2023-24,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628819110,Civil Engineering,Un-Aided Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,7
+2023-24,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628891110,Robotics and Automation,Un-Aided Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,7
+2023-24,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627724510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2023SeatMatrix.pdf,7
+2023-24,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627724610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,7
+2023-24,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627726310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2023SeatMatrix.pdf,8
+2023-24,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627737210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2023SeatMatrix.pdf,8
+2023-24,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627729310,Electrical Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,8
+2023-24,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627761210,Mechanical Engineering,,120,78,0,18,24,1,2023SeatMatrix.pdf,8
+2023-24,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627719110,Civil Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,8
+2023-24,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627791110,Robotics and Automation,,60,39,0,9,12,1,2023SeatMatrix.pdf,8
+2023-24,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627424510,Computer Engineering,Un-Aided,120,78,0,18,24,1,2023SeatMatrix.pdf,9
+2023-24,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627424610,Information Technology,Un-Aided,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627426310,Artificial Intelligence and Data Science,Un-Aided,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627437210,Electronics and Telecommunication Engg,Un-Aided,120,78,0,18,24,1,2023SeatMatrix.pdf,9
+2023-24,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627429310,Electrical Engineering,Un-Aided,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627461210,Mechanical Engineering,Un-Aided,120,78,0,18,24,1,2023SeatMatrix.pdf,9
+2023-24,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627419110,Civil Engineering,Un-Aided,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627491110,Robotics and Automation,Un-Aided,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627824510,Computer Engineering,Un-Aided,120,78,0,18,24,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627824610,Information Technology,Un-Aided,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627826310,Artificial Intelligence and Data Science,Un-Aided,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627837210,Electronics and Telecommunication Engg,Un-Aided,120,78,0,18,24,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627829310,Electrical Engineering,Un-Aided,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627861210,Mechanical Engineering,Un-Aided,120,78,0,18,24,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627819110,Civil Engineering,Un-Aided,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627891110,Robotics and Automation,Un-Aided,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411524510,Computer Engineering,Un-Aided,120,42,60,18,0,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411524610,Information Technology,Un-Aided,60,21,30,9,0,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411526310,Artificial Intelligence and Data Science,Un-Aided,60,21,30,9,0,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411537210,Electronics and Telecommunication Engg,Un-Aided,120,42,60,18,0,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411529310,Electrical Engineering,Un-Aided,60,21,30,9,0,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411561210,Mechanical Engineering,Un-Aided,120,42,60,18,0,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411519110,Civil Engineering,Un-Aided,60,21,30,9,0,1,2023SeatMatrix.pdf,9
+2023-24,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411591110,Robotics and Automation,Un-Aided,60,21,30,9,0,1,2023SeatMatrix.pdf,9
+2023-24,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512124510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2023SeatMatrix.pdf,9
+2023-24,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512124610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2023SeatMatrix.pdf,9
+2023-24,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512126310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2023SeatMatrix.pdf,10
+2023-24,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512137210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2023SeatMatrix.pdf,10
+2023-24,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512129310,Electrical Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,10
+2023-24,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512161210,Mechanical Engineering,,120,78,0,18,24,1,2023SeatMatrix.pdf,10
+2023-24,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512119110,Civil Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,10
+2023-24,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512191110,Robotics and Automation,,60,39,0,9,12,1,2023SeatMatrix.pdf,10
+2023-24,06275,,0627524510,Computer Engineering,,120,78,0,18,24,1,2023SeatMatrix.pdf,11
+2023-24,06275,,0627524610,Information Technology,,60,39,0,9,12,1,2023SeatMatrix.pdf,11
+2023-24,06275,,0627526310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2023SeatMatrix.pdf,11
+2023-24,06275,,0627537210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2023SeatMatrix.pdf,11
+2023-24,06275,,0627529310,Electrical Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,11
+2023-24,06275,,0627561210,Mechanical Engineering,,120,78,0,18,24,1,2023SeatMatrix.pdf,11
+2023-24,06275,,0627519110,Civil Engineering,,60,39,0,9,12,1,2023SeatMatrix.pdf,11
+2023-24,06275,,0627591110,Robotics and Automation,,60,39,0,9,12,1,2023SeatMatrix.pdf,11
+2023-24,03182,,0318224510,Computer Engineering,,120,42,60,18,0,1,2023SeatMatrix.pdf,11
+2023-24,03182,,0318224610,Information Technology,,60,21,30,9,0,1,2023SeatMatrix.pdf,11
+2023-24,03182,,0318226310,Artificial Intelligence and Data Science,,60,21,30,9,0,1,2023SeatMatrix.pdf,11
+2023-24,03182,,0318237210,Electronics and Telecommunication Engg,,120,42,60,18,0,1,2023SeatMatrix.pdf,11
+2023-24,03182,,0318229310,Electrical Engineering,,60,21,30,9,0,1,2023SeatMatrix.pdf,11
+2023-24,03182,,0318261210,Mechanical Engineering,,120,42,60,18,0,1,2023SeatMatrix.pdf,11
+2023-24,03182,,0318219110,Civil Engineering,,60,21,30,9,0,1,2023SeatMatrix.pdf,11
+2023-24,03182,,0318291110,Robotics and Automation,,60,21,30,9,0,1,2023SeatMatrix.pdf,11
+2024-25,06006,"COEP Technological University, Pune",0600624510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0600624610,Information Technology,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0600626310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0600637210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0600629310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0600661210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0600619110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0600691110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0301224510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0301224610,Information Technology,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0301226310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0301237210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0301229310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0301261210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0301219110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0301291110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0627124510,Computer Engineering,Government Autonomous,120,78,0,18,24,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0627124610,Information Technology,Government Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0627126310,Artificial Intelligence and Data Science,Government Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0627137210,Electronics and Telecommunication Engg,Government Autonomous,120,78,0,18,24,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0627129310,Electrical Engineering,Government Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0627161210,Mechanical Engineering,Government Autonomous,120,78,0,18,24,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0627119110,Civil Engineering,Government Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,1
+2024-25,06006,"COEP Technological University, Pune",0627191110,Robotics and Automation,Government Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,1
+2024-25,03014,,0301424510,Computer Engineering,,120,78,0,18,24,1,2024SeatMatrix.pdf,2
+2024-25,03014,,0301424610,Information Technology,,60,39,0,9,12,1,2024SeatMatrix.pdf,2
+2024-25,03014,,0301426310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2024SeatMatrix.pdf,2
+2024-25,03014,,0301437210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2024SeatMatrix.pdf,2
+2024-25,03014,,0301429310,Electrical Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,2
+2024-25,03014,,0301461210,Mechanical Engineering,,120,78,0,18,24,1,2024SeatMatrix.pdf,2
+2024-25,03014,,0301419110,Civil Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,2
+2024-25,03014,,0301491110,Robotics and Automation,,60,39,0,9,12,1,2024SeatMatrix.pdf,2
+2024-25,06273,,0627324510,Computer Engineering,,120,78,0,18,24,1,2024SeatMatrix.pdf,3
+2024-25,06273,,0627324610,Information Technology,,60,39,0,9,12,1,2024SeatMatrix.pdf,3
+2024-25,06273,,0627326310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2024SeatMatrix.pdf,3
+2024-25,06273,,0627337210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2024SeatMatrix.pdf,3
+2024-25,06273,,0627329310,Electrical Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,3
+2024-25,06273,,0627361210,Mechanical Engineering,,120,78,0,18,24,1,2024SeatMatrix.pdf,3
+2024-25,06273,,0627319110,Civil Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,3
+2024-25,06273,,0627391110,Robotics and Automation,,60,39,0,9,12,1,2024SeatMatrix.pdf,3
+2024-25,06284,,0628424510,Computer Engineering,,120,78,0,18,24,1,2024SeatMatrix.pdf,3
+2024-25,06284,,0628424610,Information Technology,,60,39,0,9,12,1,2024SeatMatrix.pdf,3
+2024-25,06284,,0628426310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2024SeatMatrix.pdf,3
+2024-25,06284,,0628437210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2024SeatMatrix.pdf,3
+2024-25,06284,,0628429310,Electrical Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,3
+2024-25,06284,,0628461210,Mechanical Engineering,,120,78,0,18,24,1,2024SeatMatrix.pdf,3
+2024-25,06284,,0628419110,Civil Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,3
+2024-25,06284,,0628491110,Robotics and Automation,,60,39,0,9,12,1,2024SeatMatrix.pdf,3
+2024-25,06007,"Walchand College of Engineering, Sangli",0600724510,Computer Engineering,Government-Aided Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,3
+2024-25,06007,"Walchand College of Engineering, Sangli",0600724610,Information Technology,Government-Aided Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,3
+2024-25,06007,"Walchand College of Engineering, Sangli",0600726310,Artificial Intelligence and Data Science,Government-Aided Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,3
+2024-25,06007,"Walchand College of Engineering, Sangli",0600737210,Electronics and Telecommunication Engg,Government-Aided Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,3
+2024-25,06007,"Walchand College of Engineering, Sangli",0600729310,Electrical Engineering,Government-Aided Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,3
+2024-25,06007,"Walchand College of Engineering, Sangli",0600761210,Mechanical Engineering,Government-Aided Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,3
+2024-25,06007,"Walchand College of Engineering, Sangli",0600719110,Civil Engineering,Government-Aided Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,3
+2024-25,06007,"Walchand College of Engineering, Sangli",0600791110,Robotics and Automation,Government-Aided Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,3
+2024-25,01002,"Government College of Engineering, Amravati",0100224510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,3
+2024-25,01002,"Government College of Engineering, Amravati",0100224610,Information Technology,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,3
+2024-25,01002,"Government College of Engineering, Amravati",0100226310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,3
+2024-25,01002,"Government College of Engineering, Amravati",0100237210,Electronics and Telecommunication Engg,,120,102,0,18,0,1,2024SeatMatrix.pdf,4
+2024-25,01002,"Government College of Engineering, Amravati",0100229310,Electrical Engineering,,60,51,0,9,0,1,2024SeatMatrix.pdf,4
+2024-25,01002,"Government College of Engineering, Amravati",0100261210,Mechanical Engineering,,120,102,0,18,0,1,2024SeatMatrix.pdf,4
+2024-25,01002,"Government College of Engineering, Amravati",0100219110,Civil Engineering,,60,51,0,9,0,1,2024SeatMatrix.pdf,4
+2024-25,01002,"Government College of Engineering, Amravati",0100291110,Robotics and Automation,,60,51,0,9,0,1,2024SeatMatrix.pdf,4
+2024-25,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200824510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,5
+2024-25,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200824610,Information Technology,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200826310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200837210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,5
+2024-25,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200829310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200861210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,5
+2024-25,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200819110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200891110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,06004,"Government College of Engineering, Karad",0600424510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,5
+2024-25,06004,"Government College of Engineering, Karad",0600424610,Information Technology,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,06004,"Government College of Engineering, Karad",0600426310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,06004,"Government College of Engineering, Karad",0600437210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,5
+2024-25,06004,"Government College of Engineering, Karad",0600429310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,06004,"Government College of Engineering, Karad",0600461210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2024SeatMatrix.pdf,5
+2024-25,06004,"Government College of Engineering, Karad",0600419110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,06004,"Government College of Engineering, Karad",0600491110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,04003,"Government College of Engineering, Chandrapur",0400324510,Computer Engineering,Government,120,102,0,18,0,1,2024SeatMatrix.pdf,5
+2024-25,04003,"Government College of Engineering, Chandrapur",0400324610,Information Technology,Government,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,04003,"Government College of Engineering, Chandrapur",0400326310,Artificial Intelligence and Data Science,Government,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,04003,"Government College of Engineering, Chandrapur",0400337210,Electronics and Telecommunication Engg,Government,120,102,0,18,0,1,2024SeatMatrix.pdf,5
+2024-25,04003,"Government College of Engineering, Chandrapur",0400329310,Electrical Engineering,Government,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,04003,"Government College of Engineering, Chandrapur",0400361210,Mechanical Engineering,Government,120,102,0,18,0,1,2024SeatMatrix.pdf,5
+2024-25,04003,"Government College of Engineering, Chandrapur",0400319110,Civil Engineering,Government,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,04003,"Government College of Engineering, Chandrapur",0400391110,Robotics and Automation,Government,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,04003,"Government College of Engineering, Chandrapur",0201824510,Computer Engineering,Government,120,102,0,18,0,1,2024SeatMatrix.pdf,5
+2024-25,04003,"Government College of Engineering, Chandrapur",0201824610,Information Technology,Government,60,51,0,9,0,1,2024SeatMatrix.pdf,5
+2024-25,02018,,0201826310,Artificial Intelligence and Data Science,,60,51,0,9,0,1,2024SeatMatrix.pdf,6
+2024-25,02018,,0201837210,Electronics and Telecommunication Engg,,120,102,0,18,0,1,2024SeatMatrix.pdf,6
+2024-25,02018,,0201829310,Electrical Engineering,,60,51,0,9,0,1,2024SeatMatrix.pdf,6
+2024-25,02018,,0201861210,Mechanical Engineering,,120,102,0,18,0,1,2024SeatMatrix.pdf,6
+2024-25,02018,,0201819110,Civil Engineering,,60,51,0,9,0,1,2024SeatMatrix.pdf,6
+2024-25,02018,,0201891110,Robotics and Automation,,60,51,0,9,0,1,2024SeatMatrix.pdf,6
+2024-25,03199,,0319924510,Computer Engineering,,120,42,60,18,0,1,2024SeatMatrix.pdf,7
+2024-25,03199,,0319924610,Information Technology,,60,21,30,9,0,1,2024SeatMatrix.pdf,7
+2024-25,03199,,0319926310,Artificial Intelligence and Data Science,,60,21,30,9,0,1,2024SeatMatrix.pdf,7
+2024-25,03199,,0319937210,Electronics and Telecommunication Engg,,120,42,60,18,0,1,2024SeatMatrix.pdf,7
+2024-25,03199,,0319929310,Electrical Engineering,,60,21,30,9,0,1,2024SeatMatrix.pdf,7
+2024-25,03199,,0319961210,Mechanical Engineering,,120,42,60,18,0,1,2024SeatMatrix.pdf,7
+2024-25,03199,,0319919110,Civil Engineering,,60,21,30,9,0,1,2024SeatMatrix.pdf,7
+2024-25,03199,,0319991110,Robotics and Automation,,60,21,30,9,0,1,2024SeatMatrix.pdf,7
+2024-25,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319824510,Computer Engineering,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2024SeatMatrix.pdf,7
+2024-25,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319824610,Information Technology,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2024SeatMatrix.pdf,7
+2024-25,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319826310,Artificial Intelligence and Data Science,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2024SeatMatrix.pdf,7
+2024-25,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319837210,Electronics and Telecommunication Engg,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2024SeatMatrix.pdf,7
+2024-25,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319829310,Electrical Engineering,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2024SeatMatrix.pdf,7
+2024-25,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319861210,Mechanical Engineering,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2024SeatMatrix.pdf,7
+2024-25,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319819110,Civil Engineering,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2024SeatMatrix.pdf,7
+2024-25,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319891110,Robotics and Automation,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2024SeatMatrix.pdf,7
+2024-25,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628824510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2024SeatMatrix.pdf,7
+2024-25,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628824610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,7
+2024-25,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628826310,Artificial Intelligence and Data Science,Un-Aided Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,7
+2024-25,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628837210,Electronics and Telecommunication Engg,Un-Aided Autonomous,120,78,0,18,24,1,2024SeatMatrix.pdf,7
+2024-25,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628829310,Electrical Engineering,Un-Aided Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,7
+2024-25,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628861210,Mechanical Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2024SeatMatrix.pdf,7
+2024-25,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628819110,Civil Engineering,Un-Aided Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,7
+2024-25,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628891110,Robotics and Automation,Un-Aided Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,7
+2024-25,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627724510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2024SeatMatrix.pdf,7
+2024-25,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627724610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,7
+2024-25,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627726310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2024SeatMatrix.pdf,8
+2024-25,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627737210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2024SeatMatrix.pdf,8
+2024-25,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627729310,Electrical Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,8
+2024-25,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627761210,Mechanical Engineering,,120,78,0,18,24,1,2024SeatMatrix.pdf,8
+2024-25,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627719110,Civil Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,8
+2024-25,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627791110,Robotics and Automation,,60,39,0,9,12,1,2024SeatMatrix.pdf,8
+2024-25,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627424510,Computer Engineering,Un-Aided,120,78,0,18,24,1,2024SeatMatrix.pdf,9
+2024-25,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627424610,Information Technology,Un-Aided,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627426310,Artificial Intelligence and Data Science,Un-Aided,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627437210,Electronics and Telecommunication Engg,Un-Aided,120,78,0,18,24,1,2024SeatMatrix.pdf,9
+2024-25,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627429310,Electrical Engineering,Un-Aided,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627461210,Mechanical Engineering,Un-Aided,120,78,0,18,24,1,2024SeatMatrix.pdf,9
+2024-25,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627419110,Civil Engineering,Un-Aided,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627491110,Robotics and Automation,Un-Aided,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627824510,Computer Engineering,Un-Aided,120,78,0,18,24,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627824610,Information Technology,Un-Aided,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627826310,Artificial Intelligence and Data Science,Un-Aided,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627837210,Electronics and Telecommunication Engg,Un-Aided,120,78,0,18,24,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627829310,Electrical Engineering,Un-Aided,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627861210,Mechanical Engineering,Un-Aided,120,78,0,18,24,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627819110,Civil Engineering,Un-Aided,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627891110,Robotics and Automation,Un-Aided,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411524510,Computer Engineering,Un-Aided,120,42,60,18,0,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411524610,Information Technology,Un-Aided,60,21,30,9,0,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411526310,Artificial Intelligence and Data Science,Un-Aided,60,21,30,9,0,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411537210,Electronics and Telecommunication Engg,Un-Aided,120,42,60,18,0,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411529310,Electrical Engineering,Un-Aided,60,21,30,9,0,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411561210,Mechanical Engineering,Un-Aided,120,42,60,18,0,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411519110,Civil Engineering,Un-Aided,60,21,30,9,0,1,2024SeatMatrix.pdf,9
+2024-25,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411591110,Robotics and Automation,Un-Aided,60,21,30,9,0,1,2024SeatMatrix.pdf,9
+2024-25,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512124510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2024SeatMatrix.pdf,9
+2024-25,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512124610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2024SeatMatrix.pdf,9
+2024-25,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512126310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2024SeatMatrix.pdf,10
+2024-25,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512137210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2024SeatMatrix.pdf,10
+2024-25,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512129310,Electrical Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,10
+2024-25,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512161210,Mechanical Engineering,,120,78,0,18,24,1,2024SeatMatrix.pdf,10
+2024-25,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512119110,Civil Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,10
+2024-25,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512191110,Robotics and Automation,,60,39,0,9,12,1,2024SeatMatrix.pdf,10
+2024-25,06275,,0627524510,Computer Engineering,,120,78,0,18,24,1,2024SeatMatrix.pdf,11
+2024-25,06275,,0627524610,Information Technology,,60,39,0,9,12,1,2024SeatMatrix.pdf,11
+2024-25,06275,,0627526310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2024SeatMatrix.pdf,11
+2024-25,06275,,0627537210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2024SeatMatrix.pdf,11
+2024-25,06275,,0627529310,Electrical Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,11
+2024-25,06275,,0627561210,Mechanical Engineering,,120,78,0,18,24,1,2024SeatMatrix.pdf,11
+2024-25,06275,,0627519110,Civil Engineering,,60,39,0,9,12,1,2024SeatMatrix.pdf,11
+2024-25,06275,,0627591110,Robotics and Automation,,60,39,0,9,12,1,2024SeatMatrix.pdf,11
+2024-25,03182,,0318224510,Computer Engineering,,120,42,60,18,0,1,2024SeatMatrix.pdf,11
+2024-25,03182,,0318224610,Information Technology,,60,21,30,9,0,1,2024SeatMatrix.pdf,11
+2024-25,03182,,0318226310,Artificial Intelligence and Data Science,,60,21,30,9,0,1,2024SeatMatrix.pdf,11
+2024-25,03182,,0318237210,Electronics and Telecommunication Engg,,120,42,60,18,0,1,2024SeatMatrix.pdf,11
+2024-25,03182,,0318229310,Electrical Engineering,,60,21,30,9,0,1,2024SeatMatrix.pdf,11
+2024-25,03182,,0318261210,Mechanical Engineering,,120,42,60,18,0,1,2024SeatMatrix.pdf,11
+2024-25,03182,,0318219110,Civil Engineering,,60,21,30,9,0,1,2024SeatMatrix.pdf,11
+2024-25,03182,,0318291110,Robotics and Automation,,60,21,30,9,0,1,2024SeatMatrix.pdf,11
+2025-26,06006,"COEP Technological University, Pune",0600624510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0600624610,Information Technology,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0600626310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0600637210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0600629310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0600661210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0600619110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0600691110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0301224510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0301224610,Information Technology,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0301226310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0301237210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0301229310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0301261210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0301219110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0301291110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0627124510,Computer Engineering,Government Autonomous,120,78,0,18,24,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0627124610,Information Technology,Government Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0627126310,Artificial Intelligence and Data Science,Government Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0627137210,Electronics and Telecommunication Engg,Government Autonomous,120,78,0,18,24,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0627129310,Electrical Engineering,Government Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0627161210,Mechanical Engineering,Government Autonomous,120,78,0,18,24,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0627119110,Civil Engineering,Government Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,1
+2025-26,06006,"COEP Technological University, Pune",0627191110,Robotics and Automation,Government Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,1
+2025-26,03014,,0301424510,Computer Engineering,,120,78,0,18,24,1,2025SeatMatrix.pdf,2
+2025-26,03014,,0301424610,Information Technology,,60,39,0,9,12,1,2025SeatMatrix.pdf,2
+2025-26,03014,,0301426310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2025SeatMatrix.pdf,2
+2025-26,03014,,0301437210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2025SeatMatrix.pdf,2
+2025-26,03014,,0301429310,Electrical Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,2
+2025-26,03014,,0301461210,Mechanical Engineering,,120,78,0,18,24,1,2025SeatMatrix.pdf,2
+2025-26,03014,,0301419110,Civil Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,2
+2025-26,03014,,0301491110,Robotics and Automation,,60,39,0,9,12,1,2025SeatMatrix.pdf,2
+2025-26,06273,,0627324510,Computer Engineering,,120,78,0,18,24,1,2025SeatMatrix.pdf,3
+2025-26,06273,,0627324610,Information Technology,,60,39,0,9,12,1,2025SeatMatrix.pdf,3
+2025-26,06273,,0627326310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2025SeatMatrix.pdf,3
+2025-26,06273,,0627337210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2025SeatMatrix.pdf,3
+2025-26,06273,,0627329310,Electrical Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,3
+2025-26,06273,,0627361210,Mechanical Engineering,,120,78,0,18,24,1,2025SeatMatrix.pdf,3
+2025-26,06273,,0627319110,Civil Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,3
+2025-26,06273,,0627391110,Robotics and Automation,,60,39,0,9,12,1,2025SeatMatrix.pdf,3
+2025-26,06284,,0628424510,Computer Engineering,,120,78,0,18,24,1,2025SeatMatrix.pdf,3
+2025-26,06284,,0628424610,Information Technology,,60,39,0,9,12,1,2025SeatMatrix.pdf,3
+2025-26,06284,,0628426310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2025SeatMatrix.pdf,3
+2025-26,06284,,0628437210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2025SeatMatrix.pdf,3
+2025-26,06284,,0628429310,Electrical Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,3
+2025-26,06284,,0628461210,Mechanical Engineering,,120,78,0,18,24,1,2025SeatMatrix.pdf,3
+2025-26,06284,,0628419110,Civil Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,3
+2025-26,06284,,0628491110,Robotics and Automation,,60,39,0,9,12,1,2025SeatMatrix.pdf,3
+2025-26,06007,"Walchand College of Engineering, Sangli",0600724510,Computer Engineering,Government-Aided Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,3
+2025-26,06007,"Walchand College of Engineering, Sangli",0600724610,Information Technology,Government-Aided Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,3
+2025-26,06007,"Walchand College of Engineering, Sangli",0600726310,Artificial Intelligence and Data Science,Government-Aided Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,3
+2025-26,06007,"Walchand College of Engineering, Sangli",0600737210,Electronics and Telecommunication Engg,Government-Aided Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,3
+2025-26,06007,"Walchand College of Engineering, Sangli",0600729310,Electrical Engineering,Government-Aided Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,3
+2025-26,06007,"Walchand College of Engineering, Sangli",0600761210,Mechanical Engineering,Government-Aided Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,3
+2025-26,06007,"Walchand College of Engineering, Sangli",0600719110,Civil Engineering,Government-Aided Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,3
+2025-26,06007,"Walchand College of Engineering, Sangli",0600791110,Robotics and Automation,Government-Aided Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,3
+2025-26,01002,"Government College of Engineering, Amravati",0100224510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,3
+2025-26,01002,"Government College of Engineering, Amravati",0100224610,Information Technology,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,3
+2025-26,01002,"Government College of Engineering, Amravati",0100226310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,3
+2025-26,01002,"Government College of Engineering, Amravati",0100237210,Electronics and Telecommunication Engg,,120,102,0,18,0,1,2025SeatMatrix.pdf,4
+2025-26,01002,"Government College of Engineering, Amravati",0100229310,Electrical Engineering,,60,51,0,9,0,1,2025SeatMatrix.pdf,4
+2025-26,01002,"Government College of Engineering, Amravati",0100261210,Mechanical Engineering,,120,102,0,18,0,1,2025SeatMatrix.pdf,4
+2025-26,01002,"Government College of Engineering, Amravati",0100219110,Civil Engineering,,60,51,0,9,0,1,2025SeatMatrix.pdf,4
+2025-26,01002,"Government College of Engineering, Amravati",0100291110,Robotics and Automation,,60,51,0,9,0,1,2025SeatMatrix.pdf,4
+2025-26,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200824510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,5
+2025-26,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200824610,Information Technology,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200826310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200837210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,5
+2025-26,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200829310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200861210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,5
+2025-26,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200819110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200891110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,06004,"Government College of Engineering, Karad",0600424510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,5
+2025-26,06004,"Government College of Engineering, Karad",0600424610,Information Technology,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,06004,"Government College of Engineering, Karad",0600426310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,06004,"Government College of Engineering, Karad",0600437210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,5
+2025-26,06004,"Government College of Engineering, Karad",0600429310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,06004,"Government College of Engineering, Karad",0600461210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2025SeatMatrix.pdf,5
+2025-26,06004,"Government College of Engineering, Karad",0600419110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,06004,"Government College of Engineering, Karad",0600491110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,04003,"Government College of Engineering, Chandrapur",0400324510,Computer Engineering,Government,120,102,0,18,0,1,2025SeatMatrix.pdf,5
+2025-26,04003,"Government College of Engineering, Chandrapur",0400324610,Information Technology,Government,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,04003,"Government College of Engineering, Chandrapur",0400326310,Artificial Intelligence and Data Science,Government,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,04003,"Government College of Engineering, Chandrapur",0400337210,Electronics and Telecommunication Engg,Government,120,102,0,18,0,1,2025SeatMatrix.pdf,5
+2025-26,04003,"Government College of Engineering, Chandrapur",0400329310,Electrical Engineering,Government,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,04003,"Government College of Engineering, Chandrapur",0400361210,Mechanical Engineering,Government,120,102,0,18,0,1,2025SeatMatrix.pdf,5
+2025-26,04003,"Government College of Engineering, Chandrapur",0400319110,Civil Engineering,Government,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,04003,"Government College of Engineering, Chandrapur",0400391110,Robotics and Automation,Government,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,04003,"Government College of Engineering, Chandrapur",0201824510,Computer Engineering,Government,120,102,0,18,0,1,2025SeatMatrix.pdf,5
+2025-26,04003,"Government College of Engineering, Chandrapur",0201824610,Information Technology,Government,60,51,0,9,0,1,2025SeatMatrix.pdf,5
+2025-26,02018,,0201826310,Artificial Intelligence and Data Science,,60,51,0,9,0,1,2025SeatMatrix.pdf,6
+2025-26,02018,,0201837210,Electronics and Telecommunication Engg,,120,102,0,18,0,1,2025SeatMatrix.pdf,6
+2025-26,02018,,0201829310,Electrical Engineering,,60,51,0,9,0,1,2025SeatMatrix.pdf,6
+2025-26,02018,,0201861210,Mechanical Engineering,,120,102,0,18,0,1,2025SeatMatrix.pdf,6
+2025-26,02018,,0201819110,Civil Engineering,,60,51,0,9,0,1,2025SeatMatrix.pdf,6
+2025-26,02018,,0201891110,Robotics and Automation,,60,51,0,9,0,1,2025SeatMatrix.pdf,6
+2025-26,03199,,0319924510,Computer Engineering,,120,42,60,18,0,1,2025SeatMatrix.pdf,7
+2025-26,03199,,0319924610,Information Technology,,60,21,30,9,0,1,2025SeatMatrix.pdf,7
+2025-26,03199,,0319926310,Artificial Intelligence and Data Science,,60,21,30,9,0,1,2025SeatMatrix.pdf,7
+2025-26,03199,,0319937210,Electronics and Telecommunication Engg,,120,42,60,18,0,1,2025SeatMatrix.pdf,7
+2025-26,03199,,0319929310,Electrical Engineering,,60,21,30,9,0,1,2025SeatMatrix.pdf,7
+2025-26,03199,,0319961210,Mechanical Engineering,,120,42,60,18,0,1,2025SeatMatrix.pdf,7
+2025-26,03199,,0319919110,Civil Engineering,,60,21,30,9,0,1,2025SeatMatrix.pdf,7
+2025-26,03199,,0319991110,Robotics and Automation,,60,21,30,9,0,1,2025SeatMatrix.pdf,7
+2025-26,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319824510,Computer Engineering,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2025SeatMatrix.pdf,7
+2025-26,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319824610,Information Technology,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2025SeatMatrix.pdf,7
+2025-26,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319826310,Artificial Intelligence and Data Science,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2025SeatMatrix.pdf,7
+2025-26,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319837210,Electronics and Telecommunication Engg,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2025SeatMatrix.pdf,7
+2025-26,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319829310,Electrical Engineering,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2025SeatMatrix.pdf,7
+2025-26,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319861210,Mechanical Engineering,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2025SeatMatrix.pdf,7
+2025-26,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319819110,Civil Engineering,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2025SeatMatrix.pdf,7
+2025-26,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319891110,Robotics and Automation,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2025SeatMatrix.pdf,7
+2025-26,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628824510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2025SeatMatrix.pdf,7
+2025-26,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628824610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,7
+2025-26,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628826310,Artificial Intelligence and Data Science,Un-Aided Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,7
+2025-26,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628837210,Electronics and Telecommunication Engg,Un-Aided Autonomous,120,78,0,18,24,1,2025SeatMatrix.pdf,7
+2025-26,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628829310,Electrical Engineering,Un-Aided Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,7
+2025-26,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628861210,Mechanical Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2025SeatMatrix.pdf,7
+2025-26,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628819110,Civil Engineering,Un-Aided Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,7
+2025-26,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628891110,Robotics and Automation,Un-Aided Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,7
+2025-26,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627724510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2025SeatMatrix.pdf,7
+2025-26,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627724610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,7
+2025-26,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627726310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2025SeatMatrix.pdf,8
+2025-26,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627737210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2025SeatMatrix.pdf,8
+2025-26,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627729310,Electrical Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,8
+2025-26,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627761210,Mechanical Engineering,,120,78,0,18,24,1,2025SeatMatrix.pdf,8
+2025-26,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627719110,Civil Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,8
+2025-26,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627791110,Robotics and Automation,,60,39,0,9,12,1,2025SeatMatrix.pdf,8
+2025-26,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627424510,Computer Engineering,Un-Aided,120,78,0,18,24,1,2025SeatMatrix.pdf,9
+2025-26,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627424610,Information Technology,Un-Aided,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627426310,Artificial Intelligence and Data Science,Un-Aided,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627437210,Electronics and Telecommunication Engg,Un-Aided,120,78,0,18,24,1,2025SeatMatrix.pdf,9
+2025-26,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627429310,Electrical Engineering,Un-Aided,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627461210,Mechanical Engineering,Un-Aided,120,78,0,18,24,1,2025SeatMatrix.pdf,9
+2025-26,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627419110,Civil Engineering,Un-Aided,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627491110,Robotics and Automation,Un-Aided,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627824510,Computer Engineering,Un-Aided,120,78,0,18,24,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627824610,Information Technology,Un-Aided,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627826310,Artificial Intelligence and Data Science,Un-Aided,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627837210,Electronics and Telecommunication Engg,Un-Aided,120,78,0,18,24,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627829310,Electrical Engineering,Un-Aided,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627861210,Mechanical Engineering,Un-Aided,120,78,0,18,24,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627819110,Civil Engineering,Un-Aided,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627891110,Robotics and Automation,Un-Aided,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411524510,Computer Engineering,Un-Aided,120,42,60,18,0,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411524610,Information Technology,Un-Aided,60,21,30,9,0,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411526310,Artificial Intelligence and Data Science,Un-Aided,60,21,30,9,0,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411537210,Electronics and Telecommunication Engg,Un-Aided,120,42,60,18,0,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411529310,Electrical Engineering,Un-Aided,60,21,30,9,0,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411561210,Mechanical Engineering,Un-Aided,120,42,60,18,0,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411519110,Civil Engineering,Un-Aided,60,21,30,9,0,1,2025SeatMatrix.pdf,9
+2025-26,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411591110,Robotics and Automation,Un-Aided,60,21,30,9,0,1,2025SeatMatrix.pdf,9
+2025-26,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512124510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2025SeatMatrix.pdf,9
+2025-26,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512124610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2025SeatMatrix.pdf,9
+2025-26,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512126310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2025SeatMatrix.pdf,10
+2025-26,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512137210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2025SeatMatrix.pdf,10
+2025-26,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512129310,Electrical Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,10
+2025-26,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512161210,Mechanical Engineering,,120,78,0,18,24,1,2025SeatMatrix.pdf,10
+2025-26,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512119110,Civil Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,10
+2025-26,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512191110,Robotics and Automation,,60,39,0,9,12,1,2025SeatMatrix.pdf,10
+2025-26,06275,,0627524510,Computer Engineering,,120,78,0,18,24,1,2025SeatMatrix.pdf,11
+2025-26,06275,,0627524610,Information Technology,,60,39,0,9,12,1,2025SeatMatrix.pdf,11
+2025-26,06275,,0627526310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2025SeatMatrix.pdf,11
+2025-26,06275,,0627537210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2025SeatMatrix.pdf,11
+2025-26,06275,,0627529310,Electrical Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,11
+2025-26,06275,,0627561210,Mechanical Engineering,,120,78,0,18,24,1,2025SeatMatrix.pdf,11
+2025-26,06275,,0627519110,Civil Engineering,,60,39,0,9,12,1,2025SeatMatrix.pdf,11
+2025-26,06275,,0627591110,Robotics and Automation,,60,39,0,9,12,1,2025SeatMatrix.pdf,11
+2025-26,03182,,0318224510,Computer Engineering,,120,42,60,18,0,1,2025SeatMatrix.pdf,11
+2025-26,03182,,0318224610,Information Technology,,60,21,30,9,0,1,2025SeatMatrix.pdf,11
+2025-26,03182,,0318226310,Artificial Intelligence and Data Science,,60,21,30,9,0,1,2025SeatMatrix.pdf,11
+2025-26,03182,,0318237210,Electronics and Telecommunication Engg,,120,42,60,18,0,1,2025SeatMatrix.pdf,11
+2025-26,03182,,0318229310,Electrical Engineering,,60,21,30,9,0,1,2025SeatMatrix.pdf,11
+2025-26,03182,,0318261210,Mechanical Engineering,,120,42,60,18,0,1,2025SeatMatrix.pdf,11
+2025-26,03182,,0318219110,Civil Engineering,,60,21,30,9,0,1,2025SeatMatrix.pdf,11
+2025-26,03182,,0318291110,Robotics and Automation,,60,21,30,9,0,1,2025SeatMatrix.pdf,11
+2026-27,06006,"COEP Technological University, Pune",0600624510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0600624610,Information Technology,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0600626310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0600637210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0600629310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0600661210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0600619110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0600691110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0301224510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0301224610,Information Technology,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0301226310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0301237210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0301229310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0301261210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0301219110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0301291110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0627124510,Computer Engineering,Government Autonomous,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0627124610,Information Technology,Government Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0627126310,Artificial Intelligence and Data Science,Government Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0627137210,Electronics and Telecommunication Engg,Government Autonomous,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0627129310,Electrical Engineering,Government Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0627161210,Mechanical Engineering,Government Autonomous,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0627119110,Civil Engineering,Government Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,06006,"COEP Technological University, Pune",0627191110,Robotics and Automation,Government Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,1
+2026-27,03014,,0301424510,Computer Engineering,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,2
+2026-27,03014,,0301424610,Information Technology,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,2
+2026-27,03014,,0301426310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,2
+2026-27,03014,,0301437210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,2
+2026-27,03014,,0301429310,Electrical Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,2
+2026-27,03014,,0301461210,Mechanical Engineering,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,2
+2026-27,03014,,0301419110,Civil Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,2
+2026-27,03014,,0301491110,Robotics and Automation,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,2
+2026-27,06273,,0627324510,Computer Engineering,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06273,,0627324610,Information Technology,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06273,,0627326310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06273,,0627337210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06273,,0627329310,Electrical Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06273,,0627361210,Mechanical Engineering,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06273,,0627319110,Civil Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06273,,0627391110,Robotics and Automation,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06284,,0628424510,Computer Engineering,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06284,,0628424610,Information Technology,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06284,,0628426310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06284,,0628437210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06284,,0628429310,Electrical Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06284,,0628461210,Mechanical Engineering,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06284,,0628419110,Civil Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06284,,0628491110,Robotics and Automation,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06007,"Walchand College of Engineering, Sangli",0600724510,Computer Engineering,Government-Aided Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06007,"Walchand College of Engineering, Sangli",0600724610,Information Technology,Government-Aided Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06007,"Walchand College of Engineering, Sangli",0600726310,Artificial Intelligence and Data Science,Government-Aided Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06007,"Walchand College of Engineering, Sangli",0600737210,Electronics and Telecommunication Engg,Government-Aided Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06007,"Walchand College of Engineering, Sangli",0600729310,Electrical Engineering,Government-Aided Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06007,"Walchand College of Engineering, Sangli",0600761210,Mechanical Engineering,Government-Aided Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06007,"Walchand College of Engineering, Sangli",0600719110,Civil Engineering,Government-Aided Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,06007,"Walchand College of Engineering, Sangli",0600791110,Robotics and Automation,Government-Aided Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,01002,"Government College of Engineering, Amravati",0100224510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,01002,"Government College of Engineering, Amravati",0100224610,Information Technology,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,01002,"Government College of Engineering, Amravati",0100226310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,3
+2026-27,01002,"Government College of Engineering, Amravati",0100237210,Electronics and Telecommunication Engg,,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,4
+2026-27,01002,"Government College of Engineering, Amravati",0100229310,Electrical Engineering,,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,4
+2026-27,01002,"Government College of Engineering, Amravati",0100261210,Mechanical Engineering,,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,4
+2026-27,01002,"Government College of Engineering, Amravati",0100219110,Civil Engineering,,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,4
+2026-27,01002,"Government College of Engineering, Amravati",0100291110,Robotics and Automation,,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,4
+2026-27,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200824510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200824610,Information Technology,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200826310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200837210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200829310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200861210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200819110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,02008,"Government College of Engineering, Chhatrapati Sambhajinagar",0200891110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,06004,"Government College of Engineering, Karad",0600424510,Computer Engineering,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,06004,"Government College of Engineering, Karad",0600424610,Information Technology,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,06004,"Government College of Engineering, Karad",0600426310,Artificial Intelligence and Data Science,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,06004,"Government College of Engineering, Karad",0600437210,Electronics and Telecommunication Engg,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,06004,"Government College of Engineering, Karad",0600429310,Electrical Engineering,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,06004,"Government College of Engineering, Karad",0600461210,Mechanical Engineering,Government Autonomous,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,06004,"Government College of Engineering, Karad",0600419110,Civil Engineering,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,06004,"Government College of Engineering, Karad",0600491110,Robotics and Automation,Government Autonomous,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,04003,"Government College of Engineering, Chandrapur",0400324510,Computer Engineering,Government,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,04003,"Government College of Engineering, Chandrapur",0400324610,Information Technology,Government,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,04003,"Government College of Engineering, Chandrapur",0400326310,Artificial Intelligence and Data Science,Government,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,04003,"Government College of Engineering, Chandrapur",0400337210,Electronics and Telecommunication Engg,Government,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,04003,"Government College of Engineering, Chandrapur",0400329310,Electrical Engineering,Government,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,04003,"Government College of Engineering, Chandrapur",0400361210,Mechanical Engineering,Government,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,04003,"Government College of Engineering, Chandrapur",0400319110,Civil Engineering,Government,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,04003,"Government College of Engineering, Chandrapur",0400391110,Robotics and Automation,Government,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,04003,"Government College of Engineering, Chandrapur",0201824510,Computer Engineering,Government,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,04003,"Government College of Engineering, Chandrapur",0201824610,Information Technology,Government,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,5
+2026-27,02018,,0201826310,Artificial Intelligence and Data Science,,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,6
+2026-27,02018,,0201837210,Electronics and Telecommunication Engg,,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,6
+2026-27,02018,,0201829310,Electrical Engineering,,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,6
+2026-27,02018,,0201861210,Mechanical Engineering,,120,102,0,18,0,1,2026_fe_seatmatrix_V1.pdf,6
+2026-27,02018,,0201819110,Civil Engineering,,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,6
+2026-27,02018,,0201891110,Robotics and Automation,,60,51,0,9,0,1,2026_fe_seatmatrix_V1.pdf,6
+2026-27,03199,,0319924510,Computer Engineering,,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03199,,0319924610,Information Technology,,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03199,,0319926310,Artificial Intelligence and Data Science,,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03199,,0319937210,Electronics and Telecommunication Engg,,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03199,,0319929310,Electrical Engineering,,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03199,,0319961210,Mechanical Engineering,,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03199,,0319919110,Civil Engineering,,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03199,,0319991110,Robotics and Automation,,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319824510,Computer Engineering,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319824610,Information Technology,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319826310,Artificial Intelligence and Data Science,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319837210,Electronics and Telecommunication Engg,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319829310,Electrical Engineering,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319861210,Mechanical Engineering,Un-Aided Linguistic Minority - Sindhi,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319819110,Civil Engineering,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,03198,"Thadomal Shahani Engineering College, Bandra, Mumbai",0319891110,Robotics and Automation,Un-Aided Linguistic Minority - Sindhi,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628824510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628824610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628826310,Artificial Intelligence and Data Science,Un-Aided Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628837210,Electronics and Telecommunication Engg,Un-Aided Autonomous,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628829310,Electrical Engineering,Un-Aided Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628861210,Mechanical Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628819110,Civil Engineering,Un-Aided Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06288,"MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",0628891110,Robotics and Automation,Un-Aided Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627724510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627724610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,7
+2026-27,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627726310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,8
+2026-27,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627737210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,8
+2026-27,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627729310,Electrical Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,8
+2026-27,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627761210,Mechanical Engineering,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,8
+2026-27,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627719110,Civil Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,8
+2026-27,06277,"Dr. D. Y. Patil College of Engineering, Akurdi, Pune",0627791110,Robotics and Automation,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,8
+2026-27,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627424510,Computer Engineering,Un-Aided,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627424610,Information Technology,Un-Aided,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627426310,Artificial Intelligence and Data Science,Un-Aided,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627437210,Electronics and Telecommunication Engg,Un-Aided,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627429310,Electrical Engineering,Un-Aided,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627461210,Mechanical Engineering,Un-Aided,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627419110,Civil Engineering,Un-Aided,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06274,"Pune Vidyarthi Griha's College of Engineering and Technology, Pune",0627491110,Robotics and Automation,Un-Aided,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627824510,Computer Engineering,Un-Aided,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627824610,Information Technology,Un-Aided,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627826310,Artificial Intelligence and Data Science,Un-Aided,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627837210,Electronics and Telecommunication Engg,Un-Aided,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627829310,Electrical Engineering,Un-Aided,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627861210,Mechanical Engineering,Un-Aided,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627819110,Civil Engineering,Un-Aided,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0627891110,Robotics and Automation,Un-Aided,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411524510,Computer Engineering,Un-Aided,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411524610,Information Technology,Un-Aided,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411526310,Artificial Intelligence and Data Science,Un-Aided,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411537210,Electronics and Telecommunication Engg,Un-Aided,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411529310,Electrical Engineering,Un-Aided,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411561210,Mechanical Engineering,Un-Aided,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411519110,Civil Engineering,Un-Aided,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,06278,"All India Shri Shivaji Memorial Society's College of Engg., Pune",0411591110,Robotics and Automation,Un-Aided,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512124510,Computer Engineering,Un-Aided Autonomous,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512124610,Information Technology,Un-Aided Autonomous,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,9
+2026-27,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512126310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,10
+2026-27,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512137210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,10
+2026-27,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512129310,Electrical Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,10
+2026-27,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512161210,Mechanical Engineering,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,10
+2026-27,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512119110,Civil Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,10
+2026-27,05121,"K. K. Wagh Institute of Engineering Education and Research, Nashik",0512191110,Robotics and Automation,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,10
+2026-27,06275,,0627524510,Computer Engineering,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,06275,,0627524610,Information Technology,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,06275,,0627526310,Artificial Intelligence and Data Science,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,06275,,0627537210,Electronics and Telecommunication Engg,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,06275,,0627529310,Electrical Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,06275,,0627561210,Mechanical Engineering,,120,78,0,18,24,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,06275,,0627519110,Civil Engineering,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,06275,,0627591110,Robotics and Automation,,60,39,0,9,12,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,03182,,0318224510,Computer Engineering,,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,03182,,0318224610,Information Technology,,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,03182,,0318226310,Artificial Intelligence and Data Science,,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,03182,,0318237210,Electronics and Telecommunication Engg,,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,03182,,0318229310,Electrical Engineering,,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,03182,,0318261210,Mechanical Engineering,,120,42,60,18,0,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,03182,,0318219110,Civil Engineering,,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,11
+2026-27,03182,,0318291110,Robotics and Automation,,60,21,30,9,0,1,2026_fe_seatmatrix_V1.pdf,11

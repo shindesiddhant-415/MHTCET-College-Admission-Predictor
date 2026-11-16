@@ -1,0 +1,6 @@
+Model,MAE,MSE,RMSE,R2,Training Time (s),Prediction Time (s)
+Ridge Regression (SGD/L2),0.1133,0.02,0.1415,0.9996,0.12,0.0266
+Random Forest Regressor,0.1168,0.0208,0.1442,0.9996,1.296,0.082
+HistGradientBoosting Regressor,0.1236,0.026,0.1612,0.9994,3.626,0.0513
+Decision Tree Regressor,0.1266,0.0248,0.1574,0.9995,0.21,0.0302
+Previous-Year Baseline,0.2037,0.055,0.2346,0.9988,0.0,0.0003

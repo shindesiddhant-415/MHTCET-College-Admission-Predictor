@@ -1,0 +1,13 @@
+metric,value,status
+total_extracted_rows,32144.0,INFO
+valid_parsed_rows,32144.0,PASS
+rows_with_missing_percentiles,0.0,PASS
+rows_with_invalid_values,0.0,PASS
+duplicate_rows,0.0,PASS
+unmatched_institutes_courses,0.0,PASS
+source_traceable_rows,32144.0,PASS
+seat_matrix_total_rows,704.0,INFO
+distinct_institutes,22.0,INFO
+distinct_branches,8.0,INFO
+distinct_categories,14.0,INFO
+percentage_verified,100.0,PASS

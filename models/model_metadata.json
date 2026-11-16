@@ -1,0 +1,52 @@
+{
+  "best_model_name": "Ridge Regression (SGD/L2)",
+  "validation_mae": 0.1133,
+  "validation_rmse": 0.1415,
+  "validation_r2": 0.9996,
+  "hyperparameters": {
+    "alpha": 10.0,
+    "solver": "auto"
+  },
+  "target_variable": "cutoff_percentile",
+  "feature_cols": [
+    "institute_code",
+    "course_code",
+    "branch_name",
+    "cap_round",
+    "seat_pool",
+    "seat_category_code",
+    "stage_code",
+    "prev_year_percentile",
+    "prev_year_merit_no",
+    "prev_year_intake",
+    "percentile_trend",
+    "intake_change"
+  ],
+  "cat_features": [
+    "institute_code",
+    "course_code",
+    "branch_name",
+    "cap_round",
+    "seat_pool",
+    "seat_category_code",
+    "stage_code"
+  ],
+  "num_features": [
+    "prev_year_percentile",
+    "prev_year_merit_no",
+    "prev_year_intake",
+    "percentile_trend",
+    "intake_change"
+  ],
+  "training_years": [
+    "2023-24 (lag)",
+    "2024-25",
+    "2025-26",
+    "2026-27"
+  ],
+  "forecast_year": "2027-28",
+  "total_training_records": 22960,
+  "test_year": "2026-27",
+  "margin_factor": 1.5,
+  "recommendation_margin": 0.17
+}

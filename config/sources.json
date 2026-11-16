@@ -1,0 +1,208 @@
+{
+  "academic_years": [
+    "2023-24",
+    "2024-25",
+    "2025-26",
+    "2026-27"
+  ],
+  "sources": [
+    {
+      "id": "2023_seat_matrix",
+      "academic_year": "2023-24",
+      "year_num": 2023,
+      "document_type": "seat_matrix",
+      "cap_round": null,
+      "seat_type": "MH",
+      "file_name": "2023SeatMatrix.pdf",
+      "local_path": "dataset/raw/pdfs/2023-24/2023SeatMatrix.pdf",
+      "url": "https://fe2026.mahacet.org/2023/2023SeatMatrix.pdf"
+    },
+    {
+      "id": "2023_cap1",
+      "academic_year": "2023-24",
+      "year_num": 2023,
+      "document_type": "cutoff",
+      "cap_round": 1,
+      "seat_type": "MH",
+      "file_name": "2023ENGG_CAP1_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2023-24/2023ENGG_CAP1_CutOff.pdf",
+      "url": "https://fe2026.mahacet.org/2023/2023ENGG_CAP1_CutOff.pdf"
+    },
+    {
+      "id": "2023_cap2",
+      "academic_year": "2023-24",
+      "year_num": 2023,
+      "document_type": "cutoff",
+      "cap_round": 2,
+      "seat_type": "MH",
+      "file_name": "2023ENGG_CAP2_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2023-24/2023ENGG_CAP2_CutOff.pdf",
+      "url": "https://fe2026.mahacet.org/2023/2023ENGG_CAP2_CutOff.pdf"
+    },
+    {
+      "id": "2023_cap3",
+      "academic_year": "2023-24",
+      "year_num": 2023,
+      "document_type": "cutoff",
+      "cap_round": 3,
+      "seat_type": "MH",
+      "file_name": "2023ENGG_CAP3_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2023-24/2023ENGG_CAP3_CutOff.pdf",
+      "url": "https://fe2026.mahacet.org/2023/2023ENGG_CAP3_CutOff.pdf"
+    },
+    {
+      "id": "2024_seat_matrix",
+      "academic_year": "2024-25",
+      "year_num": 2024,
+      "document_type": "seat_matrix",
+      "cap_round": null,
+      "seat_type": "MH",
+      "file_name": "2024SeatMatrix.pdf",
+      "local_path": "dataset/raw/pdfs/2024-25/2024SeatMatrix.pdf",
+      "url": "https://fe2026.mahacet.org/2024/2024SeatMatrix.pdf"
+    },
+    {
+      "id": "2024_cap1",
+      "academic_year": "2024-25",
+      "year_num": 2024,
+      "document_type": "cutoff",
+      "cap_round": 1,
+      "seat_type": "MH",
+      "file_name": "2024ENGG_CAP1_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2024-25/2024ENGG_CAP1_CutOff.pdf",
+      "url": "https://fe2026.mahacet.org/2024/2024ENGG_CAP1_CutOff.pdf"
+    },
+    {
+      "id": "2024_cap2",
+      "academic_year": "2024-25",
+      "year_num": 2024,
+      "document_type": "cutoff",
+      "cap_round": 2,
+      "seat_type": "MH",
+      "file_name": "2024ENGG_CAP2_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2024-25/2024ENGG_CAP2_CutOff.pdf",
+      "url": "https://fe2026.mahacet.org/2024/2024ENGG_CAP2_CutOff.pdf"
+    },
+    {
+      "id": "2024_cap3",
+      "academic_year": "2024-25",
+      "year_num": 2024,
+      "document_type": "cutoff",
+      "cap_round": 3,
+      "seat_type": "MH",
+      "file_name": "2024ENGG_CAP3_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2024-25/2024ENGG_CAP3_CutOff.pdf",
+      "url": "https://fe2026.mahacet.org/2024/2024ENGG_CAP3_CutOff.pdf"
+    },
+    {
+      "id": "2025_seat_matrix",
+      "academic_year": "2025-26",
+      "year_num": 2025,
+      "document_type": "seat_matrix",
+      "cap_round": null,
+      "seat_type": "MH",
+      "file_name": "2025SeatMatrix.pdf",
+      "local_path": "dataset/raw/pdfs/2025-26/2025SeatMatrix.pdf",
+      "url": "https://fe2026.mahacet.org/2025/2025SeatMatrix.pdf"
+    },
+    {
+      "id": "2025_cap1",
+      "academic_year": "2025-26",
+      "year_num": 2025,
+      "document_type": "cutoff",
+      "cap_round": 1,
+      "seat_type": "MH",
+      "file_name": "2025ENGG_CAP1_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2025-26/2025ENGG_CAP1_CutOff.pdf",
+      "url": "https://fe2026.mahacet.org/2025/2025ENGG_CAP1_CutOff.pdf"
+    },
+    {
+      "id": "2025_cap2",
+      "academic_year": "2025-26",
+      "year_num": 2025,
+      "document_type": "cutoff",
+      "cap_round": 2,
+      "seat_type": "MH",
+      "file_name": "2025ENGG_CAP2_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2025-26/2025ENGG_CAP2_CutOff.pdf",
+      "url": "https://fe2026.mahacet.org/2025/2025ENGG_CAP2_CutOff.pdf"
+    },
+    {
+      "id": "2025_cap3",
+      "academic_year": "2025-26",
+      "year_num": 2025,
+      "document_type": "cutoff",
+      "cap_round": 3,
+      "seat_type": "MH",
+      "file_name": "2025ENGG_CAP3_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2025-26/2025ENGG_CAP3_CutOff.pdf",
+      "url": "https://fe2026.mahacet.org/2025/2025ENGG_CAP3_CutOff.pdf"
+    },
+    {
+      "id": "2025_cap4",
+      "academic_year": "2025-26",
+      "year_num": 2025,
+      "document_type": "cutoff",
+      "cap_round": 4,
+      "seat_type": "MH",
+      "file_name": "2025ENGG_CAP4_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2025-26/2025ENGG_CAP4_CutOff.pdf",
+      "url": "https://fe2026.mahacet.org/2025/2025ENGG_CAP4_CutOff.pdf"
+    },
+    {
+      "id": "2026_seat_matrix",
+      "academic_year": "2026-27",
+      "year_num": 2026,
+      "document_type": "seat_matrix",
+      "cap_round": null,
+      "seat_type": "MH",
+      "file_name": "2026_fe_seatmatrix_V1.pdf",
+      "local_path": "dataset/raw/pdfs/2026-27/2026_fe_seatmatrix_V1.pdf",
+      "url": "https://cappublicdocs2026.blob.core.windows.net/documents/2026_fe_seatmatrix_V1.pdf"
+    },
+    {
+      "id": "2026_cap1",
+      "academic_year": "2026-27",
+      "year_num": 2026,
+      "document_type": "cutoff",
+      "cap_round": 1,
+      "seat_type": "MH",
+      "file_name": "2026ENGG_CAP1_MH_CutOff_V1.pdf",
+      "local_path": "dataset/raw/pdfs/2026-27/2026ENGG_CAP1_MH_CutOff_V1.pdf",
+      "url": "https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP1_MH_CutOff_V1.pdf"
+    },
+    {
+      "id": "2026_cap2",
+      "academic_year": "2026-27",
+      "year_num": 2026,
+      "document_type": "cutoff",
+      "cap_round": 2,
+      "seat_type": "MH",
+      "file_name": "2026ENGG_CAP2_MH_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2026-27/2026ENGG_CAP2_MH_CutOff.pdf",
+      "url": "https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP2_MH_CutOff.pdf"
+    },
+    {
+      "id": "2026_cap3",
+      "academic_year": "2026-27",
+      "year_num": 2026,
+      "document_type": "cutoff",
+      "cap_round": 3,
+      "seat_type": "MH",
+      "file_name": "2026ENGG_CAP3_MH_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2026-27/2026ENGG_CAP3_MH_CutOff.pdf",
+      "url": "https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP3_MH_CutOff.pdf"
+    },
+    {
+      "id": "2026_cap4",
+      "academic_year": "2026-27",
+      "year_num": 2026,
+      "document_type": "cutoff",
+      "cap_round": 4,
+      "seat_type": "MH",
+      "file_name": "2026ENGG_CAP4_MH_CutOff.pdf",
+      "local_path": "dataset/raw/pdfs/2026-27/2026ENGG_CAP4_MH_CutOff.pdf",
+      "url": "https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_MH_CutOff.pdf"
+    }
+  ]
+}
