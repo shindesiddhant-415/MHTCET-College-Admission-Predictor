@@ -6,6 +6,8 @@ Student Authors: Dipti Patil, Rohan Burande, Samadhan Kendhale, Siddhant Shinde
 Institution: MIT Academy of Engineering (MITAOE), Pune
 Academic Year: 2026-2027
 Primary Interface: React 18 SPA (Vite) + FastAPI REST ML Backend
+Live Deployed URL: https://mhtcet-college-admission-predictor.onrender.com
+GitHub Repository: https://github.com/shindesiddhant-415/MHTCET-College-Admission-Predictor
 ====================================================================================================
 
 ----------------------------------------------------------------------------------------------------

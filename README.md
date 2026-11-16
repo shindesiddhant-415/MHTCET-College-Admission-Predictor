@@ -1,10 +1,14 @@
 # 🎓 AI-Based MHT-CET College Admission Prediction & Personalized Recommendation System
 
+[![Live Demo on Render](https://img.shields.io/badge/Live%20Demo-Render-46E3B7?style=flat&logo=render&logoColor=white)](https://mhtcet-college-admission-predictor.onrender.com)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![React 18](https://img.shields.io/badge/frontend-React%2018%20(Vite)-61dafb.svg)](https://react.dev)
 [![FastAPI](https://img.shields.io/badge/backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com)
 [![Tests Passing](https://img.shields.io/badge/tests-20%20passed-brightgreen.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+> 🚀 **Live Public Web Application**: **[https://mhtcet-college-admission-predictor.onrender.com](https://mhtcet-college-admission-predictor.onrender.com)**  
+> 📁 **GitHub Repository**: **[https://github.com/shindesiddhant-415/MHTCET-College-Admission-Predictor](https://github.com/shindesiddhant-415/MHTCET-College-Admission-Predictor)**
 
 An advanced, full-stack Machine Learning decision-support platform for candidates participating in the **Maharashtra State Centralized Admission Process (CAP)** for undergraduate engineering admissions.
 

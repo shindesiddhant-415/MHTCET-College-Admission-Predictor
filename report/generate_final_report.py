@@ -273,8 +273,8 @@ def populate_report():
     # Table 12: Model Deployment
     # -------------------------------------------------------------
     t12 = doc.tables[12]
-    t12.rows[0].cells[1].text = "React 18 Single-Page Application (Vite) + FastAPI REST ML Backend"
-    t12.rows[1].cells[1].text = "http://localhost:5173 (React Dev) / http://localhost:8000 (FastAPI Production Mount)"
+    t12.rows[0].cells[1].text = "Render Cloud Web Service (React 18 SPA + FastAPI ASGI REST ML Backend)"
+    t12.rows[1].cells[1].text = "https://mhtcet-college-admission-predictor.onrender.com"
     t12.rows[2].cells[1].text = ".joblib (selected_model.joblib & model_metadata.json)"
     t12.rows[3].cells[1].text = "Expanding Chronological Window Validation (Train 2024, Val 2025, Test 2026)"
 
@@ -309,10 +309,10 @@ def populate_report():
     # Table 15: GitHub Details
     # -------------------------------------------------------------
     t15 = doc.tables[15]
-    t15.rows[0].cells[1].text = "https://github.com/siddhant-shinde/MHTCET-College-Recommender"
-    t15.rows[1].cells[1].text = "MHTCET-College-Recommender"
+    t15.rows[0].cells[1].text = "https://github.com/shindesiddhant-415/MHTCET-College-Admission-Predictor"
+    t15.rows[1].cells[1].text = "MHTCET-College-Admission-Predictor"
     t15.rows[2].cells[1].text = "main"
-    t15.rows[3].cells[1].text = "a4c65ff (React 18 Frontend & FastAPI Architecture)"
+    t15.rows[3].cells[1].text = "cb3bac8 (Production React 18 SPA + FastAPI Backend on Render)"
     t15.rows[4].cells[1].text = "November 2026"
 
     # -------------------------------------------------------------

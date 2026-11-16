@@ -17,6 +17,8 @@
 | **Primary Data Source** | Official Maharashtra State CET Cell CAP Cutoff Lists & Seat Matrices (2023–24 to 2026–27) |
 | **Target Audience** | MHT-CET PCM candidates, parents, academic counselors, and admission committees |
 | **Primary Interface** | React 18 SPA (Vite + Modern Dark Design System) with FastAPI REST ML Service (`api/main.py`) |
+| **Live Deployed App** | [https://mhtcet-college-admission-predictor.onrender.com](https://mhtcet-college-admission-predictor.onrender.com) |
+| **GitHub Repository** | [https://github.com/shindesiddhant-415/MHTCET-College-Admission-Predictor](https://github.com/shindesiddhant-415/MHTCET-College-Admission-Predictor) |
 | **Production Model** | Ridge Regression with $L_2$ Regularization ($\text{MAE} = 0.1133$ percentile pts, $R^2 = 0.9996$) |
 | **Unit Test Coverage** | 20 / 20 Unit Tests Passing (100% test pass rate across validation, prediction, and FastAPI REST endpoints) |
 | **SDG Alignment** | **SDG 4**: Quality Education & **SDG 10**: Reduced Inequalities |

@@ -180,8 +180,9 @@ On the held-out test dataset (Year 2026–27, N=9,184), Ridge Regression achieve
 ---
 
 ## 14. Model Deployment, Testing and Validation
-- **Deployment Platform**: React 18 Single-Page Application (Vite) + FastAPI REST ML Backend
-- **Deployed App URL**: `http://localhost:5173` (React Dev Server) / `http://localhost:8000` (FastAPI Production Mount)
+- **Deployment Platform**: Render Cloud Web Service (FastAPI ASGI Service mounting React 18 SPA)
+- **Live Deployed App URL**: [https://mhtcet-college-admission-predictor.onrender.com](https://mhtcet-college-admission-predictor.onrender.com)
+- **Local Dev URLs**: `http://localhost:5173` (React Vite) / `http://localhost:8000` (FastAPI Production Mount)
 - **Model File Format**: `.joblib` (`models/selected_model.joblib` & `models/model_metadata.json`)
 - **Validation Method**: Chronological Expanding Window Validation (Train 2024, Val 2025, Test 2026)
 
@@ -197,10 +198,10 @@ On the held-out test dataset (Year 2026–27, N=9,184), Ridge Regression achieve
 ---
 
 ## 15. GitHub Repository Details
-- **Repository URL**: `https://github.com/siddhant-shinde/MHTCET-College-Recommender`
-- **Repository Name**: `MHTCET-College-Recommender`
+- **Repository URL**: [https://github.com/shindesiddhant-415/MHTCET-College-Admission-Predictor](https://github.com/shindesiddhant-415/MHTCET-College-Admission-Predictor)
+- **Repository Name**: `MHTCET-College-Admission-Predictor`
 - **Branch Used**: `main`
-- **Latest Commit ID**: `0572d44e`
+- **Live Deployment URL**: [https://mhtcet-college-admission-predictor.onrender.com](https://mhtcet-college-admission-predictor.onrender.com)
 - **Date of Last Commit**: November 2026
 
 ---

@@ -243,6 +243,21 @@ export default function DatasetInfoTab() {
             </tbody>
           </table>
         </div>
+
+        <div style={{ marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid #e2e8f0', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', fontSize: '0.85rem' }}>
+          <div>
+            <strong>🌐 Live Web Deployment:</strong>{' '}
+            <a href="https://mhtcet-college-admission-predictor.onrender.com" target="_blank" rel="noopener noreferrer" style={{ color: '#00509d', textDecoration: 'none', fontWeight: 600 }}>
+              https://mhtcet-college-admission-predictor.onrender.com
+            </a>
+          </div>
+          <div>
+            <strong>📂 GitHub Repository:</strong>{' '}
+            <a href="https://github.com/shindesiddhant-415/MHTCET-College-Admission-Predictor" target="_blank" rel="noopener noreferrer" style={{ color: '#00509d', textDecoration: 'none', fontWeight: 600 }}>
+              shindesiddhant-415/MHTCET-College-Admission-Predictor
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
