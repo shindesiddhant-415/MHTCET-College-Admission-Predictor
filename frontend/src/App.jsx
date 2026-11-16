@@ -62,7 +62,23 @@ class ErrorBoundary extends Component {
 }
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('overview');
+  const [activeTab, setActiveTab] = useState(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('tab') || 'overview';
+    } catch {
+      return 'overview';
+    }
+  });
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    try {
+      const url = new URL(window.location);
+      url.searchParams.set('tab', tab);
+      window.history.replaceState({}, '', url);
+    } catch {}
+  };
   // Initialize with verified data so UI renders immediately without a blank white screen
   const [overview, setOverview] = useState(FALLBACK_OVERVIEW);
   const [filters, setFilters] = useState(FALLBACK_FILTERS);
@@ -149,11 +165,11 @@ export default function App() {
           </button>
         </div>
 
-        <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+        <Navbar activeTab={activeTab} setActiveTab={handleTabChange} />
 
         <main className="main-content">
           {activeTab === 'overview' && (
-            <OverviewTab overview={overview} setActiveTab={setActiveTab} />
+            <OverviewTab overview={overview} setActiveTab={handleTabChange} />
           )}
           {activeTab === 'recommend' && (
             <RecommendationsTab filters={filters} />

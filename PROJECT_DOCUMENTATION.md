@@ -675,7 +675,13 @@ pnpm run dev
 | [`tests/test_data_validation.py`](file:///d:/AIML-PROJECT/tests/test_data_validation.py) | Schema, null, range, and lag integrity unit tests. |
 | [`tests/test_prediction.py`](file:///d:/AIML-PROJECT/tests/test_prediction.py) | Unit tests for TC-1 (Valid), TC-2 (Invalid), TC-3 (Unseen), TC-4 (New College). |
 | [`tests/test_recommendations.py`](file:///d:/AIML-PROJECT/tests/test_recommendations.py) | Unit tests for TC-5 (Filters), grouping logic, and ranking order. |
+| [`report/final_report.pdf`](file:///d:/AIML-PROJECT/report/final_report.pdf) | Formal compiled academic project report (PDF, 918 KB) with complete figures & tables. |
 | [`report/final_report.docx`](file:///d:/AIML-PROJECT/report/final_report.docx) | Fully populated official MITAOE Word report template with React 18 figures. |
+| [`report/project_poster.png`](file:///d:/AIML-PROJECT/report/project_poster.png) | Academic conference poster photograph (300 DPI, 4.28 MB) for project exhibition. |
+| [`report/project_poster.pdf`](file:///d:/AIML-PROJECT/report/project_poster.pdf) | Academic conference poster in PDF vector format. |
+| [`report/generate_pdf_report.py`](file:///d:/AIML-PROJECT/report/generate_pdf_report.py) | Python script using ReportLab to build the official report PDF. |
+| [`report/generate_poster.py`](file:///d:/AIML-PROJECT/report/generate_poster.py) | Python script using Matplotlib to generate the conference poster photograph. |
+| [`report/capture_screenshots.py`](file:///d:/AIML-PROJECT/report/capture_screenshots.py) | Headless Chrome automation script capturing all application tab screenshots. |
 | [`report/final_report_summary.md`](file:///d:/AIML-PROJECT/report/final_report_summary.md) | Complete Markdown version of the academic project report. |
 | [`report/generate_final_report.py`](file:///d:/AIML-PROJECT/report/generate_final_report.py) | Python-docx script that populates the official report template. |
 | [`docs/data_dictionary.md`](file:///d:/AIML-PROJECT/docs/data_dictionary.md) | Exhaustive schema dictionary for all CSV tables. |

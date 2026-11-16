@@ -97,9 +97,26 @@ MHTCET-College-Recommender/
 │   ├── 05_model_experiments.ipynb    # Algorithm benchmarking
 │   └── 06_model_analysis.ipynb       # Diagnostic error analysis
 ├── report/
-│   ├── final_report.docx             # Complete project report in required template
+│   ├── final_report.pdf              # Complete Academic Project Report (PDF)
+│   ├── final_report.docx             # Complete project report in MITAOE template (.docx)
+│   ├── project_poster.png            # Academic Conference Poster Photograph (300 DPI)
+│   ├── project_poster.pdf            # Academic Conference Poster (PDF)
 │   ├── final_report_summary.md       # Markdown report with all sections & tables
-│   └── screenshots/                  # High-resolution evaluation & EDA figures
+│   ├── generate_pdf_report.py        # Automated PDF report builder (ReportLab)
+│   ├── generate_poster.py            # Academic poster generation script
+│   ├── capture_screenshots.py        # Automated UI screenshot capture script
+│   └── screenshots/                  # High-resolution UI captures & diagnostic plots
+│       ├── deployed_app_render_live.png # Live Render web application screenshot
+│       ├── app_overview_tab.png      # Overview dashboard tab
+│       ├── app_recommendations_tab.png # AI Predictor & option list tab
+│       ├── app_trends_tab.png        # Multi-year cutoff trends tab
+│       ├── app_model_performance_tab.png # Model benchmarks & diagnostics tab
+│       ├── app_comparison_tab.png    # Head-to-head college comparison tab
+│       ├── app_dataset_tab.png       # Dataset audit & ethics tab
+│       ├── actual_vs_predicted.png   # Diagnostic actual vs predicted plot
+│       ├── feature_importance.png    # Ridge regression feature coefficients
+│       ├── architecture_diagram.png  # End-to-end system architecture
+│       └── model_comparison_bar.png  # Benchmark comparison bar chart
 ├── results/                          # Benchmark tables & saved plots
 ├── src/
 │   ├── data/                         # Data extraction & parsing scripts
@@ -199,6 +216,38 @@ pnpm run dev
 - **Category Fairness**: The system enforces official reservation categories (`GOPENS`, `GOBCS`, `GSCS`, `GSTS`, `EWS`, `TFWS`) as selected by the user without making unsolicited assumptions.
 - **Privacy by Design**: No personal identity documents, roll numbers, or personal identifying information are collected or stored.
 - **Decision-Support Notice**: This tool is an academic decision aid and does not guarantee admission. Final allotments are governed solely by Maharashtra State CET Cell official procedures.
+
+---
+
+## 📸 Screenshots & Deliverables Gallery
+
+### 1. Live Deployed Web Application (Render)
+![Live Deployed Web Application](report/screenshots/deployed_app_render_live.png)
+
+### 2. Personalized AI Predictor & Recommendation Engine
+![AI Predictor Tab](report/screenshots/app_recommendations_tab.png)
+
+### 3. Model Diagnostic Plots & Benchmark Visualizations
+| Actual vs Predicted Cutoffs | Ridge Regression Feature Importance |
+| :---: | :---: |
+| ![Actual vs Predicted](report/screenshots/actual_vs_predicted.png) | ![Feature Importance](report/screenshots/feature_importance.png) |
+
+### 4. Academic Conference Poster Photograph (300 DPI)
+![Academic Mini-Project Poster](report/project_poster.png)
+
+---
+
+## 📋 Syllabus Repository Deliverables Checklist
+
+| Deliverable | Repository Path / Evidence | Verification Status |
+| :--- | :--- | :---: |
+| **1. Source Code / Jupyter Notebooks** | `src/`, `api/`, `frontend/`, `tests/` + 6 well-commented notebooks in `notebooks/` | ✅ Complete |
+| **2. README.md with Run Steps** | Comprehensive architecture, benchmark tables, live URL, and execution guide | ✅ Complete |
+| **3. Dataset or Dataset Link** | `dataset/` (18 PDFs, `cutoffs_long.csv`, `seat_matrix.csv`) + `config/sources.json` | ✅ Complete |
+| **4. requirements.txt** | Clean dependency file for FastAPI, Scikit-learn, ReportLab, Pytest, Uvicorn | ✅ Complete |
+| **5. Saved Trained Model File** | `models/selected_model.joblib` and `models/model_metadata.json` | ✅ Complete |
+| **6. Screenshots of Results & App** | `report/screenshots/` (6 UI tab captures, live Render app, diagnostic plots) | ✅ Complete |
+| **7. Project Report (PDF) & Poster** | `report/final_report.pdf`, `report/final_report.docx`, `report/project_poster.png`, `report/project_poster.pdf` | ✅ Complete |
 
 ---
 
