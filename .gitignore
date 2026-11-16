@@ -45,5 +45,7 @@ node_modules/
 
 # Matplotlib & cache
 .matplotlib/
+.matplotlib_cache/
+*.matplotlib_cache/
 .pytest_cache/
 

@@ -96,7 +96,7 @@ flowchart LR
 | **Criterion 1: Model Selection** | **2.5** | At least 3 regression algorithms, technical justification, previous-year baseline, and fair benchmarking. | Implemented 5 models: (1) Naive Lag Baseline, (2) Ridge Regression with $L_2$ Regularization & SGD principles, (3) Decision Tree Regressor, (4) Random Forest Regressor, (5) HistGradientBoosting Regressor. |
 | **Criterion 2: Implementation & Output** | **2.5** | End-to-end operational pipeline: PDF ingestion, normalization, ML training, recommendation engine, and deployed web application. | Complete automated pipeline: PyMuPDF extraction, 32,144 parsed records, 22,960 model targets, joblib model persistence, FastAPI REST ML backend, and a modern React 18 Single-Page Application (Vite). |
 | **Criterion 3: Critical Analysis & Evaluation** | **2.5** | Regression evaluation metrics (MAE, MSE, RMSE, $R^2$), chronological testing, residual diagnostics, and limitations. | Chronological expanding split (Train 2024, Val 2025, Test 2026). Generated Actual vs Predicted, Residual distributions, Feature Importance, Round/Branch error breakdowns. |
-| **Criterion 4: Professionalism & Documentation** | **2.5** | Clean UI, explainable recommendations, complete GitHub repository, 6 Jupyter notebooks, and populated Word report. | Production-grade React 18 UI with glassmorphic cards and interactive charts, 20 passing unit tests, data dictionary, architecture documentation, and populated official `final_report_react.docx`. |
+| **Criterion 4: Professionalism & Documentation** | **2.5** | Clean UI, explainable recommendations, complete GitHub repository, 6 Jupyter notebooks, and populated Word report. | Production-grade React 18 UI with glassmorphic cards and interactive charts, 20 passing unit tests, data dictionary, architecture documentation, and populated official `final_report.docx`. |
 
 ---
 
@@ -673,7 +673,7 @@ pnpm run dev
 | [`tests/test_data_validation.py`](file:///d:/AIML-PROJECT/tests/test_data_validation.py) | Schema, null, range, and lag integrity unit tests. |
 | [`tests/test_prediction.py`](file:///d:/AIML-PROJECT/tests/test_prediction.py) | Unit tests for TC-1 (Valid), TC-2 (Invalid), TC-3 (Unseen), TC-4 (New College). |
 | [`tests/test_recommendations.py`](file:///d:/AIML-PROJECT/tests/test_recommendations.py) | Unit tests for TC-5 (Filters), grouping logic, and ranking order. |
-| [`report/final_report_react.docx`](file:///d:/AIML-PROJECT/report/final_report_react.docx) | Fully populated official MITAOE Word report template with React 18 figures. |
+| [`report/final_report.docx`](file:///d:/AIML-PROJECT/report/final_report.docx) | Fully populated official MITAOE Word report template with React 18 figures. |
 | [`report/final_report_summary.md`](file:///d:/AIML-PROJECT/report/final_report_summary.md) | Complete Markdown version of the academic project report. |
 | [`report/generate_final_report.py`](file:///d:/AIML-PROJECT/report/generate_final_report.py) | Python-docx script that populates the official report template. |
 | [`docs/data_dictionary.md`](file:///d:/AIML-PROJECT/docs/data_dictionary.md) | Exhaustive schema dictionary for all CSV tables. |

@@ -379,13 +379,8 @@ def populate_report():
         t16.rows[r_idx].cells[3].text = "Submitted"
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    try:
-        doc.save(OUTPUT_PATH)
-        print(f"Report successfully populated and saved to {OUTPUT_PATH}")
-    except PermissionError:
-        fallback_path = r"report\final_report_react.docx"
-        doc.save(fallback_path)
-        print(f"Note: {OUTPUT_PATH} is currently open in Microsoft Word. Saved updated report to {fallback_path}")
+    doc.save(OUTPUT_PATH)
+    print(f"Report successfully populated and saved to {OUTPUT_PATH}")
 
 if __name__ == "__main__":
     populate_report()
