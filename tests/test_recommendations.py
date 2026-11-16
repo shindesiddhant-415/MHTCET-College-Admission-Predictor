@@ -56,3 +56,4 @@ def test_recommendation_sorting(recommender):
         first_reach_idx = groups.index("Reach")
         last_safer_idx = max(i for i, g in enumerate(groups) if g == "Safer")
         assert last_safer_idx < first_reach_idx
+

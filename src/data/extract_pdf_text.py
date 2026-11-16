@@ -51,3 +51,4 @@ def extract_all_pages(config_path="config/sources.json", output_csv="dataset/int
 
 if __name__ == "__main__":
     extract_all_pages()
+

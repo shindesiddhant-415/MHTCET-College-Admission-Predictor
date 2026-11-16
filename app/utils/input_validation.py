@@ -17,3 +17,4 @@ def validate_preferences(branches, category):
     if not category:
         return False, "Please select an eligible seat category."
     return True, "Valid"
+

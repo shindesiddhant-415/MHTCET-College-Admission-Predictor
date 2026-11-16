@@ -51,3 +51,4 @@ def test_tc4_new_institute_or_branch():
         seat_category_code="GOPENS"
     )
     assert res["status"] == "insufficient_data"
+

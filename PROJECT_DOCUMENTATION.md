@@ -16,9 +16,9 @@
 | **Application Type** | Autoregressive Regression + Decision-Support Recommendation Engine + Interactive Analytics |
 | **Primary Data Source** | Official Maharashtra State CET Cell CAP Cutoff Lists & Seat Matrices (2023–24 to 2026–27) |
 | **Target Audience** | MHT-CET PCM candidates, parents, academic counselors, and admission committees |
-| **Primary Interface** | Multi-Page Streamlit Web Application (`app/app.py`) |
+| **Primary Interface** | React 18 SPA (Vite + Modern Dark Design System) with FastAPI REST ML Service (`api/main.py`) |
 | **Production Model** | Ridge Regression with $L_2$ Regularization ($\text{MAE} = 0.1133$ percentile pts, $R^2 = 0.9996$) |
-| **Unit Test Coverage** | 13 / 13 Unit Tests Passing (100% test pass rate across validation and deployment test cases) |
+| **Unit Test Coverage** | 20 / 20 Unit Tests Passing (100% test pass rate across validation, prediction, and FastAPI REST endpoints) |
 | **SDG Alignment** | **SDG 4**: Quality Education & **SDG 10**: Reduced Inequalities |
 
 ---
@@ -32,8 +32,8 @@
 6. [Feature Engineering without Temporal Look-Ahead Leakage](#6-feature-engineering-without-temporal-look-ahead-leakage)
 7. [Machine Learning Models & Chronological Benchmarking](#7-machine-learning-models--chronological-benchmarking)
 8. [Personalized Recommendation Engine & Grouping Logic](#8-personalized-recommendation-engine--grouping-logic)
-9. [Multi-Page Streamlit Web Application Architecture](#9-multi-page-streamlit-web-application-architecture)
-10. [Automated Testing Suite (TC-1 to TC-5)](#10-automated-testing-suite-tc-1-to-tc-5)
+9. [React 18 Single-Page Application & FastAPI Architecture](#9-react-18-single-page-application--fastapi-architecture)
+10. [Automated Testing Suite (TC-1 to TC-5 & API Endpoints)](#10-automated-testing-suite-tc-1-to-tc-5--api-endpoints)
 11. [Reproducibility & Execution Commands](#11-reproducibility--execution-commands)
 12. [Ethical Considerations, Limitations & SDG Mapping](#12-ethical-considerations-limitations--sdg-mapping)
 13. [Viva Voce & Faculty Defense Guide](#13-viva-voce--faculty-defense-guide)
@@ -57,7 +57,7 @@ Official cutoff data is published strictly as **high-volume, unstructured PDF do
 - **Uncertainty Across Cycles**: Historical cutoffs shift dynamically due to annual applicant score distributions, institutional popularity changes, and seat intake modifications.
 
 ### 1.3 The AI/ML Solution
-This system converts raw official PDF records across 4 academic years into a structured, relational dataset, constructs chronological lag features ($t-1, t-2$) without look-ahead bias, evaluates five regression models using expanding chronological validation, and delivers personalized, explainable recommendations grouped into **Safer**, **Moderate**, and **Reach** options.
+This system converts raw official PDF records across 4 academic years into a structured, relational dataset, constructs chronological lag features ($t-1, t-2$) without look-ahead bias, evaluates five regression models using expanding chronological validation, and delivers personalized, explainable recommendations grouped into **Safer**, **Moderate**, and **Reach** options through a high-performance React 18 single-page application supported by a FastAPI REST machine learning service.
 
 ---
 
@@ -76,7 +76,7 @@ flowchart LR
     B --> B2["Practical 04: Decision Trees"]
     C --> C1["Practical 05: Ensemble Learning (RF & Boosting)"]
     C --> C2["Chronological Evaluation & Error Breakdown"]
-    D --> D1["Streamlit Web UI + Pytest (TC-1 to TC-5)"]
+    D --> D1["React 18 SPA + FastAPI + Pytest (20 Tests)"]
     E --> E1["Official Report DOCX + Clean Git Repo"]
 ```
 
@@ -85,9 +85,9 @@ flowchart LR
 | Rubric Criterion | Max Marks | Target Capability | Implementation in this Project |
 | :--- | :---: | :--- | :--- |
 | **Criterion 1: Model Selection** | **2.5** | At least 3 regression algorithms, technical justification, previous-year baseline, and fair benchmarking. | Implemented 5 models: (1) Naive Lag Baseline, (2) Ridge Regression with $L_2$ Regularization & SGD principles, (3) Decision Tree Regressor, (4) Random Forest Regressor, (5) HistGradientBoosting Regressor. |
-| **Criterion 2: Implementation & Output** | **2.5** | End-to-end operational pipeline: PDF ingestion, normalization, ML training, recommendation engine, and interactive web application. | Complete automated pipeline: PyMuPDF extraction, 32,144 parsed records, 22,960 model targets, joblib model persistence, and a 5-page Streamlit dashboard. |
+| **Criterion 2: Implementation & Output** | **2.5** | End-to-end operational pipeline: PDF ingestion, normalization, ML training, recommendation engine, and deployed web application. | Complete automated pipeline: PyMuPDF extraction, 32,144 parsed records, 22,960 model targets, joblib model persistence, FastAPI REST ML backend, and a modern React 18 Single-Page Application (Vite). |
 | **Criterion 3: Critical Analysis & Evaluation** | **2.5** | Regression evaluation metrics (MAE, MSE, RMSE, $R^2$), chronological testing, residual diagnostics, and limitations. | Chronological expanding split (Train 2024, Val 2025, Test 2026). Generated Actual vs Predicted, Residual distributions, Feature Importance, Round/Branch error breakdowns. |
-| **Criterion 4: Professionalism & Documentation** | **2.5** | Clean UI, explainable recommendations, complete GitHub repository, 6 Jupyter notebooks, and populated Word report. | Multi-page Streamlit UI, 13 passing unit tests, data dictionary, architecture documentation, and populated official `final_report.docx`. |
+| **Criterion 4: Professionalism & Documentation** | **2.5** | Clean UI, explainable recommendations, complete GitHub repository, 6 Jupyter notebooks, and populated Word report. | Production-grade React 18 UI with glassmorphic cards and interactive charts, 20 passing unit tests, data dictionary, architecture documentation, and populated official `final_report_react.docx`. |
 
 ---
 
@@ -95,12 +95,30 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    subgraph Language_Runtime [Language & Core Runtime]
-        P[Python 3.12 / 3.14 64-bit]
+    subgraph Frontend_SPA [Frontend: Modern React 18 SPA]
+        R18[React 18.2+]
+        VITE[Vite 5.2+ Bundler]
+        LUC[Lucide React Icons]
+        CSS[Glassmorphic CSS3 Design System]
+        R18 --> VITE
+        R18 --> LUC
+        R18 --> CSS
+    end
+
+    subgraph Backend_API [Backend: High-Performance REST Service]
+        FAP[FastAPI 0.110+]
+        UVI[Uvicorn ASGI 0.28+]
+        PYD[Pydantic v2 Models]
+        CORS[CORSMiddleware]
+        STAT[StaticFiles Mounting /]
+        FAP --> UVI
+        FAP --> PYD
+        FAP --> CORS
+        FAP --> STAT
     end
 
     subgraph Data_Pipeline [Data Engineering & Ingestion]
-        P --> FITZ[PyMuPDF / fitz 1.25+]
+        P[Python 3.12 / 3.14] --> FITZ[PyMuPDF / fitz 1.25+]
         P --> RE[Regex Engine re]
         P --> PD[Pandas 2.2+]
         P --> NP[NumPy 1.26+]
@@ -119,25 +137,26 @@ flowchart TD
         SKL --> JB[Joblib 1.4+ Serialization]
     end
 
-    subgraph Visualization_UI [Deployment & Visualization]
-        P --> ST[Streamlit 1.32+ Multi-Page]
-        P --> PLY[Plotly Express 5.20+]
-        P --> SNS[Seaborn 0.13+]
-        P --> MPL[Matplotlib 3.8+]
-    end
-
     subgraph QA_Documentation [Testing & Reporting]
-        P --> PYT[Pytest 8.1+]
+        P --> PYT[Pytest 8.1+ / 20 Test Cases]
         P --> DOCX[python-docx 1.1+]
         P --> GIT[Git Version Control]
     end
+
+    Frontend_SPA <-->|JSON REST over HTTP| Backend_API
+    Backend_API <-->|In-Memory Inference| Modeling_Engine
 ```
 
 ### Detailed Component Analysis:
 
 | Component / Library | Version | Purpose in Project | Why Selected Over Alternatives? |
 | :--- | :--- | :--- | :--- |
-| **Python** | `3.12+` / `3.14` | Primary programming language | Industry standard for AI/ML with native support for scikit-learn, joblib, and pandas. |
+| **Python** | `3.12+` / `3.14` | Primary backend & ML language | Industry standard for AI/ML with native support for scikit-learn, joblib, and pandas. |
+| **React** | `18.2.0` | Client-side Single-Page Application (SPA) | Component-driven reactivity, decoupled frontend architecture, instant tab transitions, responsive state handling. |
+| **Vite** | `5.2.0` | Next-generation frontend tooling & build | Sub-second Hot Module Replacement (HMR) and optimized ES-module production bundling (`dist/`). |
+| **Lucide React** | `0.359.0` | Modern SVG iconography | Lightweight, scalable icons for colleges, filters, badges, and status indicators without extra CSS bloat. |
+| **FastAPI** | `0.110.0` | REST API service for ML inference | Asynchronous ASGI framework, automatic OpenAPI documentation, strict request validation via Pydantic, and low latency. |
+| **Uvicorn** | `0.28.0` | High-performance ASGI web server | Production-grade server capable of serving both API endpoints (`/api/...`) and compiled React SPA static assets (`dist/`). |
 | **PyMuPDF (`fitz`)** | `1.25.0` | PDF text extraction | 10x to 20x faster than `PyPDF2` or `pypdf`; extracts exact font positions and multi-column text without corrupting table cells. |
 | **Pandas & NumPy** | `2.2.0` / `1.26.0` | Relational data manipulation | Vectorized operations for 32,000+ rows; efficient grouping for multi-year lag shifts (`shift(1)`, `shift(2)`). |
 | **Scikit-Learn** | `1.4.0` | Preprocessing, models & metrics | Standardized `Pipeline` and `ColumnTransformer` architecture preventing train-to-test data leakage. |
@@ -145,9 +164,7 @@ flowchart TD
 | **Random Forest** | Built-in | Bagging tree ensemble | Non-linear regression baseline; evaluates interactions across categories and institutes without requiring feature scaling. |
 | **HistGradientBoosting** | Built-in | Boosting ensemble regressor | Native scikit-learn implementation inspired by LightGBM; evaluates non-linear gradient boosted trees efficiently. |
 | **Joblib** | `1.4.0` | Model artifact persistence | Efficient serialization of scikit-learn pipelines including transformer states and trained estimators. |
-| **Streamlit** | `1.32.0` | Interactive web dashboard | Rapid deployment of reactive multi-page web applications with native state management and caching. |
-| **Plotly Express** | `5.20.0` | Interactive web charts | Client-side pan, zoom, hover tooltips, and interactive filtering for multi-year cutoff trends. |
-| **Pytest** | `8.1.0` | Automated unit testing | Automated validation of data constraints, range checks, and deployment test cases (TC-1 to TC-5). |
+| **Pytest** | `8.1.0` | Automated unit testing | Automated validation of data constraints, range checks, and deployment test cases (20 tests covering ML & REST API). |
 | **python-docx** | `1.1.0` | Report automation | Programmatically populates official MITAOE Word report templates (`.docx`) with exact experimental data and images. |
 | **ReportLab** | `5.0.0` | PDF generation | High-fidelity generation of authentic official-format Maharashtra State CET Cell cutoff lists and seat matrices. |
 
@@ -298,7 +315,7 @@ flowchart TD
     end
 
     subgraph Year_2027 ["Year 2027–28 (Future Admission Forecast)"]
-        Y5["Full Production Refit on All 22,960 Historical Records\nGenerates live recommendations in Streamlit"]
+        Y5["Full Production Refit on All 22,960 Historical Records\nGenerates live recommendations in React 18 SPA"]
     end
 
     Y1 --> Y2
@@ -374,57 +391,112 @@ Every recommendation includes a plain-language explanation:
 
 ---
 
-## 9. Multi-Page Streamlit Web Application Architecture
+## 9. React 18 Single-Page Application & FastAPI Architecture
 
-The deployed web application provides an intuitive academic interface organized into five distinct pages:
+The production interface is implemented as a decoupled, modern **React 18 Single-Page Application (SPA)** powered by a high-throughput **FastAPI REST Machine Learning Service**:
 
 ```mermaid
-flowchart LR
-    APP["app/app.py\n(Home Dashboard)"]
-    P1["1_🎯_Recommendations.py\n(Predictor & Option List)"]
-    P2["2_📈_Cutoff_Trends.py\n(Plotly Historical Trends)"]
-    P3["3_🔬_Model_Performance.py\n(Leaderboard & Diagnostics)"]
-    P4["4_⚖️_College_Comparison.py\n(Head-to-Head College Matrix)"]
-    P5["5_📚_Dataset_Information.py\n(Manifest, Quality & Ethics)"]
+flowchart TB
+    subgraph Client_Browser ["Client Tier: React 18 SPA (Vite / Port 5173 or 8000)"]
+        UI["React 18 App Root (App.jsx)"]
+        NAV["Navbar & Brand Status"]
+        T1["Tab 1: Overview Dashboard (OverviewTab.jsx)"]
+        T2["Tab 2: Personalized Shortlist (RecommendationsTab.jsx)"]
+        T3["Tab 3: Cutoff Trends (CutoffTrendsTab.jsx)"]
+        T4["Tab 4: Model Performance (ModelPerformanceTab.jsx)"]
+        T5["Tab 5: College Comparison (CollegeComparisonTab.jsx)"]
+        T6["Tab 6: Dataset & Audit (DatasetInfoTab.jsx)"]
+        SVC["API Client Layer (services/api.js)"]
+        
+        UI --> NAV
+        UI --> T1
+        UI --> T2
+        UI --> T3
+        UI --> T4
+        UI --> T5
+        UI --> T6
+        T1 & T2 & T3 & T4 & T5 & T6 --> SVC
+    end
 
-    APP --> P1
-    APP --> P2
-    APP --> P3
-    APP --> P4
-    APP --> P5
+    subgraph REST_Gateway ["API Tier: FastAPI ASGI Service (api/main.py / Port 8000)"]
+        ROUTER["FastAPI Router & Endpoints"]
+        CORS["CORSMiddleware (Cross-Origin Resource Sharing)"]
+        STATIC["StaticFiles Mount (Serving frontend/dist & results/)"]
+        PYD["Pydantic v2 Request/Response Validation"]
+        
+        ROUTER --> CORS
+        ROUTER --> STATIC
+        ROUTER --> PYD
+    end
+
+    subgraph ML_Engine ["Engine Tier: Autoregressive Machine Learning Core"]
+        MODEL["Production Ridge Pipeline (models/selected_model.joblib)"]
+        ENGINE["Recommendation Engine (src/recommendations/recommendation_engine.py)"]
+        DATA["Feature Store & Historical Records (dataset/model/ & dataset/processed/)"]
+        
+        PYD --> ENGINE
+        ENGINE --> MODEL
+        ENGINE --> DATA
+    end
+
+    SVC <-->|HTTP JSON REST Requests| ROUTER
 ```
 
-### Page Breakdown:
-1. **Home / Dashboard (`app/app.py`)**:
-   - Executive metrics: 32,144 parsed records, 22 colleges, Best Model MAE (0.1133), target forecast cycle (2027–28).
+### 9.1 FastAPI REST Endpoints (`api/main.py`)
+
+| Endpoint | HTTP Method | Request Payload / Query Params | Response Object / Purpose |
+| :--- | :---: | :--- | :--- |
+| `/api/health` | `GET` | None | `{ "status": "healthy", "model_loaded": true, "version": "1.0.0" }` |
+| `/api/overview` | `GET` | None | Dataset KPI metrics: 32,144 records, 22 colleges, Best Model MAE (0.1133), forecast year. |
+| `/api/filters` | `GET` | None | Unique lists of colleges, branches, categories, pools, and rounds for populating UI dropdowns. |
+| `/api/recommend` | `POST` | `RecommendRequest` JSON: `student_percentile`, `category`, `seat_pool`, `branches`, `cap_round`, `top_n` | Sorted recommendations list with predicted cutoffs, delta gap, suitability group (`Safer`, `Moderate`, `Reach`), and explanations. |
+| `/api/trends` | `GET` | `institute_code`, `course_code`, `category`, `round` | Multi-year historical cutoffs and percentiles across 2023, 2024, 2025, and 2026. |
+| `/api/model-performance` | `GET` | None | Benchmarking leaderboard table (MAE, MSE, RMSE, $R^2$), best model metadata, and diagnostic plot URLs. |
+| `/api/compare` | `GET` | `branch_name`, `category`, `seat_pool`, `round` | Side-by-side cutoff percentiles and sanctioned seat intake breakdown across all institutes. |
+| `/api/manifest` | `GET` | None | Metadata inventory of all 18 source documents with file sizes, page counts, and URLs. |
+
+### 9.2 React 18 Tab Views Breakdown
+
+1. **Overview Tab (`frontend/src/components/OverviewTab.jsx`)**:
+   - Executive KPI cards: 32,144 Parsed Cutoff Records, 22 Benchmark Colleges, Best Model MAE ($0.1133$), Target Forecast Cycle (2027–28).
    - High-level distributions of records by year and discipline.
-2. **Personalized Recommendations (`app/pages/1_🎯_Recommendations.py`)**:
-   - Dynamic input panel: Percentile slider (0.00–100.00), Category selector (GOPENS, GOBCS, TFWS, etc.), Seat Pool (State Level, HU, OHU), Multi-select branches and regions, CAP round selector.
-   - Filterable results table with visual badges (🛡️ Safer, ⚖️ Moderate, 🚀 Reach), gap metrics, 2026 historical cutoffs, and plain-language explanations.
-   - One-click **CSV export** for CAP option list planning.
-3. **Cutoff Trends (`app/pages/2_📈_Cutoff_Trends.py`)**:
-   - Interactive Plotly line charts showing year-over-year percentile movements across institutes.
-   - Round relaxation box plots demonstrating cutoff drops from CAP Round 1 to Round 4.
-4. **Model Performance (`app/pages/3_🔬_Model_Performance.py`)**:
-   - Full regression leaderboard comparing all 5 algorithms.
-   - High-resolution diagnostic figures: Actual vs Predicted, Residual Distribution (zero-centered), MAE Comparison Bar Chart, and Feature Importance.
-5. **College Comparison (`app/pages/4_⚖️_College_Comparison.py`)**:
-   - Side-by-side cutoff comparison across multiple institutes for a selected branch and category.
-   - Sanctioned intake breakdown from the seat matrix (State seats, Minority seats, All-India JEE seats, Institutional seats).
-6. **Dataset Information (`app/pages/5_📚_Dataset_Information.py`)**:
+   - Quick Stat cards highlighting zero look-ahead data leakage and 100% data traceability.
+2. **Personalized Recommendations Tab (`frontend/src/components/RecommendationsTab.jsx`)**:
+   - Dynamic input panel: Percentile slider and numeric input ($0.00 - 100.00$), Category selector (`GOPENS`, `GOBCS`, `TFWS`, `EWS`, etc.), Seat Pool selector, Multi-select branch filters, and CAP Round selector.
+   - Instant calculation with count badges: 🛡️ Safer Options, ⚖️ Moderate Options, 🚀 Reach Options.
+   - Rich recommendation cards displaying predicted cutoff, percentile gap ($\Delta$), historical 2026 closing benchmark, and plain-language explainability text.
+   - One-click **CSV Export** button for student option form drafting.
+3. **Cutoff Trends Tab (`frontend/src/components/CutoffTrendsTab.jsx`)**:
+   - Interactive selector for college, branch, and category.
+   - Historical trajectory cards and multi-year progression tracker showing year-over-year momentum.
+   - Round relaxation analysis illustrating seat vacancy drops between CAP Round 1 and Round 4.
+4. **Model Performance Tab (`frontend/src/components/ModelPerformanceTab.jsx`)**:
+   - Algorithmic leaderboard comparing Ridge Regression against Random Forest, HistGradientBoosting, Decision Tree, and Previous-Year Baseline.
+   - Direct rendering of high-resolution diagnostic plots: Actual vs Predicted Scatter, Residual Distribution (Zero-Centered Gaussian), Error Comparison, and Feature Importance.
+5. **College Comparison Tab (`frontend/src/components/CollegeComparisonTab.jsx`)**:
+   - Side-by-side cutoff comparison across all 22 institutes for any chosen discipline and category.
+   - Sanctioned seat matrix intake distribution (State seats, Minority seats, All-India JEE seats, Institutional quota).
+6. **Dataset Information Tab (`frontend/src/components/DatasetInfoTab.jsx`)**:
    - Traceability manifest of all 18 source documents with file sizes and URLs.
-   - Automated data quality report.
-   - Official Maharashtra seat category definitions.
-   - Ethical framework and SDG mapping.
+   - Automated data quality audit table (`data_quality_report.csv`).
+   - Official Maharashtra seat category definitions guide.
+   - Sustainable Development Goals (SDG 4 & SDG 10) mapping and ethical safeguards.
 
 ---
 
-## 10. Automated Testing Suite (TC-1 to TC-5)
+## 10. Automated Testing Suite (TC-1 to TC-5 & API Endpoints)
 
-All 13 automated unit tests pass via `pytest tests -v`:
+All **20 automated unit tests** pass via `python -m pytest tests -v`:
 
 | Test Module | Test Name | Target / Test Case | Description & Input | Assertion / Expected Outcome | Status |
 | :--- | :--- | :--- | :--- | :--- | :---: |
+| `test_api.py` | `test_api_health` | **API Health Check** | `GET /api/health` | HTTP 200, `status == 'healthy'`, `model_loaded == True` | ✅ **PASS** |
+| `test_api.py` | `test_api_overview` | **API Overview KPIs** | `GET /api/overview` | HTTP 200, valid records count $> 30,000$, MAE $< 0.15$ | ✅ **PASS** |
+| `test_api.py` | `test_api_filters` | **API Filter Options** | `GET /api/filters` | HTTP 200, non-empty categories, branches, and institutes | ✅ **PASS** |
+| `test_api.py` | `test_api_recommend_endpoint` | **API Recommendation** | `POST /api/recommend` (92.5%, GOPENS) | HTTP 200, non-empty options array with valid predicted cutoffs | ✅ **PASS** |
+| `test_api.py` | `test_api_trends_endpoint` | **API Trends** | `GET /api/trends` (COEP CS) | HTTP 200, returns historical cutoffs across multiple years | ✅ **PASS** |
+| `test_api.py` | `test_api_model_performance` | **API Model Benchmarks**| `GET /api/model-performance` | HTTP 200, leaderboard contains Ridge, RF, HGB, DT, Baseline | ✅ **PASS** |
+| `test_api.py` | `test_api_compare` | **API Comparison** | `GET /api/compare` (CS, GOPENS) | HTTP 200, returns list of institutes with cutoffs and intake | ✅ **PASS** |
 | `test_prediction.py` | `test_tc1_valid_prediction` | **TC-1: Valid Prediction** | Percentile: 92.50, GOPENS, Round 1, State Level | Returns valid predicted cutoff between 0 and 100 within 5% of history | ✅ **PASS** |
 | `test_prediction.py` | `test_tc2_invalid_percentile_rejection` | **TC-2: Invalid Percentile** | Percentile: -5.0 or 105.0 | Raises `ValueError` and cleanly rejects invalid score | ✅ **PASS** |
 | `test_prediction.py` | `test_tc3_unseen_or_invalid_category` | **TC-3: Unseen Category** | Category: `'NON_EXISTENT_CATEGORY'` | Returns clean error status without application failure | ✅ **PASS** |
@@ -451,8 +523,13 @@ cd d:\AIML-PROJECT
 # Verify Python version (3.12+ recommended)
 python --version
 
-# Install dependencies
+# Install Python backend dependencies
 pip install -r requirements.txt
+
+# Install React frontend dependencies
+cd frontend
+pnpm install
+cd ..
 ```
 
 ### 11.2 Complete End-to-End Pipeline Execution
@@ -482,21 +559,37 @@ python src/models/train_models.py
 python src/models/explain_model.py
 python src/features/generate_eda_plots.py
 
-# Step 8: Populate official MITAOE Word report template
+# Step 8: Build production React frontend bundle
+cd frontend
+pnpm run build
+cd ..
+
+# Step 9: Populate official MITAOE Word report template
 python report/generate_final_report.py
 ```
 
-### 11.3 Run Unit Tests
+### 11.3 Run Unit Tests (20 Tests)
 ```powershell
 $env:PYTHONPATH="."
 python -m pytest tests -v
 ```
 
-### 11.4 Launch Streamlit Web Application
+### 11.4 Launch Unified Production Server (FastAPI + React SPA)
 ```powershell
-streamlit run app/app.py
+python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
 ```
-*Access the local web dashboard at `http://localhost:8501`.*
+*Access the full-stack web application at `http://localhost:8000` (FastAPI serves the interactive React SPA and all REST endpoints simultaneously on port 8000).*
+
+### 11.5 Development Mode (Hot Reloading)
+```powershell
+# Terminal 1: Launch FastAPI backend with hot reloading
+python -m uvicorn api.main:app --reload --port 8000
+
+# Terminal 2: Launch Vite React dev server
+cd frontend
+pnpm run dev
+# (Access at http://localhost:5173 with automatic proxying to :8000)
+```
 
 ---
 
@@ -541,9 +634,21 @@ streamlit run app/app.py
 | File Path | Description |
 | :--- | :--- |
 | [`README.md`](file:///d:/AIML-PROJECT/README.md) | Official GitHub repository README with overview, benchmarks, and setup. |
-| [`requirements.txt`](file:///d:/AIML-PROJECT/requirements.txt) | Python dependencies list with pinned minimum versions. |
-| [`.gitignore`](file:///d:/AIML-PROJECT/.gitignore) | Git exclusion patterns for virtual environments, caches, and temp files. |
+| [`requirements.txt`](file:///d:/AIML-PROJECT/requirements.txt) | Python dependencies list with pinned minimum versions (including FastAPI, Uvicorn). |
+| [`.gitignore`](file:///d:/AIML-PROJECT/.gitignore) | Git exclusion patterns for virtual environments, node_modules, caches, and dist. |
 | [`config/sources.json`](file:///d:/AIML-PROJECT/config/sources.json) | Complete metadata manifest for all 18 official CET Cell documents. |
+| [`api/main.py`](file:///d:/AIML-PROJECT/api/main.py) | FastAPI production server exposing all REST ML endpoints and serving the React SPA. |
+| [`frontend/package.json`](file:///d:/AIML-PROJECT/frontend/package.json) | NPM package definition with React 18, Vite, and Lucide React. |
+| [`frontend/vite.config.js`](file:///d:/AIML-PROJECT/frontend/vite.config.js) | Vite configuration with `@vitejs/plugin-react` and dev server proxy to `:8000`. |
+| [`frontend/src/App.jsx`](file:///d:/AIML-PROJECT/frontend/src/App.jsx) | Main React Single-Page Application container with active tab router. |
+| [`frontend/src/services/api.js`](file:///d:/AIML-PROJECT/frontend/src/services/api.js) | Frontend REST client service for calling FastAPI endpoints. |
+| [`frontend/src/components/Navbar.jsx`](file:///d:/AIML-PROJECT/frontend/src/components/Navbar.jsx) | Header navigation bar with system status and tab switcher. |
+| [`frontend/src/components/OverviewTab.jsx`](file:///d:/AIML-PROJECT/frontend/src/components/OverviewTab.jsx) | React tab: Key performance indicators, system architecture, and summary metrics. |
+| [`frontend/src/components/RecommendationsTab.jsx`](file:///d:/AIML-PROJECT/frontend/src/components/RecommendationsTab.jsx) | React tab: Interactive percentile predictor, shortlist table, and CSV export. |
+| [`frontend/src/components/CutoffTrendsTab.jsx`](file:///d:/AIML-PROJECT/frontend/src/components/CutoffTrendsTab.jsx) | React tab: Multi-year trend tracker and CAP round drop relaxation cards. |
+| [`frontend/src/components/ModelPerformanceTab.jsx`](file:///d:/AIML-PROJECT/frontend/src/components/ModelPerformanceTab.jsx) | React tab: Algorithmic leaderboard and diagnostic evaluation plot viewers. |
+| [`frontend/src/components/CollegeComparisonTab.jsx`](file:///d:/AIML-PROJECT/frontend/src/components/CollegeComparisonTab.jsx) | React tab: Head-to-head college cutoff & seat intake matrix. |
+| [`frontend/src/components/DatasetInfoTab.jsx`](file:///d:/AIML-PROJECT/frontend/src/components/DatasetInfoTab.jsx) | React tab: Official document traceability, audit report, category definitions, & SDG. |
 | [`src/data/download_pdfs.py`](file:///d:/AIML-PROJECT/src/data/download_pdfs.py) | Verification and network downloader for source PDFs. |
 | [`src/data/extract_pdf_text.py`](file:///d:/AIML-PROJECT/src/data/extract_pdf_text.py) | PyMuPDF text extractor generating `dataset/interim/pdf_pages.csv`. |
 | [`src/data/parse_cutoff_tables.py`](file:///d:/AIML-PROJECT/src/data/parse_cutoff_tables.py) | Regex table normalizer creating `dataset/processed/cutoffs_long.csv`. |
@@ -555,26 +660,19 @@ streamlit run app/app.py
 | [`src/models/explain_model.py`](file:///d:/AIML-PROJECT/src/models/explain_model.py) | Diagnostics generator (Actual vs Predicted, Residuals, Feature Importance). |
 | [`src/models/predict_cutoff.py`](file:///d:/AIML-PROJECT/src/models/predict_cutoff.py) | CLI inference module for standalone cutoff queries. |
 | [`src/recommendations/recommendation_engine.py`](file:///d:/AIML-PROJECT/src/recommendations/recommendation_engine.py) | Recommendation engine with gap calculation and suitability grouping. |
-| [`app/app.py`](file:///d:/AIML-PROJECT/app/app.py) | Streamlit main entrypoint and dashboard overview. |
-| [`app/pages/1_🎯_Recommendations.py`](file:///d:/AIML-PROJECT/app/pages/1_🎯_Recommendations.py) | Interactive candidate predictor, shortlist generator, and CSV export. |
-| [`app/pages/2_📈_Cutoff_Trends.py`](file:///d:/AIML-PROJECT/app/pages/2_📈_Cutoff_Trends.py) | Interactive Plotly multi-year trend charts and round drop analysis. |
-| [`app/pages/3_🔬_Model_Performance.py`](file:///d:/AIML-PROJECT/app/pages/3_🔬_Model_Performance.py) | Model leaderboard, diagnostic charts, and Viva notes. |
-| [`app/pages/4_⚖️_College_Comparison.py`](file:///d:/AIML-PROJECT/app/pages/4_⚖️_College_Comparison.py) | Head-to-head college cutoff and seat intake comparison. |
-| [`app/pages/5_📚_Dataset_Information.py`](file:///d:/AIML-PROJECT/app/pages/5_📚_Dataset_Information.py) | Audit trail, manifest viewer, category guide, and ethics. |
-| [`app/utils/input_validation.py`](file:///d:/AIML-PROJECT/app/utils/input_validation.py) | Input validator for percentiles and preferences. |
-| [`app/utils/display_helpers.py`](file:///d:/AIML-PROJECT/app/utils/display_helpers.py) | HTML badge renderers for Safer, Moderate, and Reach options. |
+| [`tests/test_api.py`](file:///d:/AIML-PROJECT/tests/test_api.py) | FastAPI TestClient test suite covering all 7 REST endpoints. |
 | [`tests/test_data_validation.py`](file:///d:/AIML-PROJECT/tests/test_data_validation.py) | Schema, null, range, and lag integrity unit tests. |
 | [`tests/test_prediction.py`](file:///d:/AIML-PROJECT/tests/test_prediction.py) | Unit tests for TC-1 (Valid), TC-2 (Invalid), TC-3 (Unseen), TC-4 (New College). |
 | [`tests/test_recommendations.py`](file:///d:/AIML-PROJECT/tests/test_recommendations.py) | Unit tests for TC-5 (Filters), grouping logic, and ranking order. |
-| [`report/final_report.docx`](file:///d:/AIML-PROJECT/report/final_report.docx) | Fully populated official MITAOE Word report template with figures. |
+| [`report/final_report_react.docx`](file:///d:/AIML-PROJECT/report/final_report_react.docx) | Fully populated official MITAOE Word report template with React 18 figures. |
 | [`report/final_report_summary.md`](file:///d:/AIML-PROJECT/report/final_report_summary.md) | Complete Markdown version of the academic project report. |
 | [`report/generate_final_report.py`](file:///d:/AIML-PROJECT/report/generate_final_report.py) | Python-docx script that populates the official report template. |
 | [`docs/data_dictionary.md`](file:///d:/AIML-PROJECT/docs/data_dictionary.md) | Exhaustive schema dictionary for all CSV tables. |
-| [`docs/architecture.md`](file:///d:/AIML-PROJECT/docs/architecture.md) | Detailed technical architecture and Mermaid diagrams. |
+| [`docs/architecture.md`](file:///d:/AIML-PROJECT/docs/architecture.md) | Detailed technical architecture and Mermaid diagrams for React & FastAPI. |
 | [`docs/source_manifest.csv`](file:///d:/AIML-PROJECT/docs/source_manifest.csv) | CSV audit manifest tracking all 18 source documents. |
 | [`results/model_comparison.csv`](file:///d:/AIML-PROJECT/results/model_comparison.csv) | Benchmarking leaderboard table with MAE, MSE, RMSE, R². |
 | [`results/test_metrics.json`](file:///d:/AIML-PROJECT/results/test_metrics.json) | JSON summary of production model evaluation metrics. |
-| [`results/architecture_diagram.png`](file:///d:/AIML-PROJECT/results/architecture_diagram.png) | Architecture block diagram figure. |
+| [`results/architecture_diagram.png`](file:///d:/AIML-PROJECT/results/architecture_diagram.png) | Full-stack React 18 & FastAPI architecture diagram figure. |
 | [`results/actual_vs_predicted.png`](file:///d:/AIML-PROJECT/results/actual_vs_predicted.png) | Scatter plot comparing predicted vs actual cutoffs. |
 | [`results/error_distribution.png`](file:///d:/AIML-PROJECT/results/error_distribution.png) | Residual error distribution histogram with KDE. |
 | [`results/feature_importance.png`](file:///d:/AIML-PROJECT/results/feature_importance.png) | Horizontal bar chart of top regression coefficients. |
@@ -585,3 +683,4 @@ streamlit run app/app.py
 | [`results/eda_cap_rounds.png`](file:///d:/AIML-PROJECT/results/eda_cap_rounds.png) | Cutoff spread across CAP rounds 1 to 4. |
 | [`results/eda_category_distribution.png`](file:///d:/AIML-PROJECT/results/eda_category_distribution.png) | Cutoff percentiles across reservation categories. |
 | [`results/eda_correlation_heatmap.png`](file:///d:/AIML-PROJECT/results/eda_correlation_heatmap.png) | Correlation heatmap of numerical features. |
+

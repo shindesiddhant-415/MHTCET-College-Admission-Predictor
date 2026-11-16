@@ -8,6 +8,7 @@ env/
 build/
 develop-eggs/
 dist/
+!frontend/dist/
 downloads/
 eggs/
 .eggs/
@@ -32,10 +33,17 @@ ENV/
 *.swp
 *.swo
 
-# OS
+# OS & Temporary Office files
 .DS_Store
 Thumbs.db
+~$*
+*.tmp
+
+# Node.js & Frontend dependencies
+node_modules/
+.pnpm-store/
 
 # Matplotlib & cache
 .matplotlib/
 .pytest_cache/
+

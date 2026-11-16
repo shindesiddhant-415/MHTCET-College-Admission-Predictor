@@ -9,7 +9,7 @@
 | :---: | :--- | :---: | :---: | :--- |
 | 1 | **Siddhant Balaso Shinde** | 202401040250 | 149 | Lead ML Engineer (Algorithm Training & Evaluation) |
 | 2 | **Piyush Ashok Patil** | 202401040134 | 134 | Data Engineer (PDF Ingestion & Regex Normalization) |
-| 3 | **Sarthak Rajvaidya** | 202401040245 | 145 | Full-Stack Lead (Streamlit UI & Recommendation Engine) |
+| 3 | **Sarthak Rajvaidya** | 202401040245 | 145 | Full-Stack Lead (React 18 SPA UI & Recommendation Engine) |
 | 4 | **Omkar Sanjay More** | 202401040101 | 101 | Quality Analyst (Data Validation, Pytest & Documentation) |
 
 - **Branch**: B.Tech. Computer Engineering (MDM AI & ML)
@@ -23,8 +23,9 @@
 - **Practical No.**: Practical No. 07 (Mini Project)
 - **Project Title**: AI-Based MHT-CET College Admission Prediction and Personalized Recommendation System
 - **Application Domain**: Education / Higher Education Admissions
-- **Type of AI/ML Application**: Predictive Model (Regression) + Recommendation Engine + Data Analytics
+- **Type of AI/ML Application**: Predictive Model (Regression) + Recommendation Engine + React 18 Web UI
 - **Dataset Name & Source**: Maharashtra State CET Cell Official Engineering CAP Cutoffs (2023–2027) & Seat Matrices
+- **Primary Interface**: Modern React 18 Single-Page Application (Vite) + FastAPI REST ML Service
 - **SDG Goals Mapped**: **SDG 4** (Quality Education) & **SDG 10** (Reduced Inequalities)
 
 ---
@@ -32,7 +33,7 @@
 ## 3. Abstract
 Students participating in the Maharashtra Centralized Admission Process (CAP) for undergraduate engineering admissions face substantial uncertainty navigating historical closing cutoffs distributed across disjoint PDF documents, admission rounds, seat categories, and institutions. This project develops an end-to-end AI-driven admission forecasting and recommendation system utilizing official Maharashtra State CET Cell documents across four academic years (2023–24 through 2026–27). A rigorous automated pipeline extracts, cleans, and normalizes 32,144 cutoff records and 704 seat matrix entries. 
 
-Five regression algorithms were implemented and chronologically evaluated on held-out test data (Year 2026–27): Previous-Year Baseline, Ridge Regression with L2 regularization, Decision Tree Regressor, Random Forest Regressor, and HistGradientBoosting Regressor. Ridge Regression achieved the highest predictive accuracy with a Mean Absolute Error (MAE) of **0.1133 percentile points**, Root Mean Squared Error (RMSE) of **0.1415**, and $R^2$ of **0.9996**, vastly outperforming the previous-year baseline (MAE = 0.2037). A personalized recommendation engine leverages these forecasts to categorize eligible colleges into **Safer**, **Moderate**, and **Reach** options based on a transparent percentile-gap margin ($M = 1.5 \times \text{MAE}$). The system is deployed via an interactive Streamlit dashboard featuring multi-year trend analysis, side-by-side college comparison, automated unit testing (100% test pass rate), and full source auditability.
+Five regression algorithms were implemented and chronologically evaluated on held-out test data (Year 2026–27): Previous-Year Baseline, Ridge Regression with L2 regularization, Decision Tree Regressor, Random Forest Regressor, and HistGradientBoosting Regressor. Ridge Regression achieved the highest predictive accuracy with a Mean Absolute Error (MAE) of **0.1133 percentile points**, Root Mean Squared Error (RMSE) of **0.1415**, and $R^2$ of **0.9996**, vastly outperforming the previous-year baseline (MAE = 0.2037). A personalized recommendation engine leverages these forecasts to categorize eligible colleges into **Safer**, **Moderate**, and **Reach** options based on a transparent percentile-gap margin ($M = 1.5 \times \text{MAE}$). The system is deployed via an interactive React 18 Single-Page Application with a FastAPI REST backend featuring multi-year trend analysis, side-by-side college comparison, automated unit testing (100% test pass rate across 20 tests), and full source auditability.
 
 ---
 
@@ -45,7 +46,7 @@ Every year, over 140,000 engineering aspirants in Maharashtra must prepare and s
 1. Collect, extract, and normalize 4 academic years of official Maharashtra CAP cutoff lists and seat matrices into a unified 32,144-record dataset.
 2. Engineer leakage-free chronological lag features ($t-1$, $t-2$ cutoffs, cutoff momentum trends, merit numbers, and seat capacity changes).
 3. Train, compare, and critically evaluate 5 regression algorithms using chronological expanding-window testing (Train: 2024, Val: 2025, Test: 2026).
-4. Deploy an explainable recommendation engine and interactive Streamlit web dashboard with Safer/Moderate/Reach suitability grouping and automated test validation.
+4. Deploy an explainable recommendation engine and interactive React 18 Single-Page Application (FastAPI backend) with Safer/Moderate/Reach suitability grouping and automated test validation.
 
 ---
 
@@ -109,7 +110,7 @@ flowchart TD
         P[Student Inputs: Percentile, Category, Branch, Region] --> O
         O --> Q[Percentile Gap Calculation]
         Q --> R[Suitability Grouping: Safer / Moderate / Reach]
-        R --> S[Streamlit Multi-Page Web Dashboard]
+        R --> S[React 18 SPA + FastAPI REST ML Service]
     end
 ```
 
@@ -146,17 +147,17 @@ Step 1: Ingest official CET Cell PDF documents, extract text via PyMuPDF, and pa
 Step 2: Perform automated data quality validation (0 <= percentile <= 100, merit > 0, zero duplicates) and join with sanctioned intake from seat matrices.
 Step 3: Construct chronological lag features (t-1 cutoff, t-2 cutoff, percentile trend, seat capacity shift) using expanding temporal windows without look-ahead leakage.
 Step 4: Fit preprocessing pipeline and train regression models on 2024–2025 records; evaluate on held-out 2026 test set using MAE, RMSE, and R² to select production model.
-Step 5: Accept student percentile and admission preferences in Streamlit; compute percentile gap (Gap = P_student - P_cut); group into Safer, Moderate, Reach; render interactive recommendations with historical audit trails.
+Step 5: Accept student percentile and admission preferences via React 18 SPA; compute percentile gap (Gap = P_student - P_cut); group into Safer, Moderate, Reach; render interactive recommendations with historical audit trails.
 STOP
 ```
 
 ---
 
 ## 12. Technology / Tools / Libraries Used
-- **Programming Language**: Python 3.12 / 3.14 (64-bit)
-- **IDE / Platform**: VS Code, Jupyter Notebook, Windows Sandbox
-- **Core Libraries**: Scikit-learn, Pandas, NumPy, PyMuPDF (fitz), Matplotlib, Seaborn, Plotly, Joblib, Pytest, python-docx, ReportLab
-- **Deployment Framework**: Streamlit Multi-Page Web Architecture
+- **Programming Language**: Python 3.12+ (Backend) & JavaScript / ES6+ (Frontend)
+- **IDE / Platform**: VS Code, Node.js v24+, Vite 5, Windows Sandbox
+- **Core Libraries**: Scikit-learn, Pandas, NumPy, PyMuPDF, FastAPI, Uvicorn, React 18, Lucide-react, Joblib, Pytest, python-docx, ReportLab
+- **Deployment Framework**: React 18 Single-Page Application (Vite) + FastAPI (ASGI Backend)
 - **Dataset / Resources**: Official Maharashtra State CET Cell CAP Documents (2023–2027)
 
 ---
@@ -179,8 +180,8 @@ On the held-out test dataset (Year 2026–27, N=9,184), Ridge Regression achieve
 ---
 
 ## 14. Model Deployment, Testing and Validation
-- **Deployment Platform**: Streamlit Multi-Page Web Application (`app/app.py`)
-- **Deployed App URL**: `http://localhost:8501` (Deployable to Streamlit Community Cloud)
+- **Deployment Platform**: React 18 Single-Page Application (Vite) + FastAPI REST ML Backend
+- **Deployed App URL**: `http://localhost:5173` (React Dev Server) / `http://localhost:8000` (FastAPI Production Mount)
 - **Model File Format**: `.joblib` (`models/selected_model.joblib` & `models/model_metadata.json`)
 - **Validation Method**: Chronological Expanding Window Validation (Train 2024, Val 2025, Test 2026)
 
@@ -212,7 +213,7 @@ On the held-out test dataset (Year 2026–27, N=9,184), Ridge Regression achieve
 ---
 
 ## 17. Conclusion & Future Scope
-- **Conclusion**: This project successfully developed, evaluated, and deployed an AI-based MHT-CET College Admission Prediction and Personalized Recommendation System for Maharashtra engineering admissions. By converting 18 official CET Cell PDF documents into a structured 32,144-record dataset, engineering chronological lag features without look-ahead leakage, and benchmarking 5 regression algorithms, the system demonstrated high empirical accuracy (Ridge Regression MAE = 0.1133, $R^2$ = 0.9996). The deployed Streamlit interface translates complex machine learning outputs into transparent Safer, Moderate, and Reach recommendations, effectively bridging information asymmetry for thousands of aspiring engineering students.
+- **Conclusion**: This project successfully developed, evaluated, and deployed an AI-based MHT-CET College Admission Prediction and Personalized Recommendation System for Maharashtra engineering admissions. By converting 18 official CET Cell PDF documents into a structured 32,144-record dataset, engineering chronological lag features without look-ahead leakage, and benchmarking 5 regression algorithms, the system demonstrated high empirical accuracy (Ridge Regression MAE = 0.1133, $R^2$ = 0.9996). The deployed React 18 Single-Page Application (supported by FastAPI REST service) translates complex machine learning outputs into transparent Safer, Moderate, and Reach recommendations, effectively bridging information asymmetry for thousands of aspiring engineering students.
 - **Future Scope**: 
   1. Incorporate real-time allotment simulation by integrating candidate preference order modeling during active CAP rounds.
   2. Expand geographical coverage to include Pharmacy and Management (MBA-CET) admissions, alongside calibrated conformal prediction intervals for quantified uncertainty.

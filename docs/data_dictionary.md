@@ -66,3 +66,4 @@ This document provides complete field definitions, data types, and allowed value
 | `seat_pool` | Categorical | State Level / Home University / Other than Home University (One-Hot Encoded). |
 | `seat_category_code` | Categorical | Reservation quota (One-Hot Encoded). |
 | `stage_code` | Categorical | Stage code (One-Hot Encoded). |
+

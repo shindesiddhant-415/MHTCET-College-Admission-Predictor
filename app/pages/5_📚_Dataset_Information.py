@@ -57,3 +57,4 @@ with tab4:
     2. **Autoregressive Constraints**: Cutoffs depend on dynamic annual applicant volumes, percentile distribution shifts, and seat intake changes introduced by DTE/AICTE.
     3. **Privacy by Design**: The application does NOT collect applicant names, roll numbers, application IDs, or uploaded certificates.
     """)
+

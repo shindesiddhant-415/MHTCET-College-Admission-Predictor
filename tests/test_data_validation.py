@@ -41,3 +41,4 @@ def test_model_dataset_lags_and_no_leakage():
     assert set(df["year_num"].unique()) == {2024, 2025, 2026}
     # Check that prev_year_percentile has no nulls
     assert df["prev_year_percentile"].isnull().sum() == 0
+

@@ -1,5 +1,6 @@
 """
 Generate architecture diagram image for the report and README.
+Reflects React 18 SPA Frontend + FastAPI REST ML Backend.
 """
 
 import os
@@ -8,7 +9,6 @@ os.environ['MPLCONFIGDIR'] = os.path.abspath("results/.matplotlib_cache")
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 
 def draw_architecture_diagram(output_path="results/architecture_diagram.png"):
     fig, ax = plt.subplots(figsize=(11, 6.5), dpi=200)
@@ -41,12 +41,12 @@ def draw_architecture_diagram(output_path="results/architecture_diagram.png"):
     ax.text(5.5, 3.8, "4. Chronological ML Models\n• Train 2024 | Val 2025 | Test 2026\n• Previous-Year Cutoff Baseline\n• Ridge Regression (SGD/L2)\n• Decision Tree & Random Forest\n• HistGradientBoosting Regressor", 
             ha="center", va="center", bbox=box_green, fontsize=9, fontweight="bold")
     
-    # 5. Recommendation Engine
-    ax.text(9.2, 6.0, "5. Recommendation Engine\n• Percentile Gap: Gap = P_student - P_cut\n• Validation MAE Margin (M = 1.5*MAE)\n• Suitability Grouping:\n  - Safer: Gap > M\n  - Moderate: |Gap| <= M\n  - Reach: Gap < -M", 
+    # 5. FastAPI REST API Backend
+    ax.text(9.2, 6.0, "5. FastAPI REST Backend\n• High-Performance ASGI Engine\n• Endpoints: /api/recommend,\n  /api/trends, /api/compare\n• Percentile Gap & M=1.5*MAE\n• Static SPA Mounting", 
             ha="center", va="center", bbox=box_orange, fontsize=9, fontweight="bold")
     
-    # 6. Streamlit Deployment
-    ax.text(9.2, 3.8, "6. Streamlit Web Deployment\n• Interactive Student Profile Form\n• Historical Trends (Plotly)\n• Side-by-Side College Comparison\n• Model Leaderboard & Diagnostics\n• CSV Shortlist Export", 
+    # 6. Modern React 18 Frontend
+    ax.text(9.2, 3.8, "6. React 18 SPA Frontend\n• Vite + React Component Architecture\n• Reactive Input Form & Sliders\n• Safer / Moderate / Reach Badges\n• Multi-Year Plotly/CSS Trends\n• Head-to-Head College Matrix", 
             ha="center", va="center", bbox=box_purple, fontsize=9, fontweight="bold")
     
     # Bottom Banner: Responsible AI
@@ -63,7 +63,7 @@ def draw_architecture_diagram(output_path="results/architecture_diagram.png"):
     ax.annotate("", xy=(9.2, 4.7), xytext=(9.2, 5.1), arrowprops=arrow)
     ax.annotate("", xy=(5.5, 2.0), xytext=(5.5, 2.8), arrowprops=arrow)
     
-    plt.title("End-to-End System Architecture: MHT-CET Admission Predictor & Recommender", fontsize=13, fontweight="bold", pad=15)
+    plt.title("End-to-End System Architecture: React 18 Frontend + FastAPI ML Backend", fontsize=13, fontweight="bold", pad=15)
     plt.tight_layout()
     plt.savefig(output_path, dpi=200)
     plt.savefig("report/screenshots/architecture_diagram.png", dpi=200)

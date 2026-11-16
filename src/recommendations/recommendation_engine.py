@@ -261,3 +261,4 @@ if __name__ == "__main__":
     print(f"Status: {results['status']}, Total matches: {results['total_matches']}")
     for r in results["recommendations"][:5]:
         print(f"[{r['suitability_group']}] {r['institute_name']} | {r['branch_name']} | Cutoff: {r['predicted_cutoff']} | Gap: {r['percentile_gap']:+.2f}")
+

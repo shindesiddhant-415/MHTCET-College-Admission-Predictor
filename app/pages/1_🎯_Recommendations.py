@@ -165,3 +165,4 @@ else:
         - **Moderate Options**: Your percentile is within the competitive error band ($|\Delta| \le {res['margin']:.2f}\%$).
         - **Reach Options**: The predicted cutoff is higher than your current score ($\Delta < -{res['margin']:.2f}\%$).
         """)
+

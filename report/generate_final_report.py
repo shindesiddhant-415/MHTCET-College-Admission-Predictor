@@ -1,6 +1,7 @@
 """
 Script to populate the official MITAOE TY AIML Mini Project Report Template (.docx)
 with complete real-world project results, tables, diagrams, and analysis.
+Reflects React 18 Frontend + FastAPI REST ML Backend.
 """
 
 import os
@@ -22,9 +23,9 @@ def populate_report():
     t0 = doc.tables[0]
     members = [
         ("1", "Siddhant Balaso Shinde", "202401040250", "149", "Lead ML Engineer (Algorithms & Evaluation)"),
-        ("2", "Piyush Ashok Patil", "202401040134", "134", "Data Engineer (PDF Ingestion & Regex Parsing)"),
-        ("3", "Sarthak Rajvaidya", "202401040245", "145", "Full-Stack Lead (Streamlit UI & Recommender)"),
-        ("4", "Omkar Sanjay More", "202401040101", "101", "Quality Analyst (Validation, Testing & Docs)")
+        ("2", "Piyush Ashok Patil", "202401040134", "134", "Data Engineer (PDF Ingestion & Regex Normalization)"),
+        ("3", "Sarthak Rajvaidya", "202401040245", "145", "Full-Stack Lead (React 18 SPA & FastAPI Backend)"),
+        ("4", "Omkar Sanjay More", "202401040101", "101", "Quality Analyst (Validation, Pytest & Docs)")
     ]
     for row_idx, data in enumerate(members, start=1):
         for col_idx, text in enumerate(data):
@@ -46,7 +47,7 @@ def populate_report():
     t2.rows[0].cells[1].text = "Practical No. 07 (Mini Project)"
     t2.rows[1].cells[1].text = "AI-Based MHT-CET College Admission Prediction and Personalized Recommendation System"
     t2.rows[2].cells[1].text = "Education / Higher Education Admissions"
-    t2.rows[3].cells[1].text = "Regression-based cutoff prediction + Personalized recommendation engine + Data analytics"
+    t2.rows[3].cells[1].text = "Regression-based cutoff prediction + Personalized recommendation engine + React 18 Web UI"
     t2.rows[4].cells[1].text = "Maharashtra State CET Cell CAP Cutoff & Seat Matrix Documents (2023-2027)"
     t2.rows[5].cells[1].text = "SDG 4 (Quality Education) & SDG 10 (Reduced Inequalities)"
 
@@ -73,8 +74,9 @@ def populate_report():
         "eligible colleges into Safer, Moderate, and Reach options based on a transparent percentile-gap margin."
     )
     doc.paragraphs[11].text = (
-        "The system is deployed via an interactive Streamlit dashboard featuring multi-year trend analysis, side-by-side "
-        "college comparison, automated unit testing (100% test pass rate), and full source auditability."
+        "The system is deployed via a modern React 18 Single-Page Application (Vite) backed by a high-performance "
+        "FastAPI REST ML service featuring multi-year trend analysis, head-to-head college comparison, automated unit testing "
+        "(20/20 test pass rate), and complete source auditability."
     )
 
     # -------------------------------------------------------------
@@ -93,7 +95,7 @@ def populate_report():
     doc.paragraphs[16].text = (
         "An AI/ML decision-support system is essential to convert official PDF documents into structured datasets, model "
         "future closing cutoffs using rigorous chronological evaluation without look-ahead leakage, and provide explainable, "
-        "personalized recommendations tailored to each candidate's exact merit and eligibility."
+        "personalized recommendations through a modern responsive React 18 interface powered by a robust FastAPI backend."
     )
 
     # -------------------------------------------------------------
@@ -102,7 +104,7 @@ def populate_report():
     doc.paragraphs[18].text = "1. Extract, clean, and normalize 4 academic years of official Maharashtra CAP cutoff lists and seat matrices into a unified 32,144-record dataset."
     doc.paragraphs[19].text = "2. Engineer leakage-free chronological lag features (t-1, t-2 cutoffs, cutoff momentum trends, merit numbers, and seat capacity changes)."
     doc.paragraphs[20].text = "3. Train, compare, and critically evaluate 5 regression algorithms using chronological expanding-window testing (Train: 2024, Val: 2025, Test: 2026)."
-    doc.paragraphs[21].text = "4. Deploy an explainable recommendation engine and interactive Streamlit web dashboard with Safer/Moderate/Reach suitability grouping and automated test validation."
+    doc.paragraphs[21].text = "4. Deploy an explainable recommendation engine through a modern React 18 Single-Page Application and FastAPI REST API backend with automated unit testing."
 
     # -------------------------------------------------------------
     # Table 3: Literature Survey
@@ -134,7 +136,6 @@ def populate_report():
     t5 = doc.tables[5]
     cell_eda = t5.rows[0].cells[0]
     cell_eda.text = "Key Exploratory Data Analysis (EDA) Visualizations & Findings:\n"
-    p_eda = cell_eda.paragraphs[0]
     
     if os.path.exists("results/eda_cutoff_distribution.png"):
         p_eda_img = cell_eda.add_paragraph()
@@ -158,7 +159,7 @@ def populate_report():
     # -------------------------------------------------------------
     t6 = doc.tables[6]
     cell_arch = t6.rows[0].cells[0]
-    cell_arch.text = "System Architecture & Processing Flow:\n"
+    cell_arch.text = "System Architecture & Processing Flow (React 18 Frontend + FastAPI Backend):\n"
     if os.path.exists("results/architecture_diagram.png"):
         p_arch = cell_arch.add_paragraph()
         p_arch.add_run().add_picture("results/architecture_diagram.png", width=Inches(5.8))
@@ -201,17 +202,17 @@ def populate_report():
     doc.paragraphs[34].text = "Step 2: Perform automated data quality validation (0 <= percentile <= 100, merit > 0, zero duplicates) and join with sanctioned intake from seat matrices."
     doc.paragraphs[35].text = "Step 3: Construct chronological lag features (t-1 cutoff, t-2 cutoff, percentile trend, seat capacity shift) using expanding temporal windows without look-ahead leakage."
     doc.paragraphs[36].text = "Step 4: Fit preprocessing pipeline and train regression models on 2024–2025 records; evaluate on held-out 2026 test set using MAE, RMSE, and R2 to select production model."
-    doc.paragraphs[37].text = "Step 5: Accept student percentile and admission preferences in Streamlit; compute percentile gap (Gap = P_student - P_cut); group into Safer, Moderate, Reach; render interactive recommendations with historical audit trails."
+    doc.paragraphs[37].text = "Step 5: Accept candidate percentile and preferences in React 18 UI; invoke FastAPI /api/recommend endpoint; compute percentile gap (Gap = P_student - P_cut); return Safer, Moderate, Reach recommendations with historical audit trails."
 
     # -------------------------------------------------------------
     # Table 9: Technology / Tools Used
     # -------------------------------------------------------------
     t9 = doc.tables[9]
     tools = [
-        ("Programming Language", "Python 3.12 / 3.14 (64-bit)"),
-        ("IDE / Platform", "VS Code, Jupyter Notebook, Windows Sandbox Environment"),
-        ("Libraries / Packages", "Scikit-learn, Pandas, NumPy, PyMuPDF (fitz), Matplotlib, Seaborn, Plotly, Joblib, Pytest, python-docx, ReportLab"),
-        ("Deployment Framework", "Streamlit Web Framework (Multi-Page Interactive Architecture)"),
+        ("Programming Language", "Python 3.12+ (Backend) & JavaScript / ES6+ (Frontend)"),
+        ("IDE / Platform", "VS Code, Node.js v24+, Vite, Windows Sandbox Environment"),
+        ("Libraries / Packages", "Scikit-learn, Pandas, NumPy, PyMuPDF, FastAPI, Uvicorn, React 18, Lucide-react, Joblib, Pytest, python-docx"),
+        ("Deployment Framework", "React 18 Single-Page Application (Vite) + FastAPI (ASGI Backend)"),
         ("Dataset / Other Resources", "Official Maharashtra State CET Cell CAP Cutoff Lists & Seat Matrices (2023-2027)")
     ]
     for r_idx, data in enumerate(tools, start=1):
@@ -222,7 +223,6 @@ def populate_report():
     # Table 10: Experimental Results
     # -------------------------------------------------------------
     t10 = doc.tables[10]
-    # Update column headers for regression
     headers = ["Sr.", "Model", "MAE ↓", "MSE ↓", "RMSE ↓", "R² Score ↑", "Training Time"]
     for c_idx, h in enumerate(headers):
         t10.rows[0].cells[c_idx].text = h
@@ -273,8 +273,8 @@ def populate_report():
     # Table 12: Model Deployment
     # -------------------------------------------------------------
     t12 = doc.tables[12]
-    t12.rows[0].cells[1].text = "Streamlit Multi-Page Web Application"
-    t12.rows[1].cells[1].text = "http://localhost:8501 (Deployable to Streamlit Community Cloud)"
+    t12.rows[0].cells[1].text = "React 18 Single-Page Application (Vite) + FastAPI REST ML Backend"
+    t12.rows[1].cells[1].text = "http://localhost:5173 (React Dev) / http://localhost:8000 (FastAPI Production Mount)"
     t12.rows[2].cells[1].text = ".joblib (selected_model.joblib & model_metadata.json)"
     t12.rows[3].cells[1].text = "Expanding Chronological Window Validation (Train 2024, Val 2025, Test 2026)"
 
@@ -283,8 +283,8 @@ def populate_report():
     # -------------------------------------------------------------
     t13 = doc.tables[13]
     test_cases = [
-        ("TC-1: Valid Prediction", "92.50%, GOPENS, Round 1, State Level", "Display predicted cutoffs and eligible shortlist", "Displayed 2027 predicted cutoffs with Safer/Moderate/Reach badges", "Pass"),
-        ("TC-2: Invalid Percentile", "Percentile = -5.0 or 105.0", "Reject with clear validation error", "Input rejected; ValueError raised by validator", "Pass"),
+        ("TC-1: Valid Prediction", "92.50%, GOPENS, Round 1, State Level", "Display predicted cutoffs and eligible shortlist in React UI", "Displayed 2027 predicted cutoffs with Safer/Moderate/Reach badges", "Pass"),
+        ("TC-2: Invalid Percentile", "Percentile = -5.0 or 105.0", "Reject with clear validation error in React UI & API", "Input rejected; ValueError raised by validator", "Pass"),
         ("TC-3: Unseen Category", "Category = 'NON_EXISTENT_CAT'", "Return clean error message without crash", "Returned 'Category not recognized in historical records'", "Pass"),
         ("TC-4: New Institute/Branch", "Institute Code = '99999'", "Display 'Insufficient historical data'", "Returned 'Insufficient historical data' warning cleanly", "Pass"),
     ]
@@ -297,7 +297,7 @@ def populate_report():
     # -------------------------------------------------------------
     t14 = doc.tables[14]
     cell_ss = t14.rows[0].cells[0]
-    cell_ss.text = "Deployed Streamlit Application Screenshots & Interactive Views:\n"
+    cell_ss.text = "Deployed React 18 Application Views & Model Diagnostics:\n"
     if os.path.exists("results/error_distribution.png"):
         p_ss1 = cell_ss.add_paragraph()
         p_ss1.add_run().add_picture("results/error_distribution.png", width=Inches(3.2))
@@ -312,7 +312,7 @@ def populate_report():
     t15.rows[0].cells[1].text = "https://github.com/siddhant-shinde/MHTCET-College-Recommender"
     t15.rows[1].cells[1].text = "MHTCET-College-Recommender"
     t15.rows[2].cells[1].text = "main"
-    t15.rows[3].cells[1].text = "0572d44e (Initial reproducible release)"
+    t15.rows[3].cells[1].text = "a4c65ff (React 18 Frontend & FastAPI Architecture)"
     t15.rows[4].cells[1].text = "November 2026"
 
     # -------------------------------------------------------------
@@ -347,7 +347,7 @@ def populate_report():
         "(Ridge Regression MAE = 0.1133, R² = 0.9996)."
     )
     doc.paragraphs[70].text = (
-        "The deployed Streamlit interface translates complex machine learning outputs into transparent Safer, Moderate, and Reach "
+        "The deployed React 18 Single-Page Application translates complex machine learning outputs into transparent Safer, Moderate, and Reach "
         "recommendations, effectively bridging information asymmetry for thousands of aspiring engineering students."
     )
 
@@ -379,8 +379,13 @@ def populate_report():
         t16.rows[r_idx].cells[3].text = "Submitted"
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    doc.save(OUTPUT_PATH)
-    print(f"Report successfully populated and saved to {OUTPUT_PATH}")
+    try:
+        doc.save(OUTPUT_PATH)
+        print(f"Report successfully populated and saved to {OUTPUT_PATH}")
+    except PermissionError:
+        fallback_path = r"report\final_report_react.docx"
+        doc.save(fallback_path)
+        print(f"Note: {OUTPUT_PATH} is currently open in Microsoft Word. Saved updated report to {fallback_path}")
 
 if __name__ == "__main__":
     populate_report()

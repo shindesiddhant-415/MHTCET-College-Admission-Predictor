@@ -103,3 +103,4 @@ def parse_all_seat_matrices(interim_csv="dataset/interim/pdf_pages.csv", output_
 
 if __name__ == "__main__":
     parse_all_seat_matrices()
+

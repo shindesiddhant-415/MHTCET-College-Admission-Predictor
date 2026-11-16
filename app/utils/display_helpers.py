@@ -17,3 +17,4 @@ def format_gap(gap):
         return f'<span style="color: #7f8c8d; font-weight: bold;">0.00%</span>'
     else:
         return f'<span style="color: #e74c3c; font-weight: bold;">{gap:.2f}%</span>'
+

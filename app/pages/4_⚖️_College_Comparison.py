@@ -89,3 +89,4 @@ else:
             st.dataframe(display_sm, use_container_width=True, hide_index=True)
         else:
             st.info("Seat matrix intake records not found for chosen combination.")
+

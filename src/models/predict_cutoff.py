@@ -89,3 +89,4 @@ if __name__ == "__main__":
     )
     print("Sample Single Prediction Result:")
     print(json.dumps(res, indent=2))
+

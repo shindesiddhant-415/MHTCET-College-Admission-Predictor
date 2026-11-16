@@ -1,6 +1,6 @@
 # System Architecture
 
-The **AI-Based MHT-CET College Admission Prediction and Personalized Recommendation System** is built on an end-to-end reproducible machine learning pipeline.
+The **AI-Based MHT-CET College Admission Prediction and Personalized Recommendation System** is built on an end-to-end reproducible machine learning pipeline featuring a modern **React 18 Single-Page Application (Vite)** frontend powered by a high-performance **FastAPI REST ML Service** backend.
 
 ---
 
@@ -35,12 +35,21 @@ flowchart TD
         M --> N[(Saved Pipeline & Metadata)]
     end
 
-    subgraph Decision_Engine [Recommendation & Deployment]
-        N --> O[Personalized Recommendation Engine]
-        P[Student Inputs: Percentile, Category, Branch, Region] --> O
-        O --> Q[Percentile Gap Calculation]
-        Q --> R[Suitability Grouping: Safer / Moderate / Reach]
-        R --> S[Streamlit Multi-Page Web Dashboard]
+    subgraph Backend_Services [FastAPI REST ML Backend]
+        N --> API[FastAPI Application api/main.py]
+        API --> EP1["GET /api/overview & /api/filters"]
+        API --> EP2["POST /api/recommend (Percentile Gap & Grouping)"]
+        API --> EP3["GET /api/trends & /api/compare"]
+        API --> EP4["GET /api/model-performance & /api/manifest"]
+    end
+
+    subgraph Frontend_App [Modern React 18 Single-Page Application]
+        UI[React 18 SPA frontend/src] --> EP1
+        UI --> EP2
+        UI --> EP3
+        UI --> EP4
+        P[Candidate Profile: Percentile, Category, Branch, Region] --> UI
+        UI --> RES[Dynamic Option List: Safer / Moderate / Reach]
     end
 ```
 
@@ -66,6 +75,6 @@ $$\text{Gap}_i = \text{Percentile}_{\text{Student}} - \hat{y}_i$$
 
 Where $\hat{y}_i$ is the ML predicted closing percentile. Using the validation error margin $M = 1.5 \times \text{MAE}_{\text{val}}$:
 
-- **Safer**: $\text{Gap}_i > M$ (Comfortable admission buffer)
-- **Moderate**: $-M \le \text{Gap}_i \le M$ (Competitive margin)
-- **Reach**: $\text{Gap}_i < -M$ (Ambitious / Dream option)
+- **🛡️ Safer**: $\text{Gap}_i > M$ (Comfortable admission buffer)
+- **⚖️ Moderate**: $-M \le \text{Gap}_i \le M$ (Competitive margin)
+- **🚀 Reach**: $\text{Gap}_i < -M$ (Ambitious / Dream option)

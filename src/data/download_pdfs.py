@@ -59,3 +59,4 @@ def check_or_download_sources(config_path="config/sources.json", output_manifest
 
 if __name__ == "__main__":
     check_or_download_sources()
+

@@ -81,3 +81,4 @@ else:
         labels={"cap_round": "CAP Admission Round", "cutoff_percentile": "Percentile", "institute_name": "College"}
     )
     st.plotly_chart(fig_rounds, use_container_width=True)
+
