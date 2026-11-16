@@ -97,7 +97,6 @@ MHTCET-College-Recommender/
 │   ├── 04_feature_engineering.ipynb  # Chronological lag construction
 │   ├── 05_model_experiments.ipynb    # Algorithm benchmarking
 │   └── 06_model_analysis.ipynb       # Diagnostic error analysis
-├── mhtcet_admission_predictor_master.ipynb # Master Notebook at repository root
 ├── report/
 │   ├── final_report.pdf              # Complete Academic Project Report (PDF)
 │   ├── final_report.docx             # Complete project report in MITAOE template (.docx)
