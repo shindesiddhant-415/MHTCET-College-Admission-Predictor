@@ -312,7 +312,7 @@ def populate_report():
     t15.rows[0].cells[1].text = "https://github.com/siddhant-shinde/MHTCET-College-Recommender"
     t15.rows[1].cells[1].text = "MHTCET-College-Recommender"
     t15.rows[2].cells[1].text = "main"
-    t15.rows[3].cells[1].text = "a4f8e21 (Production Release with Full Pipelines)"
+    t15.rows[3].cells[1].text = "0572d44e (Initial reproducible release)"
     t15.rows[4].cells[1].text = "November 2026"
 
     # -------------------------------------------------------------
