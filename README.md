@@ -146,7 +146,45 @@ This project utilizes real-world regulatory documents published by the **State C
 - 📋 **[dataset/processed/data_quality_report.csv](dataset/processed/data_quality_report.csv)**: Automated audit report verifying 0 missing critical values, 100% valid percentiles (0–100), and non-zero merit ranks.
 - 📁 **[dataset/raw/pdfs/](dataset/raw/pdfs/)**: 18 original official PDF documents organized by academic year.
 
-### 2. Official Maharashtra State Regulatory Links
+### 2. Official Maharashtra State CET Cell Regulatory Documents & Direct Download Links
+
+The underlying raw datasets originate directly from the Maharashtra State Common Entrance Test Cell. Below are the verified direct download links across all four academic years:
+
+#### A. Academic Year 2023–24
+| Document Type | Direct Download Link |
+| :--- | :--- |
+| **Sanctioned Seat Matrix** | [2023–24 Seat Matrix PDF](https://fe2026.mahacet.org/2023/2023SeatMatrix.pdf) |
+| **CAP Round I — MH Cutoffs** | [2023–24 CAP I Cutoff PDF](https://fe2026.mahacet.org/2023/2023ENGG_CAP1_CutOff.pdf) |
+| **CAP Round II — MH Cutoffs** | [2023–24 CAP II Cutoff PDF](https://fe2026.mahacet.org/2023/2023ENGG_CAP2_CutOff.pdf) |
+| **CAP Round III — MH Cutoffs** | [2023–24 CAP III Cutoff PDF](https://fe2026.mahacet.org/2023/2023ENGG_CAP3_CutOff.pdf) |
+
+#### B. Academic Year 2024–25
+| Document Type | Direct Download Link |
+| :--- | :--- |
+| **Sanctioned Seat Matrix** | [2024–25 Seat Matrix PDF](https://fe2026.mahacet.org/2024/2024SeatMatrix.pdf) |
+| **CAP Round I — MH Cutoffs** | [2024–25 CAP I Cutoff PDF](https://fe2026.mahacet.org/2024/2024ENGG_CAP1_CutOff.pdf) |
+| **CAP Round II — MH Cutoffs** | [2024–25 CAP II Cutoff PDF](https://fe2026.mahacet.org/2024/2024ENGG_CAP2_CutOff.pdf) |
+| **CAP Round III — MH Cutoffs** | [2024–25 CAP III Cutoff PDF](https://fe2026.mahacet.org/2024/2024ENGG_CAP3_CutOff.pdf) |
+
+#### C. Academic Year 2025–26
+| Document Type | Direct Download Link |
+| :--- | :--- |
+| **Sanctioned Seat Matrix** | [2025–26 Seat Matrix PDF](https://fe2026.mahacet.org/2025/2025SeatMatrix.pdf) |
+| **CAP Round I — MH Cutoffs** | [2025–26 CAP I Cutoff PDF](https://fe2026.mahacet.org/2025/2025ENGG_CAP1_CutOff.pdf) |
+| **CAP Round II — MH Cutoffs** | [2025–26 CAP II Cutoff PDF](https://fe2026.mahacet.org/2025/2025ENGG_CAP2_CutOff.pdf) |
+| **CAP Round III — MH Cutoffs** | [2025–26 CAP III Cutoff PDF](https://fe2026.mahacet.org/2025/2025ENGG_CAP3_CutOff.pdf) |
+| **CAP Round IV — MH Cutoffs** | [2025–26 CAP IV Cutoff PDF](https://fe2026.mahacet.org/2025/2025ENGG_CAP4_CutOff.pdf) |
+
+#### D. Academic Year 2026–27
+| Document Type | Direct Download Link |
+| :--- | :--- |
+| **Sanctioned Seat Matrix** | [2026–27 Seat Matrix PDF](https://cappublicdocs2026.blob.core.windows.net/documents/2026_fe_seatmatrix_V1.pdf) |
+| **CAP Round I — MH Cutoffs** | [2026–27 CAP I Cutoff PDF](https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP1_MH_CutOff_V1.pdf) |
+| **CAP Round II — MH Cutoffs** | [2026–27 CAP II Cutoff PDF](https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP2_MH_CutOff.pdf) |
+| **CAP Round III — MH Cutoffs** | [2026–27 CAP III Cutoff PDF](https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP3_MH_CutOff.pdf) |
+| **CAP Round IV — MH Cutoffs** | [2026–27 CAP IV Cutoff PDF](https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_MH_CutOff.pdf) |
+
+#### Official Regulatory Portals
 - 🌐 **Official Maharashtra CET Cell Engineering Portal**: [https://fe2026.mahacet.org](https://fe2026.mahacet.org)
 - 🌐 **State Common Entrance Test Cell Main Portal**: [https://cetcell.mahacet.org](https://cetcell.mahacet.org)
 - 🌐 **Directorate of Technical Education (DTE) Maharashtra**: [https://dte.maharashtra.gov.in](https://dte.maharashtra.gov.in)

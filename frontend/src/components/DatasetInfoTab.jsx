@@ -67,10 +67,34 @@ export default function DatasetInfoTab() {
                     <td style={{ fontFamily: 'monospace', fontSize: '0.8rem' }}>{m.file_name}</td>
                     <td>{(m.file_size_bytes / 1024).toFixed(1)} KB</td>
                     <td>
-                      <span className="badge badge-safer">
-                        <CheckCircle2 size={12} />
-                        VERIFIED
-                      </span>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <span className="badge badge-safer">
+                          <CheckCircle2 size={12} />
+                          VERIFIED
+                        </span>
+                        {m.url && (
+                          <a
+                            href={m.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              color: '#00509d',
+                              textDecoration: 'none',
+                              fontSize: '0.75rem',
+                              fontWeight: 600,
+                              background: '#eff6ff',
+                              padding: '2px 8px',
+                              borderRadius: '4px',
+                              border: '1px solid #bfdbfe',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '3px'
+                            }}
+                          >
+                            PDF ↗
+                          </a>
+                        )}
+                      </div>
                     </td>
                   </tr>
                 ))}
