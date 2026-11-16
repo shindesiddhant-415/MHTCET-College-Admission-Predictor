@@ -49,3 +49,4 @@ export default function Navbar({ activeTab, setActiveTab }) {
     </header>
   );
 }
+

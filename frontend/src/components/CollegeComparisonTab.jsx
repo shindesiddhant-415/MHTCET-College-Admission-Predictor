@@ -160,3 +160,4 @@ export default function CollegeComparisonTab({ filters }) {
     </div>
   );
 }
+
